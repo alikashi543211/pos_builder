@@ -1,0 +1,8 @@
+__Entertainment Website - Student Project
+I developed student project entertainment website in php. I downloaded the theme from internet and connected database
+in php. I make admin panel to add entertainment videos from admin panel. I managed all videos from admin panel in php.
+All videos uploaded in admin panel , i displayed on entertainment website home page.
+
+__Pagination in Movies Website
+I applied in existing movies website pagination in php. I listened video from internet and then apply pagination in 
+list of movies on website.

@@ -1,0 +1,28 @@
+DevStudio Project Experience Section
+
+Humphrey & Stretton Project ( Door & Frames Manufacturer )
+In DevStudio i worked as PHP Laravel Developer and API Developer. Humphrey & Stretton project is developed in
+Angular as Frontend and Backend APIs in Laravel. So I worked with frontend team to build backend APIs for
+Humphrey & Stretton Project to integrate. I develped APIs for all Work Orders crud, Role and permission based
+APIs and Developed APIs to manage statuses of All work orders. I developed APIs for accounts manage for all
+payments of all Work orders. The major challenge to integrate Sage50 Cloud integration with Humphrey & Stretton
+to create all invoice in App and as well as in the Sage50 Cloud accounting software. To get all invoices from
+Sage50 Cloud to Humphrey & Stretton APP, I developed APIs for integration. I built APIs to show all Stats on
+Dashboard and to Show all invoiced accounts stats.
+
+Mailboxes BM  ( E Shop Website Bermuda )
+I have worked on Mailboxes Shop Bermuda website. Mailboxes Bm website basically built in Frontend in Angular and backend APIs in PHP Laravel. So I worked and collaborated with Frontend team to build RESt APIs to integrate with Mailboxes Frontend angular. So I worked as a PHP Laravel Developer. I build authentication APIs, Product management on admin side APIs, Orders management APIs for admin panels, roles and permission management APIs. I developed Customer portal APIs for this shop Product listing, Product detail, Shopping cart management APIs , Orders management APIs , Checkout and payment integration APIs. Main challenging thing was to make Filter APIs of Product multiple categories on sidebar. This multiple product parent child categories filter API was challenging I build this API successfully for customer shop side to filter products and on admin side to filter products.
+
+Dalua IOT Device ( For fresh and Salt water )
+I have worked in Dalua IOT Project , build an admin panel to manage all Deveices for fresh and Salt water. I 
+managed all devices list and detail of each device and managed roles and permission management and converted
+existing admin panel design to new design by integrated new admin panel theme. I worked on Dalua IOT APIs to
+use and integrate in Mobile for Android and IOS Development team. I worked as API developer and admin panel i 
+managed.
+
+HR Portal
+I have worked on HR Portal module of DevStudio, I build a module of salary deduction and employee loan managmenet
+module in HR portal and resolved bugs issues in HR Portal. I worked on Email template module to send emails
+to employee. I set all default templates each template contains variable like employee_name that will replaced
+by actuall employee name etc on run time.
+

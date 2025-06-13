@@ -1,0 +1,101 @@
+Deviotech Projects
+
+Talkmaze
+ToonTutor
+QuranTutor
+Driva
+Car Parts
+Petro System
+Spick And Span
+LanguageLad
+TempHub
+
+__TempHub Project
+I build the TempHub Project in PHP Laravel , jquery bootstrap.
+I worked on customization of theme to set according to 
+client requirement. I developed seller and buyer registration
+. I developed admin panel to manage all sellers, buyers.
+Seller complete the profile creation steps where seller
+select multiple offer services and set description. Buyer
+complete the registration by selecting the multiple offers in
+which buyer is interested. User can create seller and buyer
+both profiles like in Fiver. Buyer visits the temphub home page
+visit services and book service of any seller and then Pay amount to tutor then booking has been scheduled into buyer dashboard calendar  and as well as on seller dashboard calendar. Seller know the location of buyer , on time of service seller reach the buyer destination and confirm the buyer availability, buyer confirm the seller availability. In this way seller and buyer perform in system. Admin see all users with profile details of seller and buyer. Admin set commission of every booking. See the all seller earnings total bookings , then admin pay the seller payments to seller's stripe connected account after deduction of admin commission. All website content managed on CMS in admin panel.
+
+__PetroSystem Project
+I build existing PetroSystem in PHP Laravel and jQuery . I build managed admin panel to manage all jobs of employee. Each job contains 10 more sub tabs in details. i.e job Quotations, Job line items, job certificate, Job documents, job email attachments, job notifications. So each job is assigned to a specific employee.
+I developed employee portal of PetroSystem. Employee login in system then can view assigned jobs . In each job employee open the form employee working detail form employee fill this form and submit the job to admin. Admin view submitted job , admin archive the jobs then view in archived jobs list. Admin view all job Quotations, create job job Quotations if everything thing in Job quotation is satisfied then publish the quotation into a job. I resolved issues in admin panel settings section.
+
+___Driva Project 
+=> I worked on Driva website Garage booking app. I build driva portal admin panel, 
+customer side, garage user panel using PHP/Laravel Bootstrap, jQuery, ajax, javaScript. I build admin panel
+to manage all users ( garage users, admin users, customer users ), manage all statuses of garages. Garage
+user complete registration steps by adding garage details and bank account attach details attach. I implemented
+google search autocomplete on garage address. I listed down the all garages with reviews rating and stars
+on home page where customer visits. I build garage detail page to show . I build garage detail page. I build
+garage booking flow customer book garage. garage accept booking and manage bookings statues by admin. I 
+integrated the payment integration stripe and paypal. I build home page garage listing filter.  I implemented the
+logic the nearest garages listing by filtering the distance radius.
+
+__Talkmaze Project
+=> I have worked in Talkmaze project. I worked on tutor registeration , where tutor set profile details,
+bank account details for payout stripe and paypal, tutoring time schedule days and time slots schedules.
+Parents portal, worked on Admin Portal. Parents register account by entering child details then 
+get a trial class from existing tutors on talkmaze. I integrated a google calendar on parents dashboard to see
+past classes, upcoming class same as well as on tutor dashboard to see booked classes schedule with parent's child.
+I integrated zoom, Tutor generate the zoom link on booking time then zoom meeting link sent to child via email
+here class performed. Two types of classes one time and recurring. Tutor set package after trial free class. if student
+buy package then next tutor complete the need of student according to bought package. Admin set their commision from every
+booking betweeen tutor and student. So admin send the tutor amount to tutor attached stripe account. so I build this
+payment management and payout management on admin panel.
+
+__LanguageLad Project
+=> I build a languageLad system. This system allows the Teacher to teach language to students. I build a student portal
+where student see tutors list on home page and see the Teacher detail availability and then book the team to teach
+a specific language. Student book first time trial then if interested with specific teacher then buy the package of teacher
+to learn the language. Teacher connect his/her stripe account to receive payments. Admin Manage all teachers, studnets,
+bookings between them and payments maange after cutting the commision , so i developed on all of this. Student take classes
+on Zoom meeting. Student and Teacher can see all past upcoming, cancelled bookings on calendar on relevant dashboard.
+
+
+__SpickAndSpan
+I developed this system in PHP Laravel. I integrated spick and span website theme in Laravel. I build the spickAndSpan website for providing the cleaning services to customer. Customer can view cleaning services
+on home page. On website home page I build a quotation form where customer select the service and some other parameters and after calculation total value
+is displayed on basis of selected values then customer add some personal and address details like contact number, email
+address and location and submit the quotation. I build the admin panel to manage all customer users, to manage all quotations. Admin can view
+the quotation and customer detail and selected service. Then spick and span company will provide the selected service to provided customer address
+and detail.
+
+__QuranTutors
+I developed QuranTutors in PHP Laravel. I integrated website theme on front side for customer view all website pages. I listed down the all teachers
+on home page. I build authentication system for teacher and student on website. I build teacher dashboard where from menu items teacher can change
+profile details password etc. Teacher can set availability days and time slots and update any time. Teacher can set the trial class fees and can
+make packages to teach quran to students.Teacher can view all upcoming, past classes schedule on google calendar that i integrated on teacher dashboard.
+When time of class is come then active color to current today class is applied. Teacher can generate the zoom link that i integrated , From zoom link
+Zoom link is autometically shared on student dashboard.Teacher can view all earnings and bookings from dashboard along with statuses and stats.
+Student can view list of teachers from website and can view profile detail of teacher along with teacher availability. If student register in QuranTutors
+Then student can book teacher to learn Quran. I build this booking system that Student book the teacher first time price will be trial class that
+will be allowed only one time. Student can view dashboard and in dashboard menu items student can change profile information. can view all bookings
+along with statuses with teachers and can view all amount spent on QuranTutors. Student can view all upcoming , past, today class schedules that
+will be shown on integrated Google Calendar on Student dashboard. Student can view zoom links by viewing the calendar, if class time comes then join
+class on zoom will be shown on student dashboard. Email notifications i build that when teacher will generate zoom link then zoom link will be auto
+sent to student email where student can be notified and will join the zoom class with teacher. After successful class payment deduction is performed
+on zoom meeting end call back url.
+I developed the Quran Tutors admin panel integrated theme and authentication i implemented for admin panel . Admin logins to dashboard and view
+dashboard stats i.e total students, total teachers, total bookings. Admin manage all students and teacher along with complete profile details.
+Admin can set CMS Settings for website dynamic content. Admin set the percentage commision for bookings between student and teacher. Admin can view teacher
+all earnings bookings. Admin send the teacher earned amount bank receipt to Teacher after successfully paid to bank. So Admin can view total earnings
+that admin will earn from commision.
+
+__CarParts
+I worked with in a team in CarParts project. I implemented the laravel moolie subscription where user can subscribe package via moolie. Actually
+2 types of subscriptions was. first was scrap yard advertisement user subscription and second was car parts user subscription. In car parts
+There were 3 dashboards. First for scrap yard advertisement user dashboard and second was car parts advertisement dashboard. I implemented 
+subscription , cancellation and re subscription to defined packages. I displayed the car parts products on home page category wise. scrap yard
+and car parts.
+
+I used technologies in each project PHP, Laravel, MySQL database, jquery bootstrap, ajax, javascript . I implement email notifications system in each project.
+I resolved bugs issues and software admin panels to manage cruds in some other projects.
+
+
+

@@ -1,0 +1,539 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: "Rubik", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	margin: 0;
+	padding: 0
+}
+a, button {
+	text-decoration: none;
+	transition: ease-in 0.3s;
+	-moz-transition: ease-in 0.3s;
+	-webkit-transition: ease-in 0.3s;
+	-ms-transition: ease-in 0.3s;
+	-o-transition: ease-in 0.3s;
+}
+img {
+	max-width: 100%
+}
+.dashboard-idc-main-wraper{
+	background:#F2F6F9;
+	/* padding:30px 0; */
+}
+.dashboard-idc-main-wraper h1{
+	font-size:22px;
+	color:#013241
+}
+.breadcrums-dashboard-idc{
+}
+.breadcrums-dashboard-idc a{
+	color:#767676;
+	font-size:16px;
+	margin-right:15px;
+}
+.breadcrums-dashboard-idc a img{
+	margin-right:5px;
+}
+.fund-info-wraper{
+	background:#fff;
+	border-radius:10px;
+	padding:25px;
+	margin:15px 0;
+}
+.fund-info-wraper .status-fund{
+	background:#F8BE00;
+	font-size:13px;
+	color:#fff;
+	padding:8px 15px;
+	border-radius:6px;
+	position:relative;
+	top:-5px
+}
+.fund-info-wraper h2{
+	font-size:30px;
+	color:#013241
+}
+.fund-info-list-wrap{
+	margin-top:10px;
+}
+.fund-info-list-wrap span{
+	color:#525252;
+	margin-right:35px;
+}
+.fund-info-list-wrap span img{
+	position:relative;
+	top:-3px;
+}
+.fund-info-list-wrap span strong{
+	font-weight:bold;
+}
+.fund-info-list-wrap span strong a{
+	color:#013241;
+	border-bottom:1px solid #013241;
+	font-weight:bold;
+}
+.funds-search-cat-wrap form{
+}
+.funds-search-cat-wrap form .form-group{
+	position:relative;
+}
+.funds-search-cat-wrap form .form-group img{
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+.funds-search-cat-wrap form .form-group .form-control{
+	height:50px;
+	border:1px solid #dadada;
+	outline:none;
+	box-shadow:none;
+	border-radius:10px;
+	font-size:15px;
+	padding-left:45px;
+	color:#767676
+}
+.select-group{
+	position:relative;
+}
+.select-group img{
+		position:absolute;
+	top:15px;
+	left:15px;
+}
+.select-group .form-select{
+	height:50px;
+	border:1px solid #dadada;
+	outline:none;
+	box-shadow:none;
+	border-radius:10px;
+	font-size:15px;
+	padding-left:45px;
+	color:#767676
+}
+.funds-search-cat-wrap{
+	margin-bottom:15px;
+}
+.funds-dasboard-list{
+	padding:15px;
+	background:#fff;
+}
+.funds-dasboard-list h3{
+	font-size:20px;
+	color:#013241;
+	text-transform:uppercase;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+	margin-bottom:5px;
+}
+.funds-dasboard-list ul{
+	list-style:none;
+}
+.funds-dasboard-list ul li{
+	padding:10px;
+	background:#fff;
+	margin-bottom:15px;
+	border-radius:15px;
+	position:relative;
+}
+.listing-fund-dashboard{
+}
+.listing-fund-dashboard .form-check{
+	border-bottom:1px solid #ddd;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.listing-fund-dashboard .form-check label{
+    font-weight: 500;
+    font-size: 16px;
+    color: #013241;
+    line-height: 20px;
+}
+.download-fund-wrp a span{
+	font-size:16px;
+	border-bottom:1px solid #0064FB;
+	color:#0064FB;
+	margin-right:5px;
+	font-weight:600;
+}
+.download-fund-wrp .sub-heading{
+	font-size:13px;
+	color:#013241
+}
+.profile-fund-text-wrap{
+	text-align: right;
+    width: 68%;
+    float: left;
+    line-height: 16px;
+    margin-top: 8px;
+}
+.profile-fund-text-wrap span{
+	font-size:13px;
+}
+.profile-fund-text-wrap h4{
+	font-size:13px;
+}
+.profile-image-fund{
+    width: 44px;
+    float: right;
+    position: relative;
+    top: 3px;
+}
+.second-color-fund-dashboard{
+	background:#EFEFEF !important;
+}
+.listing-fund-dashboard .form-check img{
+    width: 21px;
+    height: 30px;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+.second-color-fund-dashboard .sub-heading{
+	position:relative;
+	top:20px;
+}
+.field-form-fund-wrap {
+	margin-top:5px;
+}
+.field-form-fund-wrap .form-control{
+	width:84%;
+	display:inline-block;
+	box-shadow:none;
+	outline:none;
+}
+.field-form-fund-wrap button{
+width: 13%;
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+	text-align:right;
+}
+.field-form-fund-wrap button img{
+	    width: 39px;
+}
+
+
+.drawer-menu {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 880px;
+	height: 100vh;
+	padding: 65px 0 0 0;
+	background: #fff;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transform-origin: right center;
+	-ms-transform-origin: right center;
+	transform-origin: right center;
+	-webkit-transform: perspective(500px) rotateY(-90deg);
+	transform: perspective(500px) rotateY(-90deg);
+	opacity: 0;
+	overflow: auto;
+}
+.drawer-menu li {
+	text-align: left;
+}
+
+.drawer-menu li a:hover {
+	color: #1a1e24;
+	background: #fff;
+}
+/* checkbox */
+.check {
+	display: none;
+}
+/* menu button - label tag */
+.menu-btn {
+	position: absolute;
+	display: block;
+	top: 26px;
+	right: 18px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 10px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 3;
+}
+.bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 35px;
+	height: 1px;
+	background: #3b2517;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	-webkit-transform-origin: left top;
+	-ms-transform-origin: left top;
+	transform-origin: left top;
+}
+.bar.middle {
+	top: 10px;
+	opacity: 1;
+}
+.bar.bottom {
+	top: 20px;
+	-webkit-transform-origin: left bottom;
+	-ms-transform-origin: left bottom;
+	transform-origin: left bottom;
+}
+.menu-btn__text {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+.menu-btn:hover .bar {
+	background: #18b6a4;
+}
+.close-menu {
+	position: fixed;
+	top: 0;
+	right: 880px;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0);
+	cursor: url(http://theorthodoxworks.com/demo/images/cross.svg), auto;
+	-webkit-transition-property: all;
+	transition-property: all;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	visibility: hidden;
+	opacity: 0;
+}
+/* checked */
+.check:checked ~ .drawer-menu {
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	opacity: 1;
+	z-index: 2;
+	margin:0;
+	padding:30px;
+}
+.check:checked ~ .contents {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transform: translateX(-300px);
+	-ms-transform: translateX(-300px);
+	transform: translateX(-300px);
+}
+.check:checked ~ .menu-btn .menu-btn__text {
+	visibility: hidden;
+	opacity: 0;
+}
+.check:checked ~ .menu-btn .bar.top {
+	width: 40px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: #000
+}
+.check:checked ~ .menu-btn .bar.middle {
+	opacity: 0;
+}
+.check:checked ~ .menu-btn .bar.bottom {
+	width: 40px;
+	top: 28px;
+	background: #000;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.check:checked ~ .close-menu {
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s;
+	background: rgba(0,0,0,.5);
+	visibility: visible;
+	opacity: 1;
+	z-index: 3;
+}
+.check:checked ~ .drawer-menu ul{
+	list-style:none;
+}
+.edi-work-flow-list-wrap h4{
+	border-bottom:1px solid #ccc;
+	font-size:20px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	color:#013241
+}
+.edi-work-flow-list-wrap h4 a{
+	float:right;
+	position:relative;
+	top:-5px
+}
+.edi-work-flow-list-wrap form{
+	margin-top:25px;
+}
+.edi-work-flow-list-wrap .form-group{
+}
+.edi-work-flow-list-wrap .form-group label{
+	display:block;
+	font-size:13px;
+	color:#013241;
+	font-weight:600;
+	margin-bottom:5px;
+}
+
+.edi-work-flow-list-wrap .form-group .form-control{
+	height:40px;
+	background:#F2F2F2;
+	border:none;
+	box-shadow:none;
+	font-size:14px;
+	padding-left:25px
+}
+.work-flow-main-wraper{
+}
+.work-flow-main-wraper h4{
+	margin:15px 0;
+	    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom:5px;
+    color: #013241;
+}
+.work-flow-main-wraper h4 a{
+	float:right;
+	background:#013241 !important;
+	padding:10px 30px;
+	color:#fff !important;
+	font-size:12px;
+	border-radius:6px;
+	position:relative;
+	top:-6px;
+}
+.task-category-wrap{
+	border-top:1px solid #dcdcdc;
+}
+.task-category-wrap h5{
+	border-bottom:1px solid #dcdcdc;
+	padding:14px;
+	font-size:16px
+}
+.task-category-wrap form{
+	padding:15px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	margin:0;
+}
+.task-category-wrap form .form-group{
+	margin-bottom:15px;
+}
+.task-category-wrap form .form-group label{
+		display:block;
+	font-size:13px;
+	color:#013241;
+	font-weight:600;
+	margin-bottom:5px;
+}
+.task-category-wrap form .form-group .form-control{
+	height:40px;
+	background:#F2F2F2;
+	border:none;
+	box-shadow:none;
+	font-size:14px;
+	padding-left:10px
+}
+.task-category-wrap form .form-group .form-select{
+	height:40px;
+	background:#F2F2F2;
+	border:none;
+	box-shadow:none;
+	font-size:14px;
+	padding-left:10px
+}
+.checkbox-list-wrap .form-check{
+	margin-bottom: -3px;
+}
+.checkbox-list-wrap .form-check label{
+	font-weight:600;
+	color:#013241;
+	font-size:13px
+}
+.form-check-input:checked{
+	background:#013241;
+	border:1px solid #013241;
+	box-shadow:none;
+}
+.add-btn-form{
+	    margin-top: 26px;
+    text-align: right;
+}
+.add-btn-form button{
+	background:#013241;
+	padding:8px 15px;
+	border:none;
+	box-shadow:none;
+	border-radius:6px;
+	color:#fff;
+	font-size:12px;
+}
+.delet-btn-form{
+    margin-top: -33px;
+    width: 42%;
+    position: absolute;
+    right: 53px;
+}
+.delet-btn-form img{
+	width:15px;
+	position:relative;
+}
+.delet-btn-form button{
+	background:#FF4747;
+}
+.accordion-button:not(.collapsed){
+	background:none;
+	box-shadow:none;
+	outline:none;
+	color:#000 !important
+}
+.work-flow-main-wraper .accordion-button{
+	padding:15px;
+	box-shadow:none;
+	font-weight:500;
+	color:#013241
+}
+.work-flow-main-wraper .accordion-body{
+	padding:0;
+}
+.work-flow-main-wraper .accordion-item{
+	margin-bottom:15px;
+	border:1px solid #ccc !important;
+	border-bottom:none;
+	overflow:hidden;
+	border-radius:6px
+}
+/* CSS Document */
+
+/* CSS header */

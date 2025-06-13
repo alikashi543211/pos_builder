@@ -1,0 +1,13 @@
+__Typing Test
+
+Typing Test is developed by 2 team members. First is frontend developer. I worked as backend developer php developer. To
+manage connect database and manage all registered users on admin. And each user typing test results.
+
+__ Examination System
+
+in PHP, I build examination system in comtech4all for 6 months. I build admin panel where I developed courses crud,
+Teachers and students crud, I build Examination create crud. I managed CRUD of questions creation , mcq types,
+long questions and short questions type. I implemented to save answer of all questions related to questions paper.
+Student login into student dashboard on time of exam start exam button is enabled. When student will click on start exam
+button then timer will start student finish exam within time then result will be auto calculated and will be displayed in 
+front of student. All student results will be listed in admin panel. I developed individually in this project.

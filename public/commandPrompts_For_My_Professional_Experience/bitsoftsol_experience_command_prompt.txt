@@ -1,0 +1,18 @@
+I have worked in bitsoftsol company. I worked in Laravel Administration . I converted this laravel
+administration into Laravel package, I made a command to download package uploaded on laravel
+packages list. I built in Laravel Administration to Automate crud, I resolved the issue for
+developers to save time to make cruds , Developer only will create model and migration and will
+use LaravelAdminTrait then autometically crud will be performed including web and api routes
+and views, Developer do not need to define controller functions, web and api routes for crud
+User can define Modal migration fields from front view of laravel administration interface.This
+Laravel Administration package is Like Django Autometic Admin Panel idea i built Laravel
+Administration in PHP , Laravel, Bootstrap, jQuery.
+
+I build a web application MyPropertyOffer. The idea was to convert the client excel Business
+convert into a web software where all calcuation formulas applied into excel, i converted
+into software make a library for formulas all formulas of client excel sheet. and calculate
+the final result at the end of all inputs
+
+I worked on bugs resolving on some projects and payment integrations integrations in some
+projects. I worked as Team lead to assign and manage employee team tasks. worked on documentation
+as well to collaborate with team to do work smoothly.

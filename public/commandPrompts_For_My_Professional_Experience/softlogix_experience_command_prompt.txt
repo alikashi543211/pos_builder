@@ -1,0 +1,14 @@
+__ Softlogix __
+
+__Matrimonial
+I worked with a team to develop matrimonial website. I build admin panel admin authentication. admin login and can view all
+users. Matrimonial rishta seeker register female rishta by creating and completing the registration steps. Then I displayed the
+all rishta seekers in admin panel. Admin can see all registered brides profile complete details. When customer comes on website
+to see girl for relation then view complete detail on website then can chat. I build a chat module between rishta bride and customer who
+wants relation. I build chat module.
+
+__Ajax Chat
+I build a chat in ajax between users. User register and add another users in contact list and chat between users.
+
+__Ride Booking App - Like Bykea
+I worked with senio to develop ride booking , worked on rider portal, admin portal to manage all riders and customers.
