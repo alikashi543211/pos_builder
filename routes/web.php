@@ -33,6 +33,7 @@ use App\Http\Controllers\EmployeesController;
 use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\Admin\PortfolioAnalysis\WebsiteContactsController;
 use App\Http\Controllers\Admin\PortfolioAnalysis\WebsiteContactServicesController;
+use App\Http\Controllers\Admin\Products\ProductController;
 use Illuminate\Support\Facades\Artisan;
 
 // Route::get('', function () {
@@ -294,4 +295,13 @@ Route::group(['middleware' => ['XSS', 'Admin']], function () {
 
     // Portfolio Analysis - Contact Emails
     Route::get('portfolio-analysis/website-contact-emails', [WebsiteContactEmailsController::class, 'index'])->name('portfolio_analysis.website_contact_emails');
+
+    Route::get('pos/products', [ProductController::class, 'index']);
+    Route::get('pos/products/add', [ProductController::class, 'create']);
+    Route::post('pos/products/add', [ProductController::class, 'store']);
+    Route::get('pos/products/edit/{id}', [ProductController::class, 'edit']);
+    Route::post('pos/products/edit/{id}', [ProductController::class, 'update']);
+    Route::get('pos/products/status-change/{id}', [ProductController::class, 'change']);
+    Route::get('pos/products/sorting/{id}/{sort_number}', [ProductController::class, 'sorting']);
+    Route::get('pos/products/delete/{id}', [ProductController::class, 'destroy']);
 });
