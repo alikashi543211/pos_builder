@@ -1,159 +1,175 @@
-$(document).ready(function () {
-    //show
-    $(document).on("click", ".btn-show", function (e) {
-        $(".modal-body").html("");
-        var id = $(this).data("id");
-        jQuery.getJSON(admin_url + "/acl/role/show/" + id, function (response) {
-            if (response.responseCode == 1) {
-                $(".modal-body").html(response.html);
-                $("#dodModal").modal();
-            }
-        });
+// Spinner Functions
+function loadSpinner() {
+    Swal.fire({
+        title: 'Loading...',
+        text: 'Please wait while we process your request.',
+        allowOutsideClick: false,
+        didOpen: () => {
+            Swal.showLoading();
+        }
     });
-      // Add New User
-      $(document).on("click", ".btn-add", function (e) {
-        $(".modal-body").html("");
-        $(".drawer-title").html("Add Role");
-        jQuery.getJSON(admin_url + "/acl/role/add/", function (response) {
-            if (response.responseCode == 1) {
-                $(".drawer-body").html(response.html);
-                const drawerElement = document.querySelector("#kt_activities");
-                if (drawerElement) {
-                    KTDrawer.getInstance(drawerElement).show();
-                }
-            }
-        });
-    });
+}
 
+function hideSpinner() {
+    Swal.close();
+}
 
-    //Edit Role
-    $(document).on("click", ".btn-edit", function (e) {
-        $(".modal-body").html("");
-        $(".drawer-title").html("Edit Role");
-        var id = $(this).data("id");
-        console.log("id:", id);
-        jQuery.getJSON(admin_url + "/acl/role/edit/" + id, function (response) {
-            if (response.responseCode == 1) {
-                $(".drawer-body").html(response.html);
-                const drawerElement = document.querySelector("#kt_activities");
-                console.log("drawerElement:", drawerElement);
-                if (drawerElement) {
-                    KTDrawer.getInstance(drawerElement).show();
-                }
-            }
-        });
-    });
+// Select2 Initialization
+function initSelect2WithParent() {
+    const $selectElements = $('select[data-control="select2"]');
 
-    //
-    //Form Handler
-    $(document).on("submit", "#fform", function (e) {
-        console.log("e:", e);
-        e.preventDefault();
-        $("#msg_box").html("");
-        $(".btn-save").attr("disabled", "disabled");
-        var act_val = $("#act").val();
-        var eid = $("#eid").val();
-        var params = act_val;
-
-        if (eid != "") {
-            params = act_val + "/" + eid;
+    $selectElements.each(function () {
+        const $el = $(this);
+        if ($el.hasClass('select2-hidden-accessible')) {
+            $el.select2('destroy');
         }
 
-        // loadSpinner();
+        $el.select2({
+            dropdownParent: $('#kt_activities_body')
+        });
+    });
+}
+
+// Drawer Control
+function closeDrawer() {
+    const drawer = document.querySelector("#kt_activities");
+    if (drawer) {
+        KTDrawer.getInstance(drawer).hide();
+    }
+}
+
+function openDrawer() {
+    const drawer = document.querySelector("#kt_activities");
+    if (drawer) {
+        KTDrawer.getInstance(drawer).show();
+    }
+}
+
+// Document Ready
+$(document).ready(function () {
+    // Show Role Details
+    $(document).on("click", ".btn-show", function () {
+        $(".modal-body").html("");
+        const id = $(this).data("id");
+
+        $.getJSON(`${admin_url}/acl/role/show/${id}`, function (response) {
+            if (response.responseCode === 1) {
+                $(".modal-body").html(response.html);
+                $("#icdModal").modal();
+            }
+        });
+    });
+
+    // Add Role
+    $(document).on("click", ".btn-add", function () {
+        $(".modal-body").html("");
+        $(".drawer-title").html("Add Role");
+
+        $.getJSON(`${admin_url}/acl/role/add`, function (response) {
+            if (response.responseCode === 1) {
+                $(".drawer-body").html(response.html);
+                openDrawer();
+            }
+        });
+    });
+
+    // Edit Role
+    $(document).on("click", ".btn-edit_", function () {
+        $(".modal-body").html("");
+        $(".drawer-title").html("Edit Role");
+
+        const id = $(this).data("id");
+
+        $.getJSON(`${admin_url}/acl/role/edit/${id}`, function (response) {
+            if (response.responseCode === 1) {
+                $(".drawer-body").html(response.html);
+                openDrawer();
+            }
+        });
+    });
+
+    // Form Submission (Add/Edit)
+    $(document).on("submit", "#fform", function (e) {
+        e.preventDefault();
+        closeDrawer();
+        loadSpinner();
+        $(".btn-save").attr("disabled", true);
+
+        const act = $("#act").val();
+        const eid = $("#eid").val();
+        const endpoint = eid ? `${act}/${eid}` : act;
+
         $.ajax({
-            url: admin_url + "/acl/role/" + params,
+            url: `${admin_url}/acl/role/${endpoint}`,
             type: "POST",
             data: new FormData(this),
-
             contentType: false,
             cache: false,
             processData: false,
             success: function (data) {
-                try {
-                    var obj = JSON.parse(data);
+                hideSpinner();
 
-                    if (obj.responseCode == 1) {
-                        $(".modal-body").html("");
-                        const drawerElement =
-                            document.querySelector("#kt_drawer_chat");
-                        if (drawerElement) {
-                            KTDrawer.getInstance(drawerElement).hide();
-                        }
-                        // hideSpinner();
+                try {
+                    const obj = JSON.parse(data);
+
+                    if (obj.responseCode === 1) {
                         Swal.fire("Success", obj.msg, "success");
-                        setTimeout(function () {
-                            location.reload();
+                        setTimeout(() => {
+                            window.location.href = '/acl/role';
                         }, 2000);
-                        return;
                     } else {
-                        // hideSpinner();
-                        var errMsg = "";
+                        openDrawer();
                         $(".btn_submit").removeAttr("disabled");
-                        if (typeof obj.msg === "object") {
-                            $.each(obj.msg, function (index, value) {
-                                errMsg = errMsg + value + "\r\n";
-                            });
-                        } else {
-                            errMsg = obj.msg;
-                        }
+
+                        const errMsg = typeof obj.msg === "object"
+                            ? Object.values(obj.msg).join("\r\n")
+                            : obj.msg;
+
                         Swal.fire("Error", errMsg, "error");
-                        return;
                     }
                 } catch (err) {
-                    // hideSpinner();
-                    Swal.fire(
-                        "Error",
-                        "Oops! Something went wrong. Please refresh the page and try again. Or contact IT department." +
-                            err,
-                        "error"
-                    );
+                    Swal.fire("Error", "Oops! Something went wrong. Please refresh and try again.\n" + err, "error");
                 }
-            },
-        });
-        return;
-    });
-
-    //Display Order
-    $(document).on("blur", ".display-box", function (e) {
-        var id = $(this).data("did");
-        var displayValue = $("#txt_" + id).val();
-        jQuery.getJSON(
-            admin_url + "/acl/role/do-edit/" + id + "/" + displayValue,
-            function (response) {
-                alert("done");
             }
-        );
+        });
     });
 
-    //del
-    $(document).on("click", ".btn-del", function (e) {
-        var did = $(this).data("id");
+    // Change Display Order
+    $(document).on("blur", ".display-box", function () {
+        const id = $(this).data("did");
+        const displayValue = $(`#txt_${id}`).val();
+
+        $.getJSON(`${admin_url}/acl/role/do-edit/${id}/${displayValue}`, function () {
+            alert("done");
+        });
+    });
+
+    // Delete Role
+    $(document).on("click", ".btn-del", function () {
+        const did = $(this).data("id");
+
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
             icon: "warning",
-            animation: !1,
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!",
-        }).then((result) => {
+            confirmButtonText: "Yes, delete it!"
+        }).then(result => {
             if (result.value) {
-                window.location.href = admin_url + "/acl/role/delete/" + did;
+                window.location.href = `${admin_url}/acl/role/delete/${did}`;
             }
         });
     });
 
-    //Parsley Form
+    // Initialize Parsley Validation
     $("form").parsley();
+
     $.listen("parsley:field:error", function () {
-        var i = 0;
         $("#sform .form-control").each(function (k, e) {
-            var field = $(e).data("err");
-            $(e)
-                .next("ul")
-                .find("li:eq(" + i + ")")
-                .html(field + " field is required");
+            const field = $(e).data("err");
+            $(e).next("ul").find("li:eq(0)").html(`${field} field is required`);
         });
     });
 });

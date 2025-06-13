@@ -23,11 +23,11 @@ class RoleController extends Controller
      */
     public function index()
     {
-        if (!validatePermissions('acl/role')){
+        if (!validatePermissions('acl/role')) {
             abort(403);
         }
-        $data=['pageTitle'=>'ACL - User Roles'];
-        $data['result'] = RoleModel::orderBy('display_order','ASC')->get();
+        $data = ['pageTitle' => 'ACL - User Roles'];
+        $data['result'] = RoleModel::orderBy('display_order', 'ASC')->get();
         return view('admin/acl/role/listing')->with($data);
     }
 
@@ -38,15 +38,14 @@ class RoleController extends Controller
      */
     public function create()
     {
-        if (!validatePermissions('acl/role/add')){
+        if (!validatePermissions('acl/role/add')) {
             return $this->errorResponse('Access denied');
         }
 
-        $data=['pageTitle'=>'ACL - User Roles'];
+        $data = ['pageTitle' => 'ACL - User Roles'];
         $html = view('admin/acl/role/add')->with($data)->render();
-        $response = ['responseCode'=>1,'html'=>$html];
+        $response = ['responseCode' => 1, 'html' => $html];
         return json_encode($response);
-
     }
 
     /**
@@ -57,17 +56,15 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        if (!$request->ajax() || !validatePermissions('acl/role/add')){
+        if (!$request->ajax() || !validatePermissions('acl/role/add')) {
             return $this->errorResponse('Access denied');
         }
 
         $inputs = $request->all();
 
-        if($errorMessage = $this->sanitizeStoreRoleData($inputs))
-        {
+        if ($errorMessage = $this->sanitizeStoreRoleData($inputs)) {
 
             return $this->errorResponse($errorMessage);
-
         }
 
         $roleModel = new RoleModel();
@@ -77,7 +74,6 @@ class RoleController extends Controller
 
         $response = ['responseCode' => 1, 'msg' => 'Role has been added successfully'];
         return json_encode($response);
-
     }
 
     /**
@@ -88,22 +84,21 @@ class RoleController extends Controller
      */
     public function show($id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!validatePermissions('acl/role/show/{id}')){
+        if (!validatePermissions('acl/role/show/{id}')) {
             return $this->errorResponse('Access denied');
         }
-        $response = ['responseCode'=>0,'html'=>''];
-        if($sanitizedId){
-            $row = RoleModel::where('ID',$sanitizedId)->get()->first();
-            if($row){
+        $response = ['responseCode' => 0, 'html' => ''];
+        if ($sanitizedId) {
+            $row = RoleModel::where('ID', $sanitizedId)->get()->first();
+            if ($row) {
                 $data['row'] = $row;
                 $html = view('admin/acl/role/inc_show')->with($data)->render();
-                $response = ['responseCode'=>1,'html'=>$html];
+                $response = ['responseCode' => 1, 'html' => $html];
             }
         }
         return json_encode($response);
-
     }
 
     /**
@@ -114,23 +109,38 @@ class RoleController extends Controller
      */
     public function edit(Request $request, $id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        // Sanitize the provided ID
+        $id = sanitizeInput($id, 'int');
 
-        if (!$request->ajax() || !validatePermissions('acl/role/edit/{id}') || !isInteger($sanitizedId)){
-            return $this->errorResponse('Access denied');
+        // Validate ID
+        if ($id <= 0) {
+            return response()->json([
+                'responseCode' => 0,
+                'msg' => 'Invalid ID'
+            ]);
         }
 
-        $data=['pageTitle'=>'ACL - User Roles'];
-        $data['row'] = RoleModel::where('ID',$sanitizedId)->get()->first();
-        if(!$data['row']){
-            $response = ['responseCode' => 0, 'msg' => 'Record not found'];
-        return json_encode($response);
-        }
-        $data['catResult'] = ModuleCategoryModel::orderBy('category_name','ASC')->get();
-        $html = view('admin/acl/role/edit')->with($data)->render();
-        $response = ['responseCode' => 1, 'html' => $html];
-        return json_encode($response);
+        // Set page title for the view
+        $data = [
+            'pageTitle' => 'ACL - Edit Role'
+        ];
 
+        // Retrieve the role record by ID
+        $data['row'] = RoleModel::where('ID', $id)->first();
+
+        // If role is not found, return error response
+        if (!$data['row']) {
+            return response()->json([
+                'responseCode' => 0,
+                'msg' => 'Record not found'
+            ]);
+        }
+
+        // Retrieve all module categories ordered by name
+        $data['catResult'] = ModuleCategoryModel::orderBy('category_name', 'ASC')->get();
+
+        // Return the edit view with data
+        return view('admin.acl.role.edit')->with($data);
     }
 
     /**
@@ -142,19 +152,17 @@ class RoleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!$request->ajax() || !validatePermissions('acl/role/edit/{id}') || !isInteger($sanitizedId)){
+        if (!$request->ajax() || !validatePermissions('acl/role/edit/{id}') || !isInteger($sanitizedId)) {
             return $this->errorResponse('Access denied');
         }
 
         $inputs = $request->all();
 
-        if($errorMessage = $this->sanitizeUpdateRoleData($inputs))
-        {
+        if ($errorMessage = $this->sanitizeUpdateRoleData($inputs)) {
 
             return $this->errorResponse($errorMessage);
-
         }
 
         // Find the role model by ID
@@ -169,10 +177,10 @@ class RoleController extends Controller
         $roleModel->save();
 
         //Permissions
-        RolePrivilgeModel::where('role_ID',$id)->delete();
+        RolePrivilgeModel::where('role_ID', $id)->delete();
 
-        if($request->input('access')){
-            foreach($request->input('access') as $moduleId=>$val){
+        if ($request->input('access')) {
+            foreach ($request->input('access') as $moduleId => $val) {
                 $rolePrivilgeModelr = new RolePrivilgeModel();
                 $rolePrivilgeModelr->role_ID    = $sanitizedId;
                 $rolePrivilgeModelr->module_ID  = $moduleId;
@@ -185,30 +193,31 @@ class RoleController extends Controller
     }
 
     //Ajax update display order
-    public function updateDisplayOrder(Request $request, $id,$displayOrderValue)
+    public function updateDisplayOrder(Request $request, $id, $displayOrderValue)
     {
-        $sanitizedId = sanitizeInput($id,'int');
-        $sanitizedDisplayOrderValue = sanitizeInput($displayOrderValue,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
+        $sanitizedDisplayOrderValue = sanitizeInput($displayOrderValue, 'int');
 
-        if($request->ajax()){
+        if ($request->ajax()) {
             $roleModel = RoleModel::find($sanitizedId);
             $roleModel->display_order = $sanitizedDisplayOrderValue;
             $roleModel->save();
             echo "Done";
-        }else{
+        } else {
             abort(403);
         }
     }
 
-    public function searchRole(Request $request){
+    public function searchRole(Request $request)
+    {
 
-        if (!$request->ajax() || !validatePermissions('acl/role/search')){
+        if (!$request->ajax() || !validatePermissions('acl/role/search')) {
             return $this->errorResponse('Access denied');
         }
 
-        $searchWord = sanitizeInput($request->word,'alphanumeric');
+        $searchWord = sanitizeInput($request->word, 'alphanumeric');
 
-        $data['result'] = RoleModel::where('role_name','LIKE','%'.$searchWord.'%')->with('modules')->get();
+        $data['result'] = RoleModel::where('role_name', 'LIKE', '%' . $searchWord . '%')->with('modules')->get();
 
         $html = view('admin/acl/role/inc_role_cards')->with($data)->render();
         $response = ['responseCode' => 1, 'html' => $html];
@@ -223,14 +232,14 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!validatePermissions('acl/role/delete/{id}')){
+        if (!validatePermissions('acl/role/delete/{id}')) {
             abort(403);
         }
 
         RoleModel::destroy($sanitizedId);
-        Session::flash('flash_message_success','Record has been deleted.');
+        Session::flash('flash_message_success', 'Record has been deleted.');
         return Redirect::route('acl/role');
     }
 }

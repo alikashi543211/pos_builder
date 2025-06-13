@@ -1,164 +1,149 @@
 @extends('layouts.admin')
-@push('title')
-{{$pageTitle}} - {{Config::get('global.SITE_NAME') }}
- @endpush
+
 @section('header')
     @include('includes.adminHeader_nav')
 @stop
-@section('toolbar')
-    @include('includes.toolbar')
-@stop
+
 @section('content')
-
-    <div class="row add-btn-div">
-        @if (validatePermissions('acl/role/add'))
-            <div class="col-6 add-new-btn">
-                <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-add border-anchor">
-                    <i class="ki-duotone ki-plus fs-2"></i>Add New Role
-                </a>
+    <!--begin::Toolbar-->
+    <div class="py-3 toolbar py-lg-6" id="kt_toolbar">
+        <div id="kt_toolbar_container" class="flex-wrap gap-2 container-fluid d-flex flex-stack">
+            <div class="gap-2 py-2 page-title d-flex flex-column align-items-start me-3 py-lg-0">
+                <h1 class="m-0 text-gray-900 d-flex fw-bold fs-3">{{ $pageTitle }}</h1>
+                <ul class="text-gray-600 breadcrumb breadcrumb-dot fw-semibold fs-7">
+                    <li class="text-gray-600 breadcrumb-item">
+                        <a href="{{ url('/') }}" class="text-gray-600 text-hover-primary">Dashboard</a>
+                    </li>
+                    <li class="text-gray-600 breadcrumb-item">{{ $pageTitle }}</li>
+                    <li class="text-gray-500 breadcrumb-item">{{ @$subTitle }}</li>
+                </ul>
             </div>
-        @endif
-        @if (validatePermissions('acl/role/search'))
-            <div class="col-6">
-                <div class="d-flex align-items-center position-relative my-1">
-                    <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-5">
-                        <span class="path1"></span>
-                        <span class="path2"></span>
-                    </i>
-                    <input type="text" data-kt-vendor-table-filter="search"
-                        class="form-control form-control-solid w-250px ps-13" placeholder="Search Roles">
-                </div>
-            </div>
-        @endif
-    </div>
 
-    <div class="card-body py-4 ">
-        @if (Session::has('flash_message_error'))
-            <div class="notice d-flex bg-light-danger rounded border-warning border border-dashed mb-9 p-6">
-                <div class="d-flex flex-stack flex-grow-1">
-                    <div class="fw-bold">
-                        <p class="text-gray-900 fw-bolder">{{ Session::get('flash_message_error') }}</p>
+            <div class="gap-3 d-flex align-items-center">
+                @if (validatePermissions('acl/role/search'))
+                    <div class="my-1 d-flex align-items-center position-relative">
+                        <i class="ki-duotone ki-magnifier fs-3 position-absolute ms-5">
+                            <span class="path1"></span><span class="path2"></span>
+                        </i>
+                        <input type="text" data-kt-vendor-table-filter="search"
+                            class="form-control form-control-solid w-250px ps-13" placeholder="Search Role">
                     </div>
-                </div>
-            </div>
-            @endif @if (Session::has('flash_message_success'))
-                <div class="notice d-flex bg-light-success rounded border-success border border-dashed mb-9 p-6">
-                    <div class="d-flex flex-stack flex-grow-1">
-                        <div class="fw-bold">
-                            <p class="text-gray-900 fw-bolder">{{ Session::get('flash_message_success') }}</p>
-                        </div>
-                    </div>
-                </div>
-            @endif
+                @endif
 
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 g-xl-9 container-fluid" id="cards-container">
-                @if ($result)
-                    @foreach ($result as $row)
-                        <div class="col-md-4">
-                            <!--begin::Card-->
-                            <div class="card card-flush h-md-100">
-                                <!--begin::Card header-->
-                                <div class="card-header">
-                                    <!--begin::Card title-->
-                                    <div class="card-title">
-                                        <h2>{{ $row->role_name }}</h2>
-                                    </div>
-                                    <!--end::Card title-->
-                                </div>
-                                <!--end::Card header-->
-                                <!--begin::Card body-->
-                                <div class="card-body pt-1">
-                                    <!--begin::Users-->
-                                    <div class="fw-bolder text-gray-600 mb-5">Total modules assign to this role:
-                                        {{ @$row->modules->count() }}</div>
-
-                                    <div class="d-flex flex-column text-gray-600">
-                                        <div class="d-flex align-items-center py-2">
-                                            <strong>Modules:</strong>
-                                        </div>
-                                        @if ($row->modules)
-                                            @foreach ($row->modules->take(4) as $modules)
-                                                <div class="d-flex align-items-center py-2">
-                                                    <span
-                                                        class="bullet bg-primary me-3"></span>{{ $modules->module->module_name }}
-                                                </div>
-                                            @endforeach
-                                        @endif
-                                    </div>
-                                    <!--end::Permissions-->
-                                </div>
-                                <!--end::Card body-->
-                                <!--begin::Card footer-->
-                                <div class="card-footer flex-wrap pt-0">
-                                    <a href="javascript:void(0)">
-                                        <button type="button" data-id="{{ $row->ID }}"
-                                            class="btn btn-light btn-edit  btn-active-light-primary my-1">Edit
-                                            Role</button>
-                                    </a>
-
-                                    <button type="button" class="btn btn-light btn-active-light-primary my-1 btn-del"
-                                        data-id="{{ $row->ID }}">Delete Role</button>
-
-                                </div>
-                                <!--end::Card footer-->
-                            </div>
-                            <!--end::Card-->
-                        </div>
-                    @endforeach
+                @if (validatePermissions('acl/role/add'))
+                    <a href="javascript:void(0)" class="btn btn-sm btn-add btn-primary me-3">
+                        <i class="fa-solid fa-plus"></i> Add New Role
+                    </a>
                 @endif
             </div>
-            <!--begin::Modal - Add role-->
+        </div>
+    </div>
+    <!--end::Toolbar-->
 
-            <!--end::Modal - Add role-->
+    <!-- Flash Messages -->
+    <div class="py-4 card-body" id="cards-container">
+        @if (Session::has('flash_message_error'))
+            <div class="p-6 border-dashed rounded notice d-flex bg-light-danger border-warning mb-9">
+                <div class="text-gray-900 fw-bold fw-bolder">{{ Session::get('flash_message_error') }}</div>
+            </div>
+        @endif
 
+        @if (Session::has('flash_message_success'))
+            <div class="p-6 border-dashed rounded notice d-flex bg-light-success border-success mb-9">
+                <div class="text-gray-900 fw-bold fw-bolder">{{ Session::get('flash_message_success') }}</div>
+            </div>
+        @endif
 
-    </div> <!-- end page content-->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 g-xl-9 container-fluid">
+            @foreach ($result as $row)
+                <div class="col-md-4">
+                    <div class="card card-flush h-md-100">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <h2>{{ $row->role_name }}</h2>
+                            </div>
+                        </div>
+
+                        <div class="pt-1 card-body">
+                            <div class="mb-5 text-gray-600 fw-bolder">
+                                Total users with this role: {{ @$row->modules->count() }}
+                            </div>
+
+                            <div class="text-gray-600 d-flex flex-column">
+                                <div class="py-2 d-flex align-items-center"><strong>Modules:</strong></div>
+                                @foreach ($row->modules->take(4) as $modules)
+                                    <div class="py-2 d-flex align-items-center">
+                                        <span class="bullet bg-primary me-3"></span>{{ $modules->module->module_name }}
+                                    </div>
+                                @endforeach
+                                @if ($row->modules->count() > 4)
+                                    <div class="py-2 d-flex align-items-center">
+                                        <span class="bullet bg-primary me-3"></span><em>and more...</em>
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="flex-wrap pt-0 card-footer">
+                            <a href="{{ url('acl/role/edit/' . $row->ID) }}">
+                                <button type="button" data-id="{{ $row->ID }}"
+                                    class="my-1 btn btn-light btn-active-light-primary">
+                                    Edit Role
+                                </button>
+                            </a>
+                            <button type="button" class="my-1 btn btn-light btn-active-light-primary btn-del"
+                                data-id="{{ $row->ID }}">
+                                Delete Role
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
 @stop
+
 @section('models')
-    <div id="kt_activities" class="bg-body" data-kt-drawer-permanent="true" data-kt-drawer="true" data-kt-drawer-permanent="true"
-        data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
-        data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end"
-        data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
-        <div class="card shadow-none border-0 rounded-0 w-100">
-            <!--begin::Header-->
+    <!-- Drawer -->
+    <div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities"
+        data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '900px'}"
+        data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_activities_toggle"
+        data-kt-drawer-close="#kt_activities_close">
+
+        <div class="border-0 shadow-none card rounded-0 w-100">
             <div class="card-header" id="kt_activities_header">
-                <h3 class="card-title drawer-title fw-bold text-gray-900">Edit Role</h3>
+                <h3 class="text-gray-900 card-title drawer-title fw-bold">Edit Role</h3>
                 <div class="card-toolbar">
                     <button type="button" class="btn btn-sm btn-icon btn-active-light-primary me-n5"
                         id="kt_activities_close">
                         <i class="ki-duotone ki-cross fs-1">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
+                            <span class="path1"></span><span class="path2"></span>
                         </i>
                     </button>
                 </div>
             </div>
-
-            <div class="drawer-body">
-
-            </div>
-
-
-
+            <div class="drawer-body"></div>
         </div>
     </div>
 @endsection
+
 @section('footer')
     @include('includes.adminFooter')
 @stop
 
 @section('script')
     @include('includes.adminScripts')
-    <script type="text/javascript" src="{{ asset('/assets/admin/js/role.js') }}"></script>
-    <script type="text/javascript">
-        $(document).on('click', '.btn-del', function(e) {
+    <script src="{{ asset('/assets/admin/js/role.js') }}"></script>
+
+    <script>
+        // Delete Role
+        $(document).on('click', '.btn-del', function() {
             var did = $(this).data("id");
-            console.log('did', did)
+
             Swal.fire({
                 title: 'Are you sure?',
                 text: "You won't be able to revert this!",
                 icon: 'warning',
-                animation: !1,
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
@@ -167,10 +152,10 @@
                 if (result.value) {
                     window.location.href = admin_url + "/acl/role/delete/" + did;
                 }
-            })
-
+            });
         });
 
+        // Search Role
         $('input[data-kt-vendor-table-filter="search"]').on('input', function() {
             var searchQuery = $(this).val();
 
@@ -181,14 +166,11 @@
                     word: searchQuery
                 },
                 success: function(response) {
-                    // Parse the JSON response
                     var data = JSON.parse(response);
-
                     if (data.responseCode === 1) {
-                        // Replace the HTML of the target container with the new HTML
                         $('#cards-container').html(data.html);
                     } else {
-                        console.log('No roles found.');
+                        console.log('No module found.');
                     }
                 },
                 error: function(xhr) {

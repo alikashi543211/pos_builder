@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Acl\ModuleModel;
 use App\Models\Acl\ModuleCategoryModel;
-use Session;
-use Redirect;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 use App\Traits\CategoryTrait;
 use App\Traits\ResponseTrait;
 
@@ -22,12 +22,12 @@ class ModuleController extends Controller
      */
     public function index()
     {
-        if (!validatePermissions('acl/module')){
+        if (!validatePermissions('acl/module')) {
             abort(403);
         }
-        $data=['pageTitle'=>'ACL - Modules'];
-        $data['result'] = ModuleModel::orderBy('display_order','ASC')->orderBy('module_category_ID','ASC')->get();
-        $data['catResult'] = ModuleCategoryModel::orderBy('category_name','ASC')->get();
+        $data = ['pageTitle' => 'ACL - Modules'];
+        $data['result'] = ModuleModel::orderBy('display_order', 'ASC')->orderBy('module_category_ID', 'ASC')->get();
+        $data['catResult'] = ModuleCategoryModel::orderBy('category_name', 'ASC')->get();
         return view('admin/acl/module/listing')->with($data);
     }
 
@@ -38,16 +38,15 @@ class ModuleController extends Controller
      */
     public function create()
     {
-        if (!validatePermissions('acl/module/add')){
+        if (!validatePermissions('acl/module/add')) {
             return $this->errorResponse('Access denied');
         }
 
-        $data=['pageTitle'=>'ACL - Modules'];
-        $data['catResult'] = ModuleCategoryModel::orderBy('category_name','ASC')->get();
+        $data = ['pageTitle' => 'ACL - Modules'];
+        $data['catResult'] = ModuleCategoryModel::orderBy('category_name', 'ASC')->get();
         $html = view('admin/acl/module/add')->with($data)->render();
-        $response = ['responseCode'=>1,'html'=>$html];
+        $response = ['responseCode' => 1, 'html' => $html];
         return json_encode($response);
-
     }
 
     /**
@@ -58,22 +57,20 @@ class ModuleController extends Controller
      */
     public function store(Request $request)
     {
-        if (!$request->ajax() || !validatePermissions('acl/module/add')){
+        if (!$request->ajax() || !validatePermissions('acl/module/add')) {
             return $this->errorResponse('Access denied');
         }
 
         $inputs = $request->all();
 
-        if($errorMessage = $this->sanitizeStoreCategoryData($inputs))
-        {
+        if ($errorMessage = $this->sanitizeStoreCategoryData($inputs)) {
 
             return $this->errorResponse($errorMessage);
-
         }
 
         $moduleModel = new ModuleModel();
-        $show_in_menu = ($inputs['show_in_menu']==1)?'1':'0';
-        $moduleModel->module_category_ID= $inputs['module_category_id'];
+        $show_in_menu = ($inputs['show_in_menu'] == 1) ? '1' : '0';
+        $moduleModel->module_category_ID = $inputs['module_category_id'];
         $moduleModel->module_name       = $inputs['module_name'];
         $moduleModel->route             = $inputs['route'];
         $moduleModel->show_in_menu      = $show_in_menu;
@@ -92,24 +89,23 @@ class ModuleController extends Controller
      */
     public function show(Request $request, $id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!$request->ajax() || !validatePermissions('acl/module/show/{id}') || !isInteger($sanitizedId)){
+        if (!$request->ajax() || !validatePermissions('acl/module/show/{id}') || !isInteger($sanitizedId)) {
 
             return $this->errorResponse('Access denied');
         }
 
-        $response = ['responseCode'=>0,'html'=>''];
-        if($sanitizedId){
-            $row = ModuleModel::where('ID',$sanitizedId)->get()->first();
-            if($row){
+        $response = ['responseCode' => 0, 'html' => ''];
+        if ($sanitizedId) {
+            $row = ModuleModel::where('ID', $sanitizedId)->get()->first();
+            if ($row) {
                 $data['row'] = $row;
                 $html = view('admin/acl/module/inc_show')->with($data)->render();
-                $response = ['responseCode'=>1,'html'=>$html];
+                $response = ['responseCode' => 1, 'html' => $html];
             }
         }
         return json_encode($response);
-
     }
 
     /**
@@ -120,20 +116,20 @@ class ModuleController extends Controller
      */
     public function edit(Request $request, $id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!$request->ajax() || !validatePermissions('acl/module/edit/{id}') || !isInteger($sanitizedId)){
+        if (!$request->ajax() || !validatePermissions('acl/module/edit/{id}') || !isInteger($sanitizedId)) {
             return $this->errorResponse('Access denied');
         }
 
-        $data=['pageTitle'=>'ACL - Module'];
-        $data['catResult'] = ModuleCategoryModel::orderBy('category_name','ASC')->get();
-        $data['row'] = ModuleModel::where('ID',$sanitizedId)->get()->first();
-        if(!$data['row']){
-            $response = ['responseCode'=>1,'msg'=>'Record Not Found'];
+        $data = ['pageTitle' => 'ACL - Module'];
+        $data['catResult'] = ModuleCategoryModel::orderBy('category_name', 'ASC')->get();
+        $data['row'] = ModuleModel::where('ID', $sanitizedId)->get()->first();
+        if (!$data['row']) {
+            $response = ['responseCode' => 1, 'msg' => 'Record Not Found'];
         }
         $html = view('admin/acl/module/edit')->with($data)->render();
-        $response = ['responseCode'=>1,'html'=>$html];
+        $response = ['responseCode' => 1, 'html' => $html];
         return json_encode($response);
     }
 
@@ -146,23 +142,21 @@ class ModuleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!$request->ajax() || !validatePermissions('acl/module/edit/{id}') || !isInteger($sanitizedId)){
+        if (!$request->ajax() || !validatePermissions('acl/module/edit/{id}') || !isInteger($sanitizedId)) {
             return $this->errorResponse('Access denied');
         }
 
         $inputs = $request->all();
 
-        if($errorMessage = $this->sanitizeStoreCategoryData($inputs))
-        {
+        if ($errorMessage = $this->sanitizeStoreCategoryData($inputs)) {
 
             return $this->errorResponse($errorMessage);
-
         }
 
         $moduleModel = ModuleModel::find($sanitizedId);
-        $show_in_menu = ($inputs['show_in_menu']==1)?'1':'0';
+        $show_in_menu = ($inputs['show_in_menu'] == 1) ? '1' : '0';
 
         $moduleModel->module_category_ID    = $inputs['module_category_id'];
         $moduleModel->module_name           = $inputs['module_name'];
@@ -177,31 +171,32 @@ class ModuleController extends Controller
     }
 
     //Ajax update display order
-    public function updateDisplayOrder(Request $request, $id,$displayOrderValue)
+    public function updateDisplayOrder(Request $request, $id, $displayOrderValue)
     {
-        $sanitizedId = sanitizeInput($id,'int');
-        $sanitizedDisplayOrderValue = sanitizeInput($displayOrderValue,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
+        $sanitizedDisplayOrderValue = sanitizeInput($displayOrderValue, 'int');
 
-        if($request->ajax()){
+        if ($request->ajax()) {
             $moduleModel = ModuleModel::find($sanitizedId);
             $moduleModel->display_order = $sanitizedDisplayOrderValue;
             $moduleModel->save();
             echo "Done";
-        }else{
+        } else {
             abort(403);
         }
     }
 
-    public function searchModule(Request $request){
+    public function searchModule(Request $request)
+    {
 
-        if (!$request->ajax() || !validatePermissions('acl/module/search')){
+        if (!$request->ajax() || !validatePermissions('acl/module/search')) {
             return $this->errorResponse('Access denied');
         }
 
-        $searchWord = sanitizeInput($request->word,'string');
-        
-        $data['result'] = ModuleModel::where('module_name','LIKE','%'.$searchWord.'%')
-                            ->orWhere('route','LIKE','%'.$searchWord.'%')->with('category','roles')->get();
+        $searchWord = sanitizeInput($request->word, 'string');
+
+        $data['result'] = ModuleModel::where('module_name', 'LIKE', '%' . $searchWord . '%')
+            ->orWhere('route', 'LIKE', '%' . $searchWord . '%')->with('category', 'roles')->get();
 
         $html = view('admin/acl/module/inc_module_cards')->with($data)->render();
         $response = ['responseCode' => 1, 'html' => $html];
@@ -216,13 +211,13 @@ class ModuleController extends Controller
      */
     public function destroy($id)
     {
-        $sanitizedId = sanitizeInput($id,'int');
+        $sanitizedId = sanitizeInput($id, 'int');
 
-        if (!validatePermissions('acl/module/delete/{id}') || !isInteger($sanitizedId)){
+        if (!validatePermissions('acl/module/delete/{id}') || !isInteger($sanitizedId)) {
             abort(403);
         }
         ModuleModel::destroy($sanitizedId);
-        Session::flash('flash_message_success','Record has been deleted.');
+        Session::flash('flash_message_success', 'Record has been deleted.');
         return Redirect::route('acl.module.listing');
     }
 }
