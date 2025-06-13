@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Apr 17, 2025 at 04:13 AM
--- Server version: 10.11.10-MariaDB
--- PHP Version: 7.2.34
+-- Host: 127.0.0.1
+-- Generation Time: Jun 13, 2025 at 12:21 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u379020171_kashiftech`
+-- Database: `pos_builder`
 --
 
 -- --------------------------------------------------------
@@ -7096,12 +7096,7 @@ INSERT INTO `audits` (`id`, `user_type`, `user_id`, `event`, `auditable_type`, `
 (7012, 'App\\Models\\Acl\\AdminUserModel', 2, 'created', 'App\\Models\\Acl\\RolePrivilgeModel', 6173, '[]', '{\"role_ID\":2,\"module_ID\":218,\"ID\":6173}', 'http://127.0.0.1:8000/acl/role/edit/2', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', NULL, '2025-03-04 05:29:01', '2025-03-04 05:29:01'),
 (7013, 'App\\Models\\Acl\\AdminUserModel', 2, 'created', 'App\\Models\\Acl\\RolePrivilgeModel', 6174, '[]', '{\"role_ID\":2,\"module_ID\":219,\"ID\":6174}', 'http://127.0.0.1:8000/acl/role/edit/2', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', NULL, '2025-03-04 05:29:01', '2025-03-04 05:29:01'),
 (7014, 'App\\Models\\Acl\\AdminUserModel', 2, 'created', 'App\\Models\\Acl\\RolePrivilgeModel', 6175, '[]', '{\"role_ID\":2,\"module_ID\":220,\"ID\":6175}', 'http://127.0.0.1:8000/acl/role/edit/2', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', NULL, '2025-03-04 05:29:01', '2025-03-04 05:29:01'),
-(7015, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\ModuleModel', 212, '{\"show_in_menu\":1}', '{\"show_in_menu\":\"0\"}', 'http://127.0.0.1:8000/acl/module/edit/212', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', NULL, '2025-03-04 05:33:55', '2025-03-04 05:33:55'),
-(7016, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\AdminUserModel', 2, '{\"remember_token\":\"gFnIAyTc7s2NgLwD0VLaZbEAZQDlDsjYQBLXGNe4iIyNVN3jnSh7Hq4jqUH7\"}', '{\"remember_token\":\"FXhaqbtDli5MeMRBehLUiIqzMT1ggA8WCf9quU3PxWRCJVTeFqveKiDcM3lX\"}', 'https://portfolio-builder.kashiftech.com/logout', '39.58.200.108', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', NULL, '2025-03-08 15:59:53', '2025-03-08 15:59:53'),
-(7017, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\AdminUserModel', 2, '{\"remember_token\":\"FXhaqbtDli5MeMRBehLUiIqzMT1ggA8WCf9quU3PxWRCJVTeFqveKiDcM3lX\"}', '{\"remember_token\":\"Abav6JnByN34jh6hFFHym6fHFOYv4amZyQiYdPxUDehMevyzmSpK8O1XlCo7\"}', 'https://portfolio-builder.kashiftech.com/logout', '39.49.218.40', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', NULL, '2025-03-18 06:40:45', '2025-03-18 06:40:45'),
-(7018, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\AdminUserModel', 2, '{\"remember_token\":\"Abav6JnByN34jh6hFFHym6fHFOYv4amZyQiYdPxUDehMevyzmSpK8O1XlCo7\"}', '{\"remember_token\":\"w34wQORvcODtkchFGI9XgVmdpnf73Dqz0WMb0Bx43yh1SbBNfZD0FHR5LqoR\"}', 'https://portfolio-builder.kashiftech.com/logout', '39.49.218.40', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', NULL, '2025-03-18 06:47:29', '2025-03-18 06:47:29'),
-(7019, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\AdminUserModel', 2, '{\"remember_token\":\"w34wQORvcODtkchFGI9XgVmdpnf73Dqz0WMb0Bx43yh1SbBNfZD0FHR5LqoR\"}', '{\"remember_token\":\"7MKUPfCx9f5TxzmcpsABQaDMth31E9t6gPS1mGjHdCoT7euuYHIOlbbpwEV5\"}', 'https://portfolio-builder.kashiftech.com/logout', '39.49.218.40', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', NULL, '2025-03-27 07:11:22', '2025-03-27 07:11:22'),
-(7020, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\AdminUserModel', 2, '{\"remember_token\":\"7MKUPfCx9f5TxzmcpsABQaDMth31E9t6gPS1mGjHdCoT7euuYHIOlbbpwEV5\"}', '{\"remember_token\":\"Dj3ChRxQY3tzOsw6fPCIxMKkR4BcTOFZeLnQHyw3MJoPvgc9RdRsERRcwA1u\"}', 'https://portfolio-builder.kashiftech.com/logout', '182.188.89.140', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', NULL, '2025-03-28 06:59:25', '2025-03-28 06:59:25');
+(7015, 'App\\Models\\Acl\\AdminUserModel', 2, 'updated', 'App\\Models\\Acl\\ModuleModel', 212, '{\"show_in_menu\":1}', '{\"show_in_menu\":\"0\"}', 'http://127.0.0.1:8000/acl/module/edit/212', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', NULL, '2025-03-04 05:33:55', '2025-03-04 05:33:55');
 
 -- --------------------------------------------------------
 
@@ -7161,6 +7156,96 @@ CREATE TABLE `password_reset_tokens` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `pos_products`
+--
+
+CREATE TABLE `pos_products` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `product_code` varchar(50) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` text DEFAULT NULL,
+  `category_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `unit_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `cost_price` decimal(10,2) NOT NULL DEFAULT 0.00,
+  `selling_price` decimal(10,2) NOT NULL DEFAULT 0.00,
+  `quantity` decimal(10,2) NOT NULL DEFAULT 0.00,
+  `alert_quantity` decimal(10,2) DEFAULT 0.00,
+  `tax_rate` decimal(5,2) DEFAULT 0.00,
+  `tax_type` enum('inclusive','exclusive') DEFAULT 'exclusive',
+  `image` varchar(255) DEFAULT NULL,
+  `barcode` varchar(50) DEFAULT NULL,
+  `sort_number` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT 0,
+  `created_by` int(10) UNSIGNED DEFAULT NULL,
+  `updated_by` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pos_products`
+--
+
+INSERT INTO `pos_products` (`id`, `product_code`, `name`, `description`, `category_id`, `unit_id`, `cost_price`, `selling_price`, `quantity`, `alert_quantity`, `tax_rate`, `tax_type`, `image`, `barcode`, `sort_number`, `is_active`, `created_by`, `updated_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 5, 1, 2, NULL, NULL, '2025-02-26 06:48:30', '2025-02-26 06:48:30'),
+(2, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 3, 1, 2, NULL, NULL, '2025-02-26 06:50:35', NULL),
+(3, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 4, 1, 2, NULL, NULL, '2025-02-26 06:50:41', NULL),
+(4, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 4, 1, 2, NULL, NULL, '2025-02-26 06:48:34', '2025-02-26 06:48:34'),
+(5, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 2, 1, 2, NULL, '2025-01-01 02:44:40', '2025-02-26 06:50:30', NULL),
+(6, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 6, 1, 2, NULL, '2025-01-01 02:47:26', '2025-02-26 06:48:26', '2025-02-26 06:48:26'),
+(7, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 7, 1, 2, NULL, '2025-01-01 03:08:59', '2025-02-26 06:48:22', '2025-02-26 06:48:22'),
+(8, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 8, 1, 2, NULL, '2025-01-01 03:23:20', '2025-02-26 06:48:18', '2025-02-26 06:48:18'),
+(9, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 9, 1, 2, NULL, '2025-01-01 03:34:23', '2025-02-26 06:48:14', '2025-02-26 06:48:14'),
+(10, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 10, 1, 2, NULL, '2025-01-01 03:35:56', '2025-02-26 06:48:08', '2025-02-26 06:48:08'),
+(11, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, NULL, 1, 2, NULL, '2025-01-01 03:39:02', '2025-01-01 03:55:14', '2025-01-01 03:55:14'),
+(12, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 1, 1, 2, NULL, '2025-01-06 01:32:17', '2025-02-26 06:50:21', NULL),
+(13, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 5, 1, 2, NULL, '2025-02-26 06:49:59', '2025-02-26 06:50:46', NULL),
+(14, '', '', NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 'exclusive', NULL, NULL, 6, 1, 2, NULL, '2025-02-26 06:50:13', '2025-02-26 06:50:55', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pos_product_categories`
+--
+
+CREATE TABLE `pos_product_categories` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `parent_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `is_active` tinyint(1) NOT NULL DEFAULT 1,
+  `created_by` varchar(50) DEFAULT NULL,
+  `updated_by` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pos_product_units`
+--
+
+CREATE TABLE `pos_product_units` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `short_name` varchar(20) NOT NULL,
+  `base_unit_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `operator` varchar(10) DEFAULT NULL,
+  `operation_value` decimal(10,2) DEFAULT NULL,
+  `status` enum('active','inactive') DEFAULT 'active',
+  `created_by` varchar(50) DEFAULT NULL,
+  `updated_by` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `resume_about_sections`
 --
 
@@ -7182,17 +7267,6 @@ CREATE TABLE `resume_about_sections` (
   `freelance` varchar(250) DEFAULT NULL,
   `footer_short_description` text DEFAULT NULL,
   `is_active` tinyint(1) NOT NULL DEFAULT 0,
-  `job_display_position_title` varchar(250) DEFAULT NULL,
-  `job_website` varchar(250) DEFAULT NULL,
-  `job_email_address` varchar(250) DEFAULT NULL,
-  `job_phone_no` varchar(250) DEFAULT NULL,
-  `job_birthday` varchar(250) DEFAULT NULL,
-  `job_age` varchar(250) DEFAULT NULL,
-  `job_city` varchar(250) DEFAULT NULL,
-  `job_degree` varchar(250) DEFAULT NULL,
-  `job_freelance` varchar(250) DEFAULT NULL,
-  `job_heading_short_description` varchar(250) DEFAULT NULL,
-  `job_footer_short_description` varchar(250) DEFAULT NULL,
   `created_by` int(10) UNSIGNED DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -7203,9 +7277,9 @@ CREATE TABLE `resume_about_sections` (
 -- Dumping data for table `resume_about_sections`
 --
 
-INSERT INTO `resume_about_sections` (`id`, `job_position_id`, `sort_number`, `description`, `display_picture`, `display_position_title`, `heading_short_description`, `birthday`, `age`, `website`, `degree`, `phone_no`, `email_address`, `city`, `freelance`, `footer_short_description`, `is_active`, `job_display_position_title`, `job_website`, `job_email_address`, `job_phone_no`, `job_birthday`, `job_age`, `job_city`, `job_degree`, `job_freelance`, `job_heading_short_description`, `job_footer_short_description`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 1, 'Passionate and results-driven Full Stack Developer with expertise in PHP, Laravel, and React. I specialize in building scalable web applications, crafting clean and efficient code, and delivering seamless user experiences. With a deep understanding of backend and frontend development, I thrive in creating robust, high-performance solutions. Always eager to embrace new technologies and optimize workflows, I am committed to driving innovation and excellence in web development.', 'media/kashif.ali/sidebar_profile_images/17-02_kashiftech.png', 'Web Developer', 'My journey began with a Bachelor’s in Computer Science (2016-2020), mastering PHP, Laravel, and modern frontend frameworks like React. Since 2020, I’ve specialized in custom web platforms, API development, and enterprise solutions, delivering high performance, security, and efficiency.', '1998-10-03', '26', 'https://kashiftech.com', 'BS Computer Science', '+92 315 1061349', 'admin@kashiftech.com', 'Islamabad', 'Available', 'Passionate, hardworking, and always evolving—I turn ideas into powerful digital solutions. Open to new challenges and collaborations—let\'s connect and create innovative digital solutions!', 1, 'Full Stack Web Developer', 'https://kashiftech.com', 'alikashi54321@gmail.com', '03057502419', '1998-10-03', '26', 'Multan', 'BS Computer Science', 'Available', 'My journey began with a Bachelor’s in Computer Science (2016-2020), mastering PHP, Laravel, and modern frontend frameworks like React. Since 2020, I’ve specialized in custom web platforms, API development, and enterprise solutions, delivering high pe', 'Passionate, hardworking, and always evolving—I turn ideas into powerful digital solutions. Open to new challenges and collaborations—let\'s connect and create innovative digital solutions!', 2, '2025-01-02 08:01:21', '2025-04-15 17:02:21', '2025-01-02 08:06:06'),
-(2, 1, 1, 'https://talkmaze.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, '', '', '', '', '', '', '', '', '', '', 2, '2025-01-02 08:06:49', '2025-01-02 08:06:57', NULL);
+INSERT INTO `resume_about_sections` (`id`, `job_position_id`, `sort_number`, `description`, `display_picture`, `display_position_title`, `heading_short_description`, `birthday`, `age`, `website`, `degree`, `phone_no`, `email_address`, `city`, `freelance`, `footer_short_description`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 1, 'Passionate and results-driven Full Stack Developer with expertise in PHP, Laravel, and React. I specialize in building scalable web applications, crafting clean and efficient code, and delivering seamless user experiences. With a deep understanding of backend and frontend development, I thrive in creating robust, high-performance solutions. Always eager to embrace new technologies and optimize workflows, I am committed to driving innovation and excellence in web development.', 'media/kashif.ali/sidebar_profile_images/18-29_11-37_kashif_profile_image.jpeg', 'Web Developer', 'Experienced in developing high-performance web applications using PHP, Laravel, and React. I build scalable, secure, and user-friendly solutions that drive business success..', '2025-02-19', '25', 'https://kitsoftsol.com', 'BS Computer Science', '03057502419', 'alikashi54321@gmail.com', 'Multan', 'Available', 'As a **Full Stack Web Developer**, I specialize in PHP, Laravel, and React, developing innovative web applications with a focus on performance and scalability. With **10 years of experience**, I have worked on diverse projects, from **custom web platforms** to **AI-powered applications** like **MyAIBotix**. I am passionate about writing clean, efficient code and implementing modern development practices.', 1, 2, '2025-01-02 08:01:21', '2025-03-02 18:29:26', '2025-01-02 08:06:06'),
+(2, 1, 1, 'https://talkmaze.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 2, '2025-01-02 08:06:49', '2025-01-02 08:06:57', NULL);
 
 -- --------------------------------------------------------
 
@@ -7237,9 +7311,9 @@ CREATE TABLE `resume_education_sections` (
 --
 
 INSERT INTO `resume_education_sections` (`id`, `job_position_id`, `sort_number`, `degree_name`, `institute_name`, `country`, `city`, `start_date`, `end_date`, `grades`, `description`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 1, 'BS Computer Science', 'Bahauddin Zakariya University', 'Pakistan', 'Multan', '2016-03-05', '2020-07-05', '3.35', 'Focused on web development, databases, and algorithms. Gained expertise in PHP, Laravel, React, and Next.js.', 1, 2, '2025-01-02 01:34:05', '2025-03-17 16:51:12', NULL),
+(1, 1, 1, 'BS Computer Science', 'Bahauddin Zakariya University', 'Pakistan', 'Multan', '2016-03-05', '2020-12-18', '3.35', 'I completed my bachelor in computer science.', 1, 2, '2025-01-02 01:34:05', '2025-02-28 02:01:22', NULL),
 (2, 1, 2, 'Matriculation', 'Bahauddin Zakariya University', 'Pakistan', 'Multan', '2025-01-08', '2025-01-17', '3.35', 'Completed my degree from this university', 1, 2, '2025-01-02 01:57:23', '2025-01-02 01:58:10', '2025-01-02 01:58:10'),
-(3, 1, 2, 'FSc Pre Engineering', 'Govt Emerson College', 'Pakistan', 'Multan', '2014-03-13', '2016-06-13', '905/1100', 'Strong foundation in mathematics, physics, and computing, preparing for a career in software development.', 1, 2, '2025-02-26 07:41:36', '2025-03-17 16:50:25', NULL);
+(3, 1, 2, 'FSc Pre Engineering', 'Govt Emerson College', 'Pakistan', 'Multan', '2014-03-13', '2016-08-27', '905/1100', 'I passed my fsce pre engineering from government emerson college.', 1, 2, '2025-02-26 07:41:36', '2025-02-28 02:01:23', NULL);
 
 -- --------------------------------------------------------
 
@@ -7271,13 +7345,7 @@ CREATE TABLE `resume_experience_sections` (
 --
 
 INSERT INTO `resume_experience_sections` (`id`, `job_position_id`, `sort_number`, `company_logo`, `country`, `city`, `company_name`, `designation_name`, `start_date`, `end_date`, `description`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 3, 'media/kashif.ali/company_logos/06-11_talkmaze_image.png', 'Pakistan', 'Lahore', 'DevStudio', 'PHP / Laravel Developer', '2022-02-06', '2023-07-06', 'Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-01-06 01:11:34', '2025-03-18 06:44:11', NULL),
-(2, 1, 1, NULL, 'Pakistan', 'Islamabad', 'Softlinks', 'Full Stack Web Developer', '2024-07-17', '0000-00-00', '', 1, 2, '2025-03-17 12:36:38', '2025-03-21 03:14:07', NULL),
-(3, 1, 2, NULL, 'Pakistan', 'Multan', 'Bitsoftsol', 'PHP / Laravel Developer', '2023-08-17', '2024-04-17', '', 1, 2, '2025-03-17 12:40:15', '2025-03-27 06:49:40', NULL),
-(4, 1, 4, NULL, 'Pakistan', 'Lahore', 'Deviotech', 'PHP / Laravel Developer', '2020-10-17', '2022-01-14', '', 1, 2, '2025-03-17 12:44:06', '2025-03-27 06:49:42', NULL),
-(5, 1, 5, NULL, 'Pakistan', 'Multan', 'Codex IT Solutions', 'PHP Developer', '2020-04-10', '2020-09-27', '- Developed and maintained web applications, focusing on performance and scalability.\r\n- Assisted in integrating third-party APIs for payment processing.\r\n- Provided maintenance and support for existing applications.', 1, 2, '2025-03-27 05:37:59', '2025-03-27 06:49:44', NULL),
-(6, 1, 6, NULL, 'Pakistan', 'Multan', 'Soft Logix', 'Web Developer', '2019-08-13', '2020-03-18', '- Worked on various client projects, developing dynamic websites using Laravel.\r\n- Implemented responsive design techniques for optimal performance on mobile devices.\r\n- Collaborated with team members to debug and enhance existing applications.', 1, 2, '2025-03-27 05:41:14', '2025-03-27 06:49:47', NULL),
-(7, 1, 7, NULL, 'Pakistan', 'Multan', 'Comtech4All', 'PHP Developer', '2017-06-15', '2019-11-05', '- Gained hands-on experience in web development, working on small to medium-scale projects.\r\n- Learned and applied best practices for front-end and back-end development.\r\n- Built and maintained client websites, ensuring timely delivery and performance optimization.', 1, 2, '2025-03-27 05:43:41', '2025-03-27 06:49:49', NULL);
+(1, 1, NULL, 'media/kashif.ali/company_logos/06-11_talkmaze_image.png', 'Pakistan', 'Multan', 'DevStudio', 'Laravel Developer', '2025-01-06', '2025-01-13', 'Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-01-06 01:11:34', '2025-01-06 01:11:34', NULL);
 
 -- --------------------------------------------------------
 
@@ -7301,41 +7369,11 @@ CREATE TABLE `resume_experience_section_descriptions` (
 --
 
 INSERT INTO `resume_experience_section_descriptions` (`id`, `resume_experience_section_id`, `type`, `sort_number`, `description`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, NULL, 4, NULL, '2025-01-06 01:11:34', '2025-03-17 12:34:56', NULL),
-(2, 1, NULL, 2, 'Built REST APIs for Mailboxes BM e-shop, including product filtering, cart management, and payment integration.', '2025-01-06 01:11:34', '2025-03-27 19:15:30', NULL),
-(3, 1, NULL, 3, 'Created IOT device management APIs for Dalua and enhanced HR Portal with loan, salary, and email template modules.', '2025-01-06 01:11:34', '2025-03-27 19:15:30', NULL),
-(4, 1, NULL, 1, 'Developed Laravel APIs for Humphrey & Stretton, integrating Sage50 Cloud for invoicing and dashboard stats.', '2025-01-06 01:11:34', '2025-03-27 19:15:30', NULL),
-(5, 1, NULL, 5, NULL, '2025-01-06 01:11:34', '2025-01-06 01:11:34', NULL),
-(6, 2, NULL, 1, 'Enhanced DayOutDubai with multilingual APIs, supplier dashboards, and booking systems using Laravel.', '2025-03-17 12:36:38', '2025-03-21 03:39:12', NULL),
-(7, 2, NULL, 2, 'Built ICD UAE’s Hospitality Benefits Portal in React for HR-managed hotel bookings and employee discounts.', '2025-03-17 12:36:38', '2025-03-21 03:39:12', NULL),
-(8, 2, NULL, 3, 'Developed UAE Government Finance projects like GRM Dashboard and admin panels using PHP and Laravel.', '2025-03-17 12:36:38', '2025-03-21 03:39:12', NULL),
-(9, 2, NULL, 4, NULL, '2025-03-17 12:36:38', '2025-03-17 12:36:38', NULL),
-(10, 2, NULL, 5, NULL, '2025-03-17 12:36:38', '2025-03-17 12:36:38', NULL),
-(11, 3, NULL, 1, 'Built a Laravel package automating CRUD, auto-generating routes, views, and APIs for efficient development.', '2025-03-17 12:40:15', '2025-03-27 05:48:00', NULL),
-(12, 3, NULL, 2, 'Built MyPropertyOffer, translating Excel logic into a web app with a custom formula library for automated calculations.', '2025-03-17 12:40:15', '2025-03-27 05:48:00', NULL),
-(13, 3, NULL, 3, 'Led teams, fixed bugs, integrated payments, and streamlined workflows for effective project delivery and collaboration.', '2025-03-17 12:40:15', '2025-03-27 05:48:00', NULL),
-(14, 3, NULL, 4, NULL, '2025-03-17 12:40:15', '2025-03-17 12:40:15', NULL),
-(15, 3, NULL, 5, NULL, '2025-03-17 12:40:15', '2025-03-17 12:40:15', NULL),
-(16, 4, NULL, 1, 'Developed TempHub marketplace with multi-role dashboards, booking system, and Stripe payment integration with admin commission control.', '2025-03-17 12:44:06', '2025-03-27 19:32:10', NULL),
-(17, 4, NULL, 2, 'Built Driva garage booking platform featuring geo-location filters, multi-user panels, and integrated Stripe/PayPal payments.', '2025-03-17 12:44:06', '2025-03-27 19:32:10', NULL),
-(18, 4, NULL, 3, 'Created QuranTutor/Talkmaze e-learning systems with Zoom integration, trial/packages system, and commission-based payout modules.', '2025-03-17 12:44:06', '2025-03-27 19:32:10', NULL),
-(19, 4, NULL, 4, NULL, '2025-03-17 12:44:06', '2025-03-17 12:44:06', NULL),
-(20, 4, NULL, 5, NULL, '2025-03-17 12:44:06', '2025-03-17 12:44:06', NULL),
-(21, 5, NULL, 1, 'Enhanced MLM System (PHP): Implemented multi-level tree algorithm for bonus distribution, user badges, and invite-based commissions.', '2025-03-27 05:37:59', '2025-03-27 06:39:00', NULL),
-(22, 5, NULL, 2, 'Built POS System (Laravel): Developed stock management, invoicing, sales/purchase tracking, and real-time reporting with analytics.', '2025-03-27 05:37:59', '2025-03-27 06:39:00', NULL),
-(23, 5, NULL, 3, 'Designed Tour Management (PHP): Created Hajj/Umrah package system with admin controls, dynamic pricing, and customer contact integration.', '2025-03-27 05:37:59', '2025-03-27 06:39:00', NULL),
-(24, 5, NULL, 4, NULL, '2025-03-27 05:37:59', '2025-03-27 05:37:59', NULL),
-(25, 5, NULL, 5, NULL, '2025-03-27 05:37:59', '2025-03-27 05:37:59', NULL),
-(26, 6, NULL, 1, 'Developed Matrimonial Platform (PHP): Built admin panel, user profiles, and real-time chat system for matchmaking.', '2025-03-27 05:41:14', '2025-03-27 06:40:28', NULL),
-(27, 6, NULL, 3, 'Created Ajax Chat System: Implemented instant messaging with contact lists and user-to-user communication.', '2025-03-27 05:41:14', '2025-03-27 06:40:28', NULL),
-(28, 6, NULL, 2, 'Enhanced Ride-Booking App: Contributed to rider/admin portals for managing bookings and user interactions.', '2025-03-27 05:41:14', '2025-03-27 06:40:28', NULL),
-(29, 6, NULL, 4, NULL, '2025-03-27 05:41:14', '2025-03-27 05:41:14', NULL),
-(30, 6, NULL, 5, NULL, '2025-03-27 05:41:14', '2025-03-27 05:41:14', NULL),
-(31, 7, NULL, 1, 'Developed Typing Test (PHP): Built backend system with user management, test results tracking, and admin analytics.', '2025-03-27 05:43:41', '2025-03-27 06:49:35', NULL),
-(32, 7, NULL, 2, 'Created Examination System (PHP): Designed full-stack exam platform with auto-grading, timers, and question CRUD operations.', '2025-03-27 05:43:41', '2025-03-27 06:49:35', NULL),
-(33, 7, NULL, 3, 'Built Learning Management Tools: Implemented student/teacher dashboards, course management, and real-time result calculations.', '2025-03-27 05:43:41', '2025-03-27 06:49:35', NULL),
-(34, 7, NULL, 4, NULL, '2025-03-27 05:43:41', '2025-03-27 05:43:41', NULL),
-(35, 7, NULL, 5, NULL, '2025-03-27 05:43:41', '2025-03-27 05:43:41', NULL);
+(1, 1, NULL, 4, 'Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description', '2025-01-06 01:11:34', '2025-01-06 01:17:14', NULL),
+(2, 1, NULL, 2, 'Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description', '2025-01-06 01:11:34', '2025-01-06 01:16:53', NULL),
+(3, 1, NULL, 3, NULL, '2025-01-06 01:11:34', '2025-01-06 01:11:34', NULL),
+(4, 1, NULL, 1, '444Test 1 description Test 1 444description Test 1 description Test 1 description Test 1 description Test 1 description Test 1 description', '2025-01-06 01:11:34', '2025-01-06 01:17:35', NULL),
+(5, 1, NULL, 5, NULL, '2025-01-06 01:11:34', '2025-01-06 01:11:34', NULL);
 
 -- --------------------------------------------------------
 
@@ -7422,14 +7460,6 @@ CREATE TABLE `resume_header_sections` (
   `portfolio_website` text DEFAULT NULL,
   `facebook_link` text DEFAULT NULL,
   `is_active` tinyint(1) NOT NULL DEFAULT 0,
-  `full_name` varchar(250) DEFAULT NULL,
-  `job_first_name` varchar(250) DEFAULT NULL,
-  `job_last_name` varchar(250) DEFAULT NULL,
-  `job_full_name` varchar(250) DEFAULT NULL,
-  `job_position_display_title_1` varchar(250) DEFAULT NULL,
-  `job_position_display_title_2` varchar(250) DEFAULT NULL,
-  `job_position_display_title_3` varchar(250) DEFAULT NULL,
-  `job_position_display_title_4` varchar(250) DEFAULT NULL,
   `created_by` int(10) UNSIGNED DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -7444,8 +7474,8 @@ CREATE TABLE `resume_header_sections` (
 -- Dumping data for table `resume_header_sections`
 --
 
-INSERT INTO `resume_header_sections` (`id`, `job_position_id`, `gender`, `first_name`, `last_name`, `date_of_birth`, `date_of_joining`, `position_display_title_1`, `phone_number`, `email`, `location`, `city`, `country`, `display_picture`, `heading`, `short_summary`, `linked_in_link`, `github_link`, `portfolio_website`, `facebook_link`, `is_active`, `full_name`, `job_first_name`, `job_last_name`, `job_full_name`, `job_position_display_title_1`, `job_position_display_title_2`, `job_position_display_title_3`, `job_position_display_title_4`, `created_by`, `created_at`, `updated_at`, `deleted_at`, `background_image`, `position_display_title_2`, `position_display_title_3`, `position_display_title_4`) VALUES
-(1, 1, 'Male', 'Kashif', 'Tech', '1998-10-03', '2017-03-07', 'Software Engineer', '+923057502419', 'alikashi54321@gmail.com', 'Suraj Miani Choak Near UBL', 'Multan', 'Pakistan', 'media/kashif.ali/profile_images/11-27_kashif_profile_image.jpeg', 'Transforming Ideas into Interactive Websites | Full-Stack Developer', 'Experienced Web Developer with over {exp} of expertise in building responsive, user-friendly websites and applications using cutting-edge technologies. Proficient in both front-end and backend development, including Laravel, Next.js, and modern frameworks.', 'https://www.linkedin.com/in/kashif-ali-39659518a/', 'https://github.com/alikashi543211', 'https://kashiftech.com/', NULL, 1, 'KashifTech', 'Kashif', 'Ali', 'Kashif Ali', 'Full Stack Web Developer', 'Laravel Expert', 'React Developer', 'Web Developer', 2, '2024-12-31 03:41:32', '2025-04-08 09:13:59', NULL, 'media/kashif.ali/header_background_images/13-30_pexels-goumbik-574071 (1).jpg', 'Laravel Expert', 'React Developer', 'Web Developer');
+INSERT INTO `resume_header_sections` (`id`, `job_position_id`, `gender`, `first_name`, `last_name`, `date_of_birth`, `date_of_joining`, `position_display_title_1`, `phone_number`, `email`, `location`, `city`, `country`, `display_picture`, `heading`, `short_summary`, `linked_in_link`, `github_link`, `portfolio_website`, `facebook_link`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`, `background_image`, `position_display_title_2`, `position_display_title_3`, `position_display_title_4`) VALUES
+(1, 1, 'Male', 'Kashif', 'Ali', '1998-10-03', '2017-03-07', 'Full Stack Developer', '+923057502419', 'alikashi54321@gmail.com', 'Suraj Miani Choak Near UBL', 'Multan', 'Pakistan', 'media/kashif.ali/profile_images/11-27_kashif_profile_image.jpeg', 'Transforming Ideas into Interactive Websites | Full-Stack Developer', 'Experienced Web Developer with over {exp} of expertise in building responsive, user-friendly websites and applications using cutting-edge technologies. Proficient in both front-end and backend development, including Laravel, Next.js, and modern frameworks.', 'https://www.linkedin.com/in/kashif-ali-39659518a/', 'https://github.com/alikashi543211', 'https://kashiftech.com/', NULL, 1, 2, '2024-12-31 03:41:32', '2025-03-02 18:11:48', NULL, 'media/kashif.ali/header_background_images/11-28_640px-Faisal_Masjid,_Islamabad (1) (1).jpg', 'Laravel Expert', 'React Developer', 'Web Developer');
 
 -- --------------------------------------------------------
 
@@ -7600,91 +7630,50 @@ CREATE TABLE `resume_portfolio_settings` (
 INSERT INTO `resume_portfolio_settings` (`id`, `job_position_id`, `sort_number`, `key`, `value`, `is_attachment`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, 1, 'Talkmaze', 'https://talkmaze.com', '0', 1, 2, '2025-01-02 08:01:21', '2025-01-02 08:06:06', '2025-01-02 08:06:06'),
 (2, 1, 1, 'Talkmaze', 'https://talkmaze.com', '0', 1, 2, '2025-01-02 08:06:49', '2025-01-02 08:06:57', NULL),
-(3, 1, NULL, 'portfolio_download_resume_path_link', 'media/kashif.ali/sidebar_profile_images/05-55_kashif_profile_image.jpeg', '122222', 1, 2, '2025-02-24 08:15:54', '2025-03-03 02:14:22', NULL),
+(3, 1, NULL, 'portfolio_download_resume_path_link', 'https://kashiftech.com/media/kashif.ali/sidebar_profile_images/05-55_kashif_profile_image.jpeg', '122222', 1, 2, '2025-02-24 08:15:54', '2025-03-05 04:35:30', NULL),
 (4, 1, NULL, 'job_position_id', '1', '0', 1, 2, '2025-02-24 08:15:54', '2025-02-24 08:15:54', NULL),
 (5, 1, NULL, 'skill_section_heading', 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.', '0', 1, 2, '2025-02-24 08:15:54', '2025-02-24 08:16:35', NULL),
-(6, 1, NULL, 'about_section_text', 'I am a self-motivated Full Stack Web Developer with {exp} of experience, specializing in PHP (Laravel) & React/Next.js. I excel in building scalable web applications, robust APIs, and seamless user experiences with clean, maintainable code.', '0', 1, 2, '2025-02-24 08:34:37', '2025-04-15 17:56:08', NULL),
-(7, 1, NULL, 'skill_section_description', 'Experienced in full-stack web development, specializing in scalable applications, API integration, and database management. Proficient in both frontend and backend technologies, with expertise in server management and DevOps.', '0', 1, 2, '2025-02-24 08:34:37', '2025-03-18 06:13:11', NULL),
-(8, 1, NULL, 'resume_section_text', 'Seasoned Full Stack Developer with {exp} of experience crafting scalable web apps, seamless API integrations, and robust cloud solutions, prioritizing performance and quality.', '0', 1, 2, '2025-02-24 08:34:37', '2025-04-15 17:56:34', NULL),
-(9, 1, NULL, 'portfolio_section_text', 'Discover innovative web solutions, dynamic interfaces, and scalable applications. Expertise in full-stack development, seamless API integrations, and performance optimization.', '0', 1, 2, '2025-02-24 08:34:37', '2025-03-17 20:21:30', NULL),
-(10, 1, NULL, 'services_section_text', 'I deliver end-to-end web development solutions, creating high-performance, secure, and scalable applications with modern, cutting-edge tools and frameworks.', '0', 1, 2, '2025-02-24 08:34:37', '2025-03-17 20:22:40', NULL),
-(11, 1, NULL, 'testimonials_section_text', 'Discover what my clients have to say about collaborating with me—delivering exceptional results, seamless communication, and innovative solutions tailored to their needs.', '0', 1, 2, '2025-02-24 08:34:37', '2025-03-18 06:22:27', NULL),
-(12, 1, NULL, 'contact_section_text', 'Have a project in mind? Let’s collaborate to turn your vision into reality. As a dedicated Full Stack Developer, I bring expertise, reliability, and innovation to every project.', '0', 1, 2, '2025-02-24 08:34:37', '2025-03-18 06:24:48', NULL),
-(13, 1, NULL, 'footer_section_text', '© {current_year} KashifTech. All Rights Reserved. | Innovating the Future, One Line of Code at a Time.', '0', 1, 2, '2025-02-24 08:34:37', '2025-03-19 14:25:37', NULL),
-(14, 1, NULL, 'contact_form_address_value_text', 'Remote Professional | Serving Clients Worldwide', '0', 1, 2, '2025-02-25 07:20:29', '2025-03-19 14:31:28', NULL),
-(15, 1, NULL, 'contact_form_call_us_value_text', '+92 315 1061349', '0', 1, 2, '2025-02-25 07:20:29', '2025-03-18 06:25:54', NULL),
-(16, 1, NULL, 'contact_form_email_us_value_text', 'contact@kashiftech.com', '0', 1, 2, '2025-02-25 07:20:29', '2025-03-18 06:25:54', NULL),
-(17, 1, NULL, 'website_title', 'KashifTech | Full Stack  Web Developer - PHP, Laravel, React', '0', 1, 2, '2025-02-26 06:54:35', '2025-03-19 14:22:00', NULL),
-(18, 1, NULL, 'summary_section_title_text', 'Kashif Tech', '0', 1, 2, '2025-02-26 07:01:54', '2025-03-18 06:18:05', NULL),
-(19, 1, NULL, 'summary_section_description_text', 'Results-driven Full Stack Developer skilled in building high-performance web applications, optimizing user experiences, and delivering scalable solutions.', '0', 1, 2, '2025-02-26 07:01:54', '2025-03-18 06:17:54', NULL),
+(6, 1, NULL, 'about_section_text', 'Passionate and results-driven Full Stack Developer with expertise in PHP, Laravel, and React. I specialize in building scalable web applications, crafting clean and efficient code, and delivering seamless user experiences. With a deep understanding of backend and frontend development, I thrive in creating robust, high-performance solutions. Always eager to embrace new technologies and optimize workflows, I am committed to driving innovation and excellence in web development.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:03:05', NULL),
+(7, 1, NULL, 'skill_section_description', 'Expertise in Full Stack Web Development with a strong focus on PHP, Laravel, and modern JavaScript frameworks.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:03:05', NULL),
+(8, 1, NULL, 'resume_section_text', 'Experienced Full Stack Web Developer with 10+ years of expertise in PHP, Laravel, and modern JavaScript frameworks like React and Next.js. Skilled in developing scalable web applications, API integrations, and cloud-based solutions.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:03:05', NULL),
+(9, 1, NULL, 'portfolio_section_text', 'Explore a showcase of cutting-edge web applications, dynamic user interfaces, and scalable solutions built with Laravel, Next.js, and React. From AI-powered content generators to robust e-commerce platforms, each project reflects expertise in full-stack development, seamless API integrations, and performance optimization.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:39:36', NULL),
+(10, 1, NULL, 'services_section_text', 'I provide **end-to-end web development solutions**, ensuring high-performance, secure, and scalable applications using the latest technologies.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:09:54', NULL),
+(11, 1, NULL, 'testimonials_section_text', 'See what my clients say about working with me.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:36:45', NULL),
+(12, 1, NULL, 'contact_section_text', 'Have a project in mind? Need a reliable Full Stack Developer? Let\'s connect and bring your ideas to life!', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-26 07:36:45', NULL),
+(13, 1, NULL, 'footer_section_text', '© {current_year} KashifTech. All Rights Reserved. | Empowering Innovation, One Line of Code at a Time.', '0', 1, 2, '2025-02-24 08:34:37', '2025-02-28 01:46:47', NULL),
+(14, 1, NULL, 'contact_form_address_value_text', 'A108 Adam Street, New York, NY 535022', '0', 1, 2, '2025-02-25 07:20:29', '2025-02-25 07:20:29', NULL),
+(15, 1, NULL, 'contact_form_call_us_value_text', '+1 5589 55488 55', '0', 1, 2, '2025-02-25 07:20:29', '2025-02-25 07:20:29', NULL),
+(16, 1, NULL, 'contact_form_email_us_value_text', 'info@example.com', '0', 1, 2, '2025-02-25 07:20:29', '2025-02-25 07:20:29', NULL),
+(17, 1, NULL, 'website_title', 'Kashif Ali | Full Stack Web Developer - PHP, Laravel, React', '0', 1, 2, '2025-02-26 06:54:35', '2025-02-26 06:54:35', NULL),
+(18, 1, NULL, 'summary_section_title_text', 'Kashif Ali', '0', 1, 2, '2025-02-26 07:01:54', '2025-02-26 07:01:54', NULL),
+(19, 1, NULL, 'summary_section_description_text', 'Results-driven Full Stack Web Developer specializing in PHP, Laravel, React, and Next.js. Passionate about building high-performance web applications and optimizing user experiences.', '0', 1, 2, '2025-02-26 07:01:54', '2025-02-26 07:01:54', NULL),
 (20, 1, NULL, 'summary_section_country_text', 'Pakistan', '0', 1, 2, '2025-02-26 07:01:54', '2025-03-04 05:42:32', NULL),
-(21, 1, NULL, 'summary_section_contact_text', '+92 315 1061349', '0', 1, 2, '2025-02-26 07:01:54', '2025-03-18 06:18:34', NULL),
-(22, 1, NULL, 'summary_section_email_text', 'admin@kashiftech.com', '0', 1, 2, '2025-02-26 07:01:54', '2025-03-18 06:17:54', NULL),
-(23, 1, NULL, 'website_fav_icon', 'media/kashif.ali/portfolio_settings/17-20_kashiftech.png', '0', 1, 2, '2025-02-28 01:04:33', '2025-04-15 17:20:45', NULL),
-(24, 1, NULL, 'website_apple_touch_icon', 'media/kashif.ali/portfolio_settings/17-20_kashiftech.png', '0', 1, 2, '2025-02-28 01:36:28', '2025-04-15 17:20:45', NULL),
-(25, 1, NULL, 'website_meta_description', 'KashifTech - A highly skilled Full Stack Web Developer with expertise in PHP, Laravel, and React. Specializing in building scalable web applications, AI-powered platforms, and modern frontend solutions.', '0', 1, 2, '2025-02-28 01:44:02', '2025-03-19 14:22:00', NULL),
-(26, 1, NULL, 'website_meta_keywords', 'Full Stack Developer, PHP Developer, Laravel Expert, React Developer, Web Development, Next.js, AI-powered Applications, API Development, Software Engineer', '0', 1, 2, '2025-02-28 01:44:02', '2025-03-19 14:17:28', NULL),
-(27, 1, NULL, 'resume_website_contact_service_selection', 'no', '0', 1, 2, '2025-03-03 02:14:23', '2025-03-08 16:01:27', NULL),
-(28, 1, NULL, '_token', '7awBi7kzd9Hn3La2HoWx74T3PJijJRA3HvpbPgk7', NULL, 1, 2, '2025-03-04 03:31:06', '2025-04-15 17:20:44', NULL),
-(29, 1, NULL, 'resume_website_send_email_selection', 'yes', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 16:09:25', NULL),
-(30, 1, NULL, 'resume_website_send_email_mode_selection', 'live', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 15:40:00', NULL),
+(21, 1, NULL, 'summary_section_contact_text', '+923057502419', '0', 1, 2, '2025-02-26 07:01:54', '2025-02-26 07:01:54', NULL),
+(22, 1, NULL, 'summary_section_email_text', 'kashifali@gmail.com', '0', 1, 2, '2025-02-26 07:01:54', '2025-02-26 07:01:54', NULL),
+(23, 1, NULL, 'website_fav_icon', 'media/kashif.ali/portfolio_settings/08-33_bootstrap_fav_icon.png', '0', 1, 2, '2025-02-28 01:04:33', '2025-03-04 03:33:07', NULL),
+(24, 1, NULL, 'website_apple_touch_icon', 'media/kashif.ali/portfolio_settings/08-33_apple_touch_icon.png', '0', 1, 2, '2025-02-28 01:36:28', '2025-03-04 03:33:07', NULL),
+(25, 1, NULL, 'website_meta_description', 'Kashif Ali - A highly skilled Full Stack Web Developer with expertise in PHP, Laravel, and React. Specializing in building scalable web applications, AI-powered platforms, and modern frontend solutions.', '0', 1, 2, '2025-02-28 01:44:02', '2025-02-28 01:44:02', NULL),
+(26, 1, NULL, 'website_meta_keywords', 'Full Stack Developer, PHP Developer, Laravel Expert, React Developer, Web Development, Next.js, AI-powered Applications, API Development, Software Engineer, MyAIBotix', '0', 1, 2, '2025-02-28 01:44:02', '2025-02-28 01:44:02', NULL),
+(27, 1, NULL, 'resume_website_contact_service_selection', 'yes', '0', 1, 2, '2025-03-03 02:14:23', '2025-03-03 02:14:23', NULL),
+(28, 1, NULL, '_token', '02Svs6wmo1p8Fb83LqPOafwaciXYwjBhFjlEFbOp', NULL, 1, 2, '2025-03-04 03:31:06', '2025-03-05 04:35:30', NULL),
+(29, 1, NULL, 'resume_website_send_email_selection', 'yes', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(30, 1, NULL, 'resume_website_send_email_mode_selection', 'local', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:33:06', NULL),
 (31, 1, NULL, 'email_credentials_section_email_host', 'smtp.mailtrap.io', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
 (32, 1, NULL, 'email_credentials_section_email_port', '2525', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
-(33, 1, NULL, 'email_credentials_section_email_username', '053edeb7b4c8db', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 04:10:09', NULL),
-(34, 1, NULL, 'email_credentials_section_email_password', 'e6eeac1ec26f7f', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 04:08:03', NULL),
+(33, 1, NULL, 'email_credentials_section_email_username', 'contact@kashiftech.com', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(34, 1, NULL, 'email_credentials_section_email_password', 'e6eeac1ec26f7f', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
 (35, 1, NULL, 'email_credentials_section_email_encryption', 'tls', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
-(36, 1, NULL, 'email_credentials_section_email_from_address', 'contact@kashiftech.com', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 13:04:03', NULL),
-(37, 1, NULL, 'email_credentials_section_email_from_name', 'KashifTech', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 13:04:03', NULL),
-(38, 1, NULL, 'email_credentials_section_live_email_host', 'smtp.hostinger.com', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 14:32:04', NULL),
-(39, 1, NULL, 'email_credentials_section_live_email_port', '465', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 14:32:22', NULL),
-(40, 1, NULL, 'email_credentials_section_live_email_username', 'contact@kashiftech.com', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 13:04:03', NULL),
-(41, 1, NULL, 'email_credentials_section_live_email_password', '12345@**AAAa', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 13:04:03', NULL),
-(42, 1, NULL, 'email_credentials_section_live_email_encryption', 'tls', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-08 13:21:41', NULL),
+(36, 1, NULL, 'email_credentials_section_email_from_address', 'contact@kashiftech.com', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(37, 1, NULL, 'email_credentials_section_email_from_name', 'KashifTech', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(38, 1, NULL, 'email_credentials_section_live_email_host', 'smtp.mailtrap.io', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(39, 1, NULL, 'email_credentials_section_live_email_port', '2525', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(40, 1, NULL, 'email_credentials_section_live_email_username', '053edeb7b4c8db', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(41, 1, NULL, 'email_credentials_section_live_email_password', 'e6eeac1ec26f7f', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
+(42, 1, NULL, 'email_credentials_section_live_email_encryption', 'tls', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
 (43, 1, NULL, 'email_credentials_section_live_email_from_address', 'contact@kashiftech.com', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
 (44, 1, NULL, 'email_credentials_section_live_email_from_name', 'KashifTech', NULL, 1, 2, '2025-03-04 03:31:07', '2025-03-04 03:31:07', NULL),
-(45, 1, NULL, 'website_base_media_url', 'https://kashiftech.com/', NULL, 1, 2, '2025-03-04 03:39:11', '2025-03-14 04:58:24', NULL),
-(46, 1, NULL, 'website_base_media_path', '/home/u379020171/domains/kashiftech.com/public_html/', NULL, 1, 2, '2025-03-04 03:39:11', '2025-03-14 04:58:24', NULL),
-(47, 1, NULL, 'email_credentials_section_email_transport', 'smtp', NULL, 1, 2, '2025-03-08 14:49:34', '2025-03-08 14:51:15', NULL),
-(48, 1, NULL, 'email_credentials_section_live_email_transport', 'smtp', NULL, 1, 2, '2025-03-08 14:49:34', '2025-03-08 15:08:34', NULL),
-(49, 1, NULL, 'resume_about_section_download_resume_selection', 'yes', NULL, 1, 2, '2025-03-08 17:12:54', '2025-03-08 17:15:48', NULL),
-(50, 1, NULL, 'website_whatsapp_show_hide', 'show', NULL, 1, 2, '2025-03-19 13:38:18', '2025-03-19 14:15:55', NULL),
-(51, 1, NULL, 'website_whatsapp_number', '923151061349', NULL, 1, 2, '2025-03-19 13:38:18', '2025-03-19 13:38:18', NULL),
-(52, 1, NULL, 'website_whatsapp_auto_message', 'Hello, I visited KashifTech.com and am interested in your web development services. Could you share more details? Thank you!', NULL, 1, 2, '2025-03-19 13:38:18', '2025-03-19 14:19:32', NULL),
-(53, 1, NULL, 'website_images_show_hide_toggle', 'show', NULL, 1, 2, '2025-03-27 06:25:54', '2025-04-14 12:44:31', NULL),
-(54, 1, NULL, 'website_experience_read_more_show_hide_toggle', 'hide', NULL, 1, 2, '2025-03-27 07:10:59', '2025-03-28 06:59:02', NULL),
-(55, 1, NULL, 'job_website_testimonial_show_hide', 'show', NULL, 1, 2, '2025-04-08 09:16:22', '2025-04-08 09:16:22', NULL),
-(56, 1, NULL, 'job_website_services_show_hide', 'show', NULL, 1, 2, '2025-04-08 09:16:22', '2025-04-08 09:16:22', NULL),
-(57, 1, NULL, 'job_website_whatsapp_number', '923057502419', NULL, 1, 2, '2025-04-08 09:16:22', '2025-04-08 09:16:22', NULL),
-(58, 1, NULL, 'job_website_whatsapp_auto_message', 'Hello Kashif Ali, I came across your portfolio at KashifTech.com and I\'m impressed by your work. I\'m interested in discussing potential opportunities with you. Could you please share more information about your availability and services?', NULL, 1, 2, '2025-04-08 09:16:22', '2025-04-14 11:33:54', NULL),
-(59, 1, NULL, 'job_footer_section_text', '© {current_year} KashifAli. All Rights Reserved. | Innovating the Future, One Line of Code at a Time.', NULL, 1, 2, '2025-04-08 09:16:22', '2025-04-08 09:16:22', NULL),
-(60, 1, NULL, 'job_contact_form_address_value_text', 'Multan, Punjab, Pakistan', NULL, 1, 2, '2025-04-08 09:17:33', '2025-04-08 09:17:33', NULL),
-(61, 1, NULL, 'job_contact_form_call_us_value_text', '+92 305 7502419', NULL, 1, 2, '2025-04-08 09:17:33', '2025-04-08 09:17:33', NULL),
-(62, 1, NULL, 'job_contact_form_email_us_value_text', 'alikashi54321@gmail.com', NULL, 1, 2, '2025-04-08 09:17:33', '2025-04-08 09:17:33', NULL),
-(63, 1, NULL, 'job_website_title', 'Kashif Ali | Full Stack  Web Developer - PHP, Laravel, React', NULL, 1, 2, '2025-04-08 09:22:55', '2025-04-08 09:22:55', NULL),
-(64, 1, NULL, 'job_website_meta_description', 'Kashif Ali - A highly skilled Full Stack Web Developer with expertise in PHP, Laravel, and React. Specializing in building scalable web applications, AI-powered platforms, and modern frontend solutions.', NULL, 1, 2, '2025-04-08 09:22:55', '2025-04-08 09:22:55', NULL),
-(65, 1, NULL, 'job_website_meta_keywords', 'Full Stack Developer, PHP Developer, Laravel Expert, React Developer, Web Development, Next.js, AI-powered Applications, API Development, Software Engineer', NULL, 1, 2, '2025-04-08 09:22:55', '2025-04-08 09:22:55', NULL),
-(66, 1, NULL, 'website_business_or_job_selection', 'business', NULL, 1, 2, '2025-04-10 04:44:33', '2025-04-17 03:20:15', NULL),
-(67, 1, NULL, 'job_summary_section_title_text', 'Kashif Ali', NULL, 1, 2, '2025-04-12 12:56:37', '2025-04-12 12:56:37', NULL),
-(68, 1, NULL, 'job_summary_section_description_text', 'Results-driven Full Stack Developer skilled in building high-performance web applications, optimizing user experiences, and delivering scalable solutions.', NULL, 1, 2, '2025-04-12 12:56:37', '2025-04-12 12:56:37', NULL),
-(69, 1, NULL, 'job_summary_section_country_text', 'Pakistan', NULL, 1, 2, '2025-04-12 12:56:37', '2025-04-12 12:56:37', NULL),
-(70, 1, NULL, 'job_summary_section_contact_text', '923057502419', NULL, 1, 2, '2025-04-12 12:56:37', '2025-04-12 12:56:37', NULL),
-(71, 1, NULL, 'job_summary_section_email_text', 'alikashi54321@gmail.com', NULL, 1, 2, '2025-04-12 12:56:37', '2025-04-12 12:56:37', NULL),
-(72, 1, NULL, 'website_about_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(73, 1, NULL, 'website_stats_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(74, 1, NULL, 'website_skills_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(75, 1, NULL, 'website_resume_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(76, 1, NULL, 'website_portfolio_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(77, 1, NULL, 'website_services_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(78, 1, NULL, 'website_testimonial_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(79, 1, NULL, 'website_contact_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(80, 1, NULL, 'job_website_about_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(81, 1, NULL, 'job_website_stats_section_show_hide', 'hide', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:43:29', NULL),
-(82, 1, NULL, 'job_website_skills_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(83, 1, NULL, 'job_website_resume_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(84, 1, NULL, 'job_website_portfolio_section_show_hide', 'show', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:41:17', NULL),
-(85, 1, NULL, 'job_website_services_section_show_hide', 'hide', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:43:29', NULL),
-(86, 1, NULL, 'job_website_testimonial_section_show_hide', 'hide', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:43:50', NULL),
-(87, 1, NULL, 'job_website_contact_section_show_hide', 'hide', NULL, 1, 2, '2025-04-14 12:41:17', '2025-04-14 12:43:29', NULL);
+(45, 1, NULL, 'website_base_media_url', 'http://127.0.0.1:8001/', NULL, 1, 2, '2025-03-04 03:39:11', '2025-03-04 03:39:11', NULL),
+(46, 1, NULL, 'website_base_media_path', 'E:\\softlinks\\DOD\\kashiftech_laravel\\public\\', NULL, 1, 2, '2025-03-04 03:39:11', '2025-03-04 03:39:11', NULL);
 
 -- --------------------------------------------------------
 
@@ -7712,9 +7701,9 @@ CREATE TABLE `resume_project_categories` (
 --
 
 INSERT INTO `resume_project_categories` (`id`, `job_position_id`, `sort_number`, `category_name`, `category_slug`, `category_link`, `category_thumbnail`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 1, 'PHP', 'php', 'https://talkmaze.com', 'media/live_link_thumbnails/kashif.ali/13-04_talkmaze_image.png', 0, 2, '2025-01-02 08:01:21', '2025-03-28 06:09:51', '2025-01-02 08:06:06'),
-(3, 1, 2, 'Web-Development', 'web-development', NULL, NULL, 1, 2, '2025-02-25 05:34:22', '2025-04-08 05:03:56', NULL),
-(4, 1, 3, 'React', 'react', NULL, NULL, 0, 2, '2025-02-25 05:34:31', '2025-03-28 06:09:54', NULL);
+(1, 1, 1, 'PHP', 'php', 'https://talkmaze.com', 'media/live_link_thumbnails/kashif.ali/13-04_talkmaze_image.png', 1, 2, '2025-01-02 08:01:21', '2025-02-25 05:55:19', '2025-01-02 08:06:06'),
+(3, 1, 2, 'Laravel', 'laravel', NULL, NULL, 1, 2, '2025-02-25 05:34:22', '2025-02-25 05:54:04', NULL),
+(4, 1, 3, 'React', 'react', NULL, NULL, 1, 2, '2025-02-25 05:34:31', '2025-02-25 05:54:05', NULL);
 
 -- --------------------------------------------------------
 
@@ -7754,13 +7743,9 @@ INSERT INTO `resume_project_sections` (`id`, `job_position_id`, `resume_project_
 (3, 1, 1, 2, 'NEW PROJECT TEST', NULL, NULL, '', '', NULL, '2025-01-09', '2025-01-25', NULL, 'DEMO DESCRIPTION DEMO DESCRIPTION DEMO DESCRIPTION DEMO DESCRIPTION DEMO DESCRIPTION DEMO DESCRIPTION DEMO DESCRIPTION DEMO DESCRIPTION', 1, 2, '2025-01-03 04:50:53', '2025-01-03 04:59:32', '2025-01-03 04:59:32'),
 (4, 1, 1, NULL, 'Cooking Oil', NULL, NULL, NULL, NULL, NULL, '2025-01-09', '2025-01-31', NULL, 'Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description Cooking oil description', 1, 2, '2025-01-03 05:00:33', '2025-02-25 06:04:05', '2025-02-25 06:04:05'),
 (5, 1, 4, NULL, 'Cooking Oil sss', NULL, NULL, NULL, NULL, NULL, '2025-01-09', '2025-01-24', 'media/project_thumbnails/kashif.ali/10-13_talkmaze_image.png', 'dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD dDED DD DFDFDFD', 1, 2, '2025-01-03 05:13:40', '2025-01-03 05:13:53', '2025-01-03 05:13:53'),
-(6, 1, 3, 6, 'TheTempHub', 'thetemphub', 'https://thetemphub.com', 'Pakistan', 'Islamabad', NULL, '2025-02-25', '2025-02-25', 'media/kashif.ali/project_thumbnails/06-03_temphub.PNG', NULL, 1, 2, '2025-02-25 06:04:48', '2025-04-17 02:49:26', NULL),
-(7, 1, 3, 2, 'Day Out Dubai', 'day-out-dubai', 'https://dayoutdubai.com', 'Pakistan', 'Islamabad', NULL, '2025-02-26', '2025-02-26', 'media/kashif.ali/project_thumbnails/06-05_day_out_dubai.PNG', NULL, 1, 2, '2025-02-25 06:06:55', '2025-04-17 02:24:01', NULL),
-(8, 1, 3, NULL, 'Talkmaze', 'talkmaze-slug', NULL, NULL, NULL, NULL, '2025-02-22', '2025-02-22', NULL, 'Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description', 1, 2, '2025-02-28 08:24:04', '2025-02-28 08:28:38', '2025-02-28 08:28:38'),
-(9, 1, 3, 5, 'Talkmaze', 'talkmaze', 'https://talkmaze.com', 'Pakistan', NULL, NULL, '2025-03-29', '2025-03-15', 'media/kashif.ali/project_thumbnails/06-09_talkmaze_home.PNG', NULL, 1, 2, '2025-03-28 06:09:04', '2025-03-28 06:57:28', NULL),
-(10, 1, 3, 3, 'Mailboxes BM', 'mailboxes-bm', 'https://mailboxes.bm', NULL, NULL, NULL, '2025-03-29', '2025-03-29', 'media/kashif.ali/project_thumbnails/06-29_Product_Listing_Page.jpg', NULL, 1, 2, '2025-03-28 06:28:06', '2025-03-28 06:57:17', NULL),
-(11, 1, 3, 4, 'Dalua IOT', 'dalua-iot', 'https://dalua.com', NULL, NULL, NULL, '2025-03-29', '2025-03-31', 'media/kashif.ali/project_thumbnails/06-31_Admin_Portal_View_Schedule_Page.jpg', NULL, 1, 2, '2025-03-28 06:31:26', '2025-03-28 06:57:34', NULL),
-(12, 1, 3, 1, 'Humphrey & Stretton', 'humphrey-and-stretton', 'https://humphreystretton.com', NULL, NULL, NULL, '2025-03-14', '2025-03-13', 'media/kashif.ali/project_thumbnails/06-56_accounts_page.PNG', NULL, 1, 2, '2025-03-28 06:56:53', '2025-03-28 06:57:05', NULL);
+(6, 1, 3, 1, 'E Commerce', 'e-commerce', NULL, 'Pakistan', 'Islamabad', NULL, '2025-02-25', '2025-02-25', 'media/kashif.ali/project_thumbnails/08-08_banner-arabic-1.png', 'Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-02-25 06:04:48', '2025-02-28 07:01:46', NULL),
+(7, 1, 1, 2, 'Day Out Dubai', 'day-out-dubai', NULL, 'Pakistan', 'Islamabad', NULL, '2025-02-26', '2025-02-26', 'media/kashif.ali/project_thumbnails/08-05_banner-arabic-2.png', 'Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-02-25 06:06:55', '2025-02-28 07:01:46', NULL),
+(8, 1, 3, NULL, 'Talkmaze', 'talkmaze-slug', NULL, NULL, NULL, NULL, '2025-02-22', '2025-02-22', NULL, 'Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description Talkmaze description', 1, 2, '2025-02-28 08:24:04', '2025-02-28 08:28:38', '2025-02-28 08:28:38');
 
 -- --------------------------------------------------------
 
@@ -7784,41 +7769,21 @@ CREATE TABLE `resume_project_section_descriptions` (
 --
 
 INSERT INTO `resume_project_section_descriptions` (`id`, `resume_project_section_id`, `type`, `sort_number`, `description`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(5, 6, NULL, 1, 'I developed TempHub, a Laravel-based marketplace connecting sellers and buyers. The platform features customized themes and dual-profile registration (like Fiverr). Sellers create profiles by listing services with descriptions, while buyers register by selecting preferred offerings. The system includes a comprehensive admin panel for user management.', '2025-02-25 06:04:48', '2025-04-17 02:48:57', NULL),
-(6, 6, NULL, 2, 'Buyers can browse services, book appointments, and pay via Stripe. Bookings sync to both buyer and seller dashboards. Location verification ensures smooth transactions - sellers confirm buyer availability on arrival. This two-way confirmation system enhances trust between users on the platform.', '2025-02-25 06:04:48', '2025-04-17 02:48:57', NULL),
-(7, 6, NULL, 3, 'Admins manage all users, set booking commissions, and track earnings. Payments are processed to sellers\' Stripe accounts after commission deductions. The integrated CMS allows full website content control, making TempHub a complete marketplace solution.', '2025-02-25 06:04:48', '2025-04-17 02:48:57', NULL),
+(5, 6, NULL, 1, NULL, '2025-02-25 06:04:48', '2025-02-25 06:04:48', NULL),
+(6, 6, NULL, 2, NULL, '2025-02-25 06:04:48', '2025-02-25 06:04:48', NULL),
+(7, 6, NULL, 3, NULL, '2025-02-25 06:04:48', '2025-02-25 06:04:48', NULL),
 (8, 6, NULL, 4, NULL, '2025-02-25 06:04:48', '2025-02-25 06:04:48', NULL),
 (9, 6, NULL, 5, NULL, '2025-02-25 06:04:48', '2025-02-25 06:04:48', NULL),
-(10, 7, NULL, 1, 'At DayOutDubai, I developed a tourism platform enabling suppliers to list tour packages with detailed descriptions and pricing. Customers can browse and book these Dubai outing experiences seamlessly. I built the system using Laravel, React, and MySQ', '2025-02-25 06:06:55', '2025-04-17 02:22:45', NULL),
-(11, 7, NULL, 2, 'I implemented customer booking APIs and supplier dashboard APIs, allowing suppliers to manage their products efficiently. The platform supports multilingual content, switching between English and Arabic dynamically via API-driven database translation', '2025-02-25 06:06:55', '2025-04-17 02:22:45', NULL),
-(12, 7, NULL, 3, 'My work involved full-stack development, combining PHP (Laravel) for backend logic and React for dynamic frontend interactions. MySQL handled data storage, while jQuery and JavaScript enhanced UI responsiveness. The result was a scalable, feature-ric', '2025-02-25 06:06:55', '2025-04-17 02:22:45', NULL),
+(10, 7, NULL, 1, 'Day Out Dubai is a user-friendly platform for booking UAE tours. Built with Laravel and React, it offers a smooth experience for reserving desert safaris, yacht cruises, and adventure tours.', '2025-02-25 06:06:55', '2025-02-28 06:35:50', NULL),
+(11, 7, NULL, 2, 'The website includes real-time availability, secure payments, and multilingual support. Its robust backend efficiently handles bookings, tour management, and customer inquiries.', '2025-02-25 06:06:55', '2025-02-28 06:35:50', NULL),
+(12, 7, NULL, 3, 'Designed for speed and SEO, the platform ensures high search visibility. A mobile-friendly layout and interactive UI enhance user engagement and booking efficiency. 🚀', '2025-02-25 06:06:55', '2025-02-28 06:35:50', NULL),
 (13, 7, NULL, 4, NULL, '2025-02-25 06:06:55', '2025-02-25 06:06:55', NULL),
 (14, 7, NULL, 5, NULL, '2025-02-25 06:06:55', '2025-02-25 06:06:55', NULL),
 (15, 8, NULL, 1, NULL, '2025-02-28 08:24:04', '2025-02-28 08:24:04', NULL),
 (16, 8, NULL, 2, NULL, '2025-02-28 08:24:04', '2025-02-28 08:24:04', NULL),
 (17, 8, NULL, 3, NULL, '2025-02-28 08:24:04', '2025-02-28 08:24:04', NULL),
 (18, 8, NULL, 4, NULL, '2025-02-28 08:24:04', '2025-02-28 08:24:04', NULL),
-(19, 8, NULL, 5, NULL, '2025-02-28 08:24:04', '2025-02-28 08:24:04', NULL),
-(20, 9, NULL, 1, 'I developed Talkmaze\'s tutor registration system, enabling tutors to set profiles, bank details (Stripe/PayPal), and schedule availability. Parents register with child details to book trial classes. The platform features dedicated dashboards for tutors and parents with integrated Google Calendar for class scheduling.', '2025-03-28 06:09:04', '2025-04-17 02:51:12', NULL),
-(21, 9, NULL, 2, 'The system supports one-time and recurring classes via Zoom integration. Tutors generate meeting links automatically emailed to students. After trials, tutors create paid packages which students can purchase. Admin manages all bookings while tracking tutor schedules and student progress through the platform.', '2025-03-28 06:09:04', '2025-04-17 02:51:12', NULL),
-(22, 9, NULL, 3, 'I implemented a payment system where admin sets commissions per booking. Tutors receive payouts to their connected Stripe accounts after commission deductions. The admin panel handles complete payment management, ensuring secure transactions between all parties in the tutoring ecosystem.', '2025-03-28 06:09:04', '2025-04-17 02:51:12', NULL),
-(23, 9, NULL, 4, NULL, '2025-03-28 06:09:04', '2025-03-28 06:09:04', NULL),
-(24, 9, NULL, 5, NULL, '2025-03-28 06:09:04', '2025-03-28 06:09:04', NULL),
-(25, 10, NULL, 1, 'I developed the backend for Mailboxes BM e-shop using Laravel, creating REST APIs for Angular frontend integration. Built secure authentication APIs and comprehensive product management APIs for admin panel operations. Implemented order processing APIs to handle complete purchase lifecycle from cart to fulfillment.', '2025-03-28 06:28:06', '2025-04-17 02:56:22', NULL),
-(26, 10, NULL, 2, 'Designed customer-facing APIs including product listing, detailed views, cart management and checkout flows. Integrated payment processing systems for seamless transactions. The most complex task was developing multi-level category filter APIs for both customer and admin product searches.', '2025-03-28 06:28:06', '2025-04-17 02:56:22', NULL),
-(27, 10, NULL, 3, 'Successfully engineered parent-child category filter APIs enabling sophisticated product filtering across hierarchies. These APIs power sidebar filters on customer portal and admin product management. My work bridged Angular frontend with robust Laravel backend for Bermuda\'s premier shipping service e-commerce platform.', '2025-03-28 06:28:06', '2025-04-17 02:56:22', NULL),
-(28, 10, NULL, 4, NULL, '2025-03-28 06:28:06', '2025-03-28 06:28:06', NULL),
-(29, 10, NULL, 5, NULL, '2025-03-28 06:28:06', '2025-03-28 06:28:06', NULL),
-(30, 11, NULL, 1, 'I developed Dalua IOT\'s admin panel to manage both fresh and saltwater devices. The system tracks all device details, statuses, and maintains a comprehensive device inventory. I implemented role-based permissions to control access levels for different admin users while ensuring secure device management.', '2025-03-28 06:31:26', '2025-04-17 02:53:49', NULL),
-(31, 11, NULL, 2, 'I redesigned the existing admin panel by integrating a modern UI theme, improving usability and functionality. As an API developer, I created robust IOT APIs for seamless mobile integration. These APIs enabled Android/iOS teams to sync device data and control functionalities efficiently.', '2025-03-28 06:31:26', '2025-04-17 02:53:49', NULL),
-(32, 11, NULL, 3, 'My work included developing backend systems for real-time device monitoring and management. The admin panel provides complete oversight of all IOT devices while APIs facilitate smooth mobile communication. This dual approach ensures reliable performance across both web and mobile platforms.', '2025-03-28 06:31:26', '2025-04-17 02:53:49', NULL),
-(33, 11, NULL, 4, NULL, '2025-03-28 06:31:26', '2025-03-28 06:31:26', NULL),
-(34, 11, NULL, 5, NULL, '2025-03-28 06:31:26', '2025-03-28 06:31:26', NULL),
-(35, 12, NULL, 1, 'As a Laravel developer for Humphrey & Stretton, I built backend APIs to support their Angular frontend door manufacturing system. Developed comprehensive Work Order CRUD APIs with status tracking and role-based permission controls. Created payment management APIs to handle all financial transactions related to work orders.', '2025-03-28 06:56:53', '2025-04-17 02:58:01', NULL),
-(36, 12, NULL, 2, 'The key challenge was integrating Sage50 Cloud accounting software with the application. I developed bi-directional APIs to sync invoices between the app and Sage50 Cloud. This included creating invoices in both systems and fetching historical accounting data from Sage into the application.', '2025-03-28 06:56:53', '2025-04-17 02:58:01', NULL),
-(37, 12, NULL, 3, 'Implemented dashboard APIs displaying key metrics like work order stats and invoiced accounts analytics. These APIs power real-time business insights for management. My work enabled seamless operations between manufacturing workflows and financial systems for this door/frame manufacturer.', '2025-03-28 06:56:53', '2025-04-17 02:58:01', NULL),
-(38, 12, NULL, 4, NULL, '2025-03-28 06:56:53', '2025-03-28 06:56:53', NULL),
-(39, 12, NULL, 5, NULL, '2025-03-28 06:56:53', '2025-03-28 06:56:53', NULL);
+(19, 8, NULL, 5, NULL, '2025-02-28 08:24:04', '2025-02-28 08:24:04', NULL);
 
 -- --------------------------------------------------------
 
@@ -7843,17 +7808,17 @@ CREATE TABLE `resume_project_section_images` (
 --
 
 INSERT INTO `resume_project_section_images` (`id`, `resume_project_section_id`, `sort_number`, `image_title`, `image_path`, `is_thumbnail`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 6, NULL, 'dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd', NULL, 0, '2025-01-02 04:06:07', '2025-03-28 05:44:10', '2025-03-28 05:44:10'),
-(2, 6, NULL, 'dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd', NULL, 0, '2025-01-02 04:06:07', '2025-03-28 05:44:14', '2025-03-28 05:44:14'),
-(3, 6, NULL, 'dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd', NULL, 0, '2025-01-02 04:06:07', '2025-03-28 05:44:17', '2025-03-28 05:44:17'),
-(4, 6, NULL, '', NULL, 0, '2025-01-02 04:06:07', '2025-03-28 05:44:19', '2025-03-28 05:44:19'),
+(1, 6, NULL, 'dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd', NULL, 0, '2025-01-02 04:06:07', '2025-01-02 04:06:07', NULL),
+(2, 6, NULL, 'dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd', NULL, 0, '2025-01-02 04:06:07', '2025-01-02 04:06:07', NULL),
+(3, 6, NULL, 'dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd dfgdfgfd', NULL, 0, '2025-01-02 04:06:07', '2025-01-02 04:06:07', NULL),
+(4, 6, NULL, '', NULL, 0, '2025-01-02 04:06:07', '2025-01-02 04:06:07', NULL),
 (5, 4, NULL, NULL, 'media/kashif.ali/project_images/Cooking Oil/05-22_kashif_profile_image.jpeg', 0, '2025-01-06 00:22:47', '2025-01-06 00:22:47', NULL),
 (6, 4, NULL, NULL, 'media/kashif.ali/project_images/Cooking Oil/05-22_wrapper-5.jpg', 0, '2025-01-06 00:22:47', '2025-01-06 00:22:47', NULL),
 (7, 4, NULL, NULL, 'media/kashif.ali/project_images/Cooking Oil/05-22_ai_botix.PNG', 0, '2025-01-06 00:22:47', '2025-01-06 00:22:47', NULL),
 (8, 4, NULL, NULL, 'media/kashif.ali/project_images/Cooking Oil/05-22_pexels-adria-masi-461420600-27962172.jpg', 0, '2025-01-06 00:22:47', '2025-01-06 00:22:47', NULL),
-(9, 7, NULL, NULL, 'media/kashif.ali/project_images/Day Out Dubai/11-07_banner-arabic-2.png', 0, '2025-02-25 06:07:36', '2025-03-17 13:33:15', '2025-03-17 13:33:15'),
+(9, 7, NULL, NULL, 'media/kashif.ali/project_images/Day Out Dubai/11-07_banner-arabic-2.png', 0, '2025-02-25 06:07:36', '2025-02-25 06:07:36', NULL),
 (10, 7, NULL, NULL, 'media/kashif.ali/project_images/Day Out Dubai/11-07_banner-arabic-1.png', 0, '2025-02-25 06:07:37', '2025-02-25 06:09:09', '2025-02-25 06:09:09'),
-(11, 7, NULL, NULL, 'media/kashif.ali/project_images/Day Out Dubai/11-14_hero-bg.jpg', 0, '2025-02-28 06:14:31', '2025-03-17 13:33:20', '2025-03-17 13:33:20');
+(11, 7, NULL, NULL, 'media/kashif.ali/project_images/Day Out Dubai/11-14_hero-bg.jpg', 0, '2025-02-28 06:14:31', '2025-02-28 06:14:31', NULL);
 
 -- --------------------------------------------------------
 
@@ -7893,12 +7858,12 @@ INSERT INTO `resume_service_sections` (`id`, `job_position_id`, `service_sidebar
 (6, 1, NULL, NULL, NULL, NULL, '', 3, 1, 'Cooking Oil', 'Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-02-25 06:04:48', '2025-02-26 05:57:40', '2025-02-26 05:57:40'),
 (7, 1, NULL, NULL, NULL, NULL, '', 1, 2, 'Day Out Dubai', 'Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-02-25 06:06:55', '2025-02-26 05:57:37', '2025-02-26 05:57:37'),
 (8, 1, NULL, NULL, NULL, 'bi bi-briefcase', 'media/kashif.ali/service_thumbnails/10-56_hero-bg.jpg', NULL, NULL, 'Lorem Ipsum', 'Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident', 1, 2, '2025-02-26 05:56:42', '2025-02-26 05:57:47', '2025-02-26 05:57:47'),
-(9, 1, NULL, NULL, 'full-stack-development', 'bi bi-briefcase', 'media/kashif.ali/service_thumbnails/03-40_Full-Stack-Development-Service.jpeg', NULL, 1, 'Full Stack Development', 'Crafting robust, scalable, and secure web applications with modern technologies for seamless performance.', 1, 2, '2025-02-26 05:58:31', '2025-04-17 03:40:56', NULL),
-(10, 1, NULL, NULL, 'custom-api-development', 'bi bi-card-checklist', 'media/kashif.ali/service_thumbnails/03-49_custom-api-development.jpeg', NULL, 2, 'Custom API Development', 'Designing and integrating RESTful APIs to enable seamless data exchange and third-party connectivity.', 1, 2, '2025-02-26 06:23:03', '2025-04-17 03:49:41', NULL),
-(11, 1, NULL, NULL, 'e-commerce-development', 'bi bi-bar-chart', 'media/kashif.ali/service_thumbnails/03-56_E-Commerce-Development-Service.PNG', NULL, 3, 'E-Commerce Development', 'Building high-performance e-commerce platforms with seamless payments for great user experiences.', 1, 2, '2025-02-26 06:23:41', '2025-04-17 03:56:43', NULL),
-(12, 1, NULL, NULL, 'authentication-security', 'bi bi-binoculars', 'media/kashif.ali/service_thumbnails/04-02_Authentication-And-Security-Service.PNG', NULL, 4, 'Authentication & Security', 'Secure authentication with OAuth, JWT, and role-based access control for a robust security system.', 1, 2, '2025-02-26 06:24:23', '2025-04-17 04:02:02', NULL),
-(13, 1, NULL, NULL, 'performance-optimization', 'bi bi-brightness-high', 'media/kashif.ali/service_thumbnails/04-01_performance_and_optimization.PNG', NULL, 5, 'Performance Optimization', 'Boosting website speed and scalability with caching, database optimization, and server-side enhancements.', 1, 2, '2025-02-26 06:25:06', '2025-04-17 04:01:05', NULL),
-(14, 1, NULL, NULL, 'deployment-and-hosting', 'bi bi-calendar4-week', 'media/kashif.ali/service_thumbnails/04-07_deployment_service.PNG', NULL, 6, 'Deployment & Hosting', 'Deploying applications on leading platforms with CI/CD pipelines for seamless updates and scalability.', 1, 2, '2025-02-26 06:25:46', '2025-04-17 04:07:53', NULL),
+(9, 1, NULL, NULL, 'full-stack-development', 'bi bi-briefcase', 'media/kashif.ali/service_thumbnails/10-58_my-profile-img.jpg', NULL, 1, 'Full Stack Development', 'Building robust, scalable, and secure web applications using **PHP, Laravel, React, and Next.js**.', 1, 2, '2025-02-26 05:58:31', '2025-02-26 07:14:52', NULL),
+(10, 1, NULL, NULL, 'custom-api-development', 'bi bi-card-checklist', 'media/kashif.ali/service_thumbnails/12-39_Custom-API.png', NULL, 2, 'Custom API Development', 'Designing and integrating **RESTful & GraphQL APIs** for seamless data exchange and third-party integrations.', 1, 2, '2025-02-26 06:23:03', '2025-02-28 07:39:23', NULL),
+(11, 1, NULL, NULL, 'e-commerce-development', 'bi bi-bar-chart', NULL, NULL, 3, 'E-Commerce Development', 'Developing high-performance **e-commerce platforms** with Laravel, Next.js, and integrations like Stripe & PayPal.', 1, 2, '2025-02-26 06:23:41', '2025-02-26 07:14:55', NULL),
+(12, 1, NULL, NULL, 'authentication-security', 'bi bi-binoculars', NULL, NULL, 4, 'Authentication & Security', 'Implementing secure authentication using **OAuth, JWT, Laravel Sanctum, NextAuth, and role-based access control (RBAC)**.', 1, 2, '2025-02-26 06:24:23', '2025-02-26 07:14:57', NULL),
+(13, 1, NULL, NULL, 'performance-optimization', 'bi bi-brightness-high', NULL, NULL, 5, 'Performance Optimization', 'Enhancing website speed and scalability through **caching, database optimization, and server-side improvements**.', 1, 2, '2025-02-26 06:25:06', '2025-02-26 07:14:58', NULL),
+(14, 1, NULL, NULL, 'deployment-and-hosting', 'bi bi-calendar4-week', NULL, NULL, 6, 'Deployment & Hosting', 'Deploying applications on **Hostinger, DigitalOcean, Vercel, and AWS** with CI/CD pipelines for smooth updates.', 1, 2, '2025-02-26 06:25:46', '2025-02-26 07:15:04', NULL),
 (15, 1, NULL, NULL, 'test-service-updated', 'test-class', NULL, NULL, NULL, 'Test Service', 'Test Description Test Description Test Description Test Description Test Description Test Description', 1, 2, '2025-02-28 08:25:01', '2025-02-28 08:25:21', '2025-02-28 08:25:21');
 
 -- --------------------------------------------------------
@@ -7933,34 +7898,34 @@ INSERT INTO `resume_service_section_descriptions` (`id`, `resume_service_section
 (12, 7, NULL, 3, NULL, '2025-02-25 06:06:55', '2025-02-25 06:06:55', NULL),
 (13, 7, NULL, 4, NULL, '2025-02-25 06:06:55', '2025-02-25 06:06:55', NULL),
 (14, 7, NULL, 5, NULL, '2025-02-25 06:06:55', '2025-02-25 06:06:55', NULL),
-(15, 9, NULL, 1, 'I offer full stack development services using modern technologies like Laravel, Angular, and React. My expertise covers both frontend and backend development, ensuring seamless integration between UI and APIs. I build responsive, scalable web applications tailored to your business needs.', '2025-02-26 05:58:31', '2025-04-17 03:25:53', NULL),
-(16, 9, NULL, 2, 'From database design to deployment, I handle complete project lifecycles. My solutions include user authentication, payment gateways, and third-party API integrations. I optimize performance and security while maintaining clean, maintainable code standards.', '2025-02-26 05:58:31', '2025-04-17 03:25:53', NULL),
-(17, 9, NULL, 3, 'Whether e-commerce platforms or custom web apps, I deliver robust full stack solutions. My services feature admin panels, mobile-responsive designs, and real-time data processing. Let\'s transform your ideas into high-performing digital experiences.', '2025-02-26 05:58:31', '2025-04-17 03:25:53', NULL),
+(15, 9, NULL, 1, NULL, '2025-02-26 05:58:31', '2025-02-26 05:58:31', NULL),
+(16, 9, NULL, 2, NULL, '2025-02-26 05:58:31', '2025-02-26 05:58:31', NULL),
+(17, 9, NULL, 3, NULL, '2025-02-26 05:58:31', '2025-02-26 05:58:31', NULL),
 (18, 9, NULL, 4, NULL, '2025-02-26 05:58:31', '2025-02-26 05:58:31', NULL),
 (19, 9, NULL, 5, NULL, '2025-02-26 05:58:31', '2025-02-26 05:58:31', NULL),
-(20, 10, NULL, 1, 'I specialize in custom API development using Laravel, Node.js, and Python. My APIs power web/mobile apps with secure, scalable endpoints for data exchange. I design RESTful and GraphQL APIs tailored to your specific business logic and requirements.', '2025-02-26 06:23:03', '2025-04-17 03:27:18', NULL),
-(21, 10, NULL, 2, 'From authentication to complex integrations, I build APIs that connect systems seamlessly. My solutions include payment gateways, third-party services, and database interactions. Each API is documented, versioned, and optimized for peak performance.', '2025-02-26 06:23:03', '2025-04-17 03:27:18', NULL),
-(22, 10, NULL, 3, 'I develop APIs with robust security (JWT/OAuth), rate limiting, and error handling. Whether for internal tools or public platforms, my APIs ensure reliable, efficient communication between your applications and services. Let\'s connect your digital ecosystem.', '2025-02-26 06:23:03', '2025-04-17 03:27:18', NULL),
+(20, 10, NULL, 1, 'Custom API development ensures smooth communication between applications, enabling efficient data exchange and automation. It enhances functionality by integrating third-party services and streamlining business operations.', '2025-02-26 06:23:03', '2025-02-28 07:32:31', NULL),
+(21, 10, NULL, 2, 'Our APIs are built for security, scalability, and high performance. With authentication, encryption, and optimized queries, we ensure reliable and fast data processing tailored to your needs.', '2025-02-26 06:23:03', '2025-02-28 07:32:31', NULL),
+(22, 10, NULL, 3, 'Whether you need RESTful or GraphQL APIs, we develop custom solutions to connect mobile apps, web platforms, and cloud systems. Our APIs enhance workflow efficiency and improve user experience. 🚀', '2025-02-26 06:23:03', '2025-02-28 07:32:31', NULL),
 (23, 10, NULL, 4, NULL, '2025-02-26 06:23:03', '2025-02-26 06:23:03', NULL),
 (24, 10, NULL, 5, NULL, '2025-02-26 06:23:03', '2025-02-26 06:23:03', NULL),
-(25, 11, NULL, 1, 'I deliver complete e-commerce solutions using platforms like Shopify, WooCommerce, and custom Laravel builds. My services include product management, secure checkout systems, and mobile-responsive designs. I create stores that convert visitors into loyal customers.', '2025-02-26 06:23:41', '2025-04-17 03:28:53', NULL),
-(26, 11, NULL, 2, 'From catalog setup to payment integration, I handle all technical aspects. I implement Stripe, PayPal, and local payment gateways with PCI compliance. My stores feature wishlists, reviews, and personalized recommendations to boost sales.', '2025-02-26 06:23:41', '2025-04-17 03:28:53', NULL),
-(27, 11, NULL, 3, 'I optimize stores for speed, SEO, and user experience across devices. My solutions include inventory management, order tracking, and analytics dashboards. Let\'s build your online store that grows with your business needs.', '2025-02-26 06:23:41', '2025-04-17 03:28:53', NULL),
+(25, 11, NULL, 1, NULL, '2025-02-26 06:23:41', '2025-02-26 06:23:41', NULL),
+(26, 11, NULL, 2, NULL, '2025-02-26 06:23:41', '2025-02-26 06:23:41', NULL),
+(27, 11, NULL, 3, NULL, '2025-02-26 06:23:41', '2025-02-26 06:23:41', NULL),
 (28, 11, NULL, 4, NULL, '2025-02-26 06:23:41', '2025-02-26 06:23:41', NULL),
 (29, 11, NULL, 5, NULL, '2025-02-26 06:23:41', '2025-02-26 06:23:41', NULL),
-(30, 12, NULL, 1, 'I provide robust authentication solutions including OAuth 2.0, JWT, and session-based security. My implementations feature multi-factor authentication, password encryption, and secure token management to protect user identities and prevent unauthorized access.', '2025-02-26 06:24:23', '2025-04-17 03:29:49', NULL),
-(31, 12, NULL, 2, 'From role-based access control to API security layers, I harden your systems against threats. I implement rate limiting, CSRF protection, and data validation to safeguard against common vulnerabilities like SQL injection and XSS attacks.', '2025-02-26 06:24:23', '2025-04-17 03:29:49', NULL),
-(32, 12, NULL, 3, 'My security services include penetration testing, security audits, and compliance with GDPR/CCPA standards. I build defense mechanisms that adapt to evolving threats while maintaining seamless user experiences. Protect your digital assets with enterprise-grade security.', '2025-02-26 06:24:23', '2025-04-17 03:29:49', NULL),
+(30, 12, NULL, 1, NULL, '2025-02-26 06:24:23', '2025-02-26 06:24:23', NULL),
+(31, 12, NULL, 2, NULL, '2025-02-26 06:24:23', '2025-02-26 06:24:23', NULL),
+(32, 12, NULL, 3, NULL, '2025-02-26 06:24:23', '2025-02-26 06:24:23', NULL),
 (33, 12, NULL, 4, NULL, '2025-02-26 06:24:23', '2025-02-26 06:24:23', NULL),
 (34, 12, NULL, 5, NULL, '2025-02-26 06:24:23', '2025-02-26 06:24:23', NULL),
-(35, 13, NULL, 1, 'I specialize in performance optimization for websites and applications, delivering lightning-fast load times and smooth user experiences. My services include code minification, asset compression, and efficient caching strategies to maximize speed and responsiveness.', '2025-02-26 06:25:06', '2025-04-17 03:30:52', NULL),
-(36, 13, NULL, 2, 'From database query optimization to server-side rendering improvements, I identify and resolve bottlenecks. I implement lazy loading, CDN integration, and image optimization techniques to enhance performance across all devices and connection speeds.', '2025-02-26 06:25:06', '2025-04-17 03:30:52', NULL),
-(37, 13, NULL, 3, 'My solutions reduce bounce rates and improve SEO rankings through strategic performance tuning. I conduct thorough audits using Lighthouse and WebPageTest, then implement targeted optimizations that transform sluggish systems into high-performing assets.', '2025-02-26 06:25:06', '2025-04-17 03:30:52', NULL),
+(35, 13, NULL, 1, NULL, '2025-02-26 06:25:06', '2025-02-26 06:25:06', NULL),
+(36, 13, NULL, 2, NULL, '2025-02-26 06:25:06', '2025-02-26 06:25:06', NULL),
+(37, 13, NULL, 3, NULL, '2025-02-26 06:25:06', '2025-02-26 06:25:06', NULL),
 (38, 13, NULL, 4, NULL, '2025-02-26 06:25:06', '2025-02-26 06:25:06', NULL),
 (39, 13, NULL, 5, NULL, '2025-02-26 06:25:06', '2025-02-26 06:25:06', NULL),
-(40, 14, NULL, 1, 'I offer comprehensive deployment and hosting solutions for web applications and APIs. My services include cloud hosting setup (AWS, DigitalOcean), CI/CD pipeline configuration, and automated deployment workflows to ensure seamless updates and zero downtime.', '2025-02-26 06:25:46', '2025-04-17 03:31:55', NULL),
-(41, 14, NULL, 2, 'From containerization with Docker to serverless architectures, I optimize hosting for performance and cost. I configure load balancing, auto-scaling, and monitoring tools to maintain 99.9% uptime while keeping your infrastructure lean and efficient.', '2025-02-26 06:25:46', '2025-04-17 03:31:55', NULL),
-(42, 14, NULL, 3, 'I provide complete environment management including staging/production setups, SSL configuration, and DNS management. My deployment strategies ensure secure, scalable hosting that grows with your traffic demands while maintaining optimal performance.', '2025-02-26 06:25:46', '2025-04-17 03:31:55', NULL),
+(40, 14, NULL, 1, NULL, '2025-02-26 06:25:46', '2025-02-26 06:25:46', NULL),
+(41, 14, NULL, 2, NULL, '2025-02-26 06:25:46', '2025-02-26 06:25:46', NULL),
+(42, 14, NULL, 3, NULL, '2025-02-26 06:25:46', '2025-02-26 06:25:46', NULL),
 (43, 14, NULL, 4, NULL, '2025-02-26 06:25:46', '2025-02-26 06:25:46', NULL),
 (44, 14, NULL, 5, NULL, '2025-02-26 06:25:46', '2025-02-26 06:25:46', NULL),
 (45, 15, NULL, 1, NULL, '2025-02-28 08:25:01', '2025-02-28 08:25:01', NULL),
@@ -8032,7 +7997,6 @@ CREATE TABLE `resume_sidebar_sections` (
   `instagram_link` text DEFAULT NULL,
   `skype_link` text DEFAULT NULL,
   `linkedin_link` text DEFAULT NULL,
-  `youtube_link` text DEFAULT NULL,
   `github_link` text DEFAULT NULL,
   `display_picture` varchar(250) DEFAULT NULL,
   `sort_number` int(11) DEFAULT NULL,
@@ -8040,21 +8004,15 @@ CREATE TABLE `resume_sidebar_sections` (
   `created_by` int(10) UNSIGNED DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `deleted_at` timestamp NULL DEFAULT NULL,
-  `job_facebook_link` text DEFAULT NULL,
-  `job_instagram_link` text DEFAULT NULL,
-  `job_skype_link` text DEFAULT NULL,
-  `job_linkedin_link` text DEFAULT NULL,
-  `job_youtube_link` text DEFAULT NULL,
-  `job_github_link` text DEFAULT NULL
+  `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `resume_sidebar_sections`
 --
 
-INSERT INTO `resume_sidebar_sections` (`id`, `job_position_id`, `facebook_link`, `instagram_link`, `skype_link`, `linkedin_link`, `youtube_link`, `github_link`, `display_picture`, `sort_number`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`, `job_facebook_link`, `job_instagram_link`, `job_skype_link`, `job_linkedin_link`, `job_youtube_link`, `job_github_link`) VALUES
-(1, 1, 'https://www.facebook.com/kashiftech', 'https://instagram.com/kashiftech', 'http://join.skype.com/kashiftech', 'https://www.linkedin.com/in/kashiftech', 'https://www.youtube.com/watch?v=m7s8ixzmHd8&ab_channel=ARYDigitalHD', 'https://github.com/kashiftech', 'media/kashif.ali/sidebar_profile_images/17-01_kashiftech.png', 1, 1, 2, '2025-01-02 08:01:21', '2025-04-15 17:01:38', '2025-01-02 08:06:06', 'https://www.facebook.com/kashifali', 'https://instagram.com/kashifali', 'http://join.skype.com/kashifali', 'https://www.linkedin.com/in/kashifali', 'https://www.youtube.com/watch?v=m7s8ixzmHd8&ab_channel=ARYDigitalHD', 'https://github.com/kashifali');
+INSERT INTO `resume_sidebar_sections` (`id`, `job_position_id`, `facebook_link`, `instagram_link`, `skype_link`, `linkedin_link`, `github_link`, `display_picture`, `sort_number`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 1, 'https://www.facebook.com/kashif-ali', 'https://instagram.com/username', 'http://join.skype.com/xyz123', 'https://www.linkedin.com/in/username/', 'https://github.com/username', 'media/kashif.ali/sidebar_profile_images/05-55_kashif_profile_image.jpeg', 1, 1, 2, '2025-01-02 08:01:21', '2025-03-03 05:55:09', '2025-01-02 08:06:06');
 
 -- --------------------------------------------------------
 
@@ -8082,8 +8040,8 @@ CREATE TABLE `resume_skill_sections` (
 
 INSERT INTO `resume_skill_sections` (`id`, `job_position_id`, `sort_number`, `skill_icon`, `skill_title`, `skill_rating`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, 5, NULL, 'Laravel', 5, 1, 2, NULL, '2025-02-26 06:48:30', '2025-02-26 06:48:30'),
-(2, 1, 3, NULL, 'React & Next.js', 85, 1, 2, NULL, '2025-03-17 19:52:56', NULL),
-(3, 1, 4, NULL, 'Database Management (MySQL)', 85, 1, 2, NULL, '2025-03-17 19:53:42', NULL),
+(2, 1, 3, NULL, 'React & Next.js', 90, 1, 2, NULL, '2025-02-26 06:50:35', NULL),
+(3, 1, 4, NULL, 'Database Management (MySQL & MongoDB)', 85, 1, 2, NULL, '2025-02-26 06:50:41', NULL),
 (4, 1, 4, NULL, 'jQuery', 4, 1, 2, NULL, '2025-02-26 06:48:34', '2025-02-26 06:48:34'),
 (5, 1, 2, NULL, 'API Development & Integration', 90, 1, 2, '2025-01-01 02:44:40', '2025-02-26 06:50:30', NULL),
 (6, 1, 6, NULL, 'Vue JS', 100, 1, 2, '2025-01-01 02:47:26', '2025-02-26 06:48:26', '2025-02-26 06:48:26'),
@@ -8093,10 +8051,8 @@ INSERT INTO `resume_skill_sections` (`id`, `job_position_id`, `sort_number`, `sk
 (10, 1, 10, NULL, 'Flutter', 4, 1, 2, '2025-01-01 03:35:56', '2025-02-26 06:48:08', '2025-02-26 06:48:08'),
 (11, 1, NULL, NULL, 'Flutter', 5, 1, 2, '2025-01-01 03:39:02', '2025-01-01 03:55:14', '2025-01-01 03:55:14'),
 (12, 1, 1, 'media/kashif.ali/skill_icons/06-32_talkmaze_image.png', 'PHP & Laravel', 95, 1, 2, '2025-01-06 01:32:17', '2025-02-26 06:50:21', NULL),
-(13, 1, 5, NULL, 'Deployment & cPanel & Server Management', 85, 1, 2, '2025-02-26 06:49:59', '2025-03-17 20:04:14', NULL),
-(14, 1, 6, NULL, 'Git & Version Control', 90, 1, 2, '2025-02-26 06:50:13', '2025-03-17 19:58:10', NULL),
-(15, 1, 4, NULL, 'HTML & CSS & Bootstrap', 95, 1, 2, '2025-03-17 19:55:27', '2025-03-17 19:59:02', NULL),
-(16, 1, 5, NULL, 'JavaScrit & jQuery & AJAX', 85, 1, 2, '2025-03-17 19:57:02', '2025-03-17 20:01:31', NULL);
+(13, 1, 5, NULL, 'JavaScript (ES6+)', 85, 1, 2, '2025-02-26 06:49:59', '2025-02-26 06:50:46', NULL),
+(14, 1, 6, NULL, 'Cloud & DevOps (Docker, AWS, CI/CD)', 75, 1, 2, '2025-02-26 06:50:13', '2025-02-26 06:50:55', NULL);
 
 -- --------------------------------------------------------
 
@@ -8124,11 +8080,11 @@ CREATE TABLE `resume_testimonial_sections` (
 --
 
 INSERT INTO `resume_testimonial_sections` (`id`, `job_position_id`, `sort_number`, `display_picture`, `designation_title`, `full_name`, `message`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(3, 1, NULL, 'media/kashif.ali/testimonial_user_images/16-45_testimonials-1.jpg', 'Freelancer', 'Matt Brandon', 'We needed a scalable, high-performance solution, and Kashif exceeded expectations. His API development and frontend optimization expertise made our platform faster and more efficient.', 1, 2, '2025-02-25 08:12:56', '2025-03-17 20:34:24', NULL),
-(4, 1, NULL, 'media/kashif.ali/testimonial_user_images/19-50_16-45_testimonials-2.jpg', 'Designer', 'Sara Wilsson', 'Working with KashifTech was transformative. His full-stack expertise, from database optimization to UI design, delivered a flawless, scalable, and user-friendly application. His attention to detail stood out.', 1, 2, '2025-02-25 08:15:00', '2025-03-27 19:50:19', NULL),
-(5, 1, NULL, 'media/kashif.ali/testimonial_user_images/16-45_testimonials-5.jpg', 'Store Owner', 'Jena Karlis', 'Kashif’s expertise in Laravel, PHP, and React streamlined our web application effortlessly. His dedication, quick troubleshooting, and clean coding standards made the development process smooth and efficient.', 1, 2, '2025-02-26 07:24:08', '2025-03-17 20:30:11', NULL),
-(6, 1, NULL, 'media/kashif.ali/testimonial_user_images/16-45_testimonials-4.jpg', 'Ceo , Founder', 'Saul Goodman', 'KashifTech’s expertise in Laravel, React, and Next.js transformed our project seamlessly. His ability to deliver robust, scalable solutions exceeded expectations. A true web development professional!', 1, 2, '2025-02-26 07:25:01', '2025-03-27 19:47:23', NULL),
-(7, 1, NULL, 'media/kashif.ali/testimonial_user_images/19-50_16-46_testimonials-3.jpg', 'Entrepreneur', 'John Larson', 'KashifTech is a skilled Full Stack Developer who brought our Laravel and React project to life. His problem-solving skills and attention to detail ensured a seamless user experience and robust backend performance.', 1, 2, '2025-02-26 07:25:51', '2025-03-27 19:50:31', NULL);
+(3, 1, NULL, 'media/kashif.ali/testimonial_user_images/12-28_testimonials-4.jpg', 'Freelancer', 'Matt Brandon', 'We needed a scalable and high-performance Next.js and Laravel solution, and Kashif delivered beyond expectations. His expertise in API development and frontend optimization made our platform faster and more efficient.', 1, 2, '2025-02-25 08:12:56', '2025-02-26 07:28:12', NULL),
+(4, 1, NULL, 'media/kashif.ali/testimonial_user_images/13-15_testimonials-2.jpg', 'Designer', 'Sara Wilsson', 'Working with Kashif Ali was a game-changer for our project. His deep understanding of full-stack development, from database optimization to interactive UI components, ensured a flawless and user-friendly application.', 1, 2, '2025-02-25 08:15:00', '2025-02-26 07:23:22', NULL),
+(5, 1, NULL, 'media/kashif.ali/testimonial_user_images/12-26_testimonials-3.jpg', 'Store Owner', 'Jena Karlis', 'Kashif\'s proficiency in Laravel, PHP, and React allowed us to streamline our web application effortlessly. His dedication, quick troubleshooting, and clean coding standards made our development process smooth and efficient.', 1, 2, '2025-02-26 07:24:08', '2025-02-26 07:26:39', NULL),
+(6, 1, NULL, 'media/kashif.ali/testimonial_user_images/12-27_testimonials-1.jpg', 'Ceo , Founder', 'Saul Goodman', 'Kashif Ali\'s expertise in Laravel, React, and Next.js transformed our project seamlessly. His ability to deliver robust, scalable solutions exceeded our expectations. A true professional in web development!', 1, 2, '2025-02-26 07:25:01', '2025-02-26 07:27:18', NULL),
+(7, 1, NULL, 'media/kashif.ali/testimonial_user_images/12-28_testimonials-5.jpg', 'Entrepreneur', 'John Larson', 'Kashif Ali is a highly skilled Full Stack Developer who brought our Laravel  and React-based project to life. His problem-solving ability and attention to detail ensured a seamless user experience and robust backend performance.', 1, 2, '2025-02-26 07:25:51', '2025-02-26 07:28:01', NULL);
 
 -- --------------------------------------------------------
 
@@ -8156,55 +8112,7 @@ CREATE TABLE `resume_website_contacts` (
 --
 
 INSERT INTO `resume_website_contacts` (`id`, `job_position_id`, `contact_name`, `resume_website_contact_email_id`, `contact_subject`, `contact_body`, `resume_website_contact_service_id`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'Kashif Ali', 1, 'Leave application', 'HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE \r\n\r\nHELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE \r\n\r\nHELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE', 2, 1, 2, '2025-03-04 02:00:13', '2025-03-04 02:00:13', NULL),
-(2, 1, 'Kashif', 2, 'LJSDLF', 'Test message', 2, 1, 2, '2025-03-07 14:42:19', '2025-03-07 14:42:19', NULL),
-(3, 1, 'Hello', 3, 'Hello Subject', 'Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum Hello lorem ipsum', 1, 1, 2, '2025-03-08 04:08:49', '2025-03-08 04:08:49', NULL),
-(4, 1, 'Fatima Kashif', 4, 'Web Development', 'Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message', 2, 1, 2, '2025-03-08 04:11:08', '2025-03-08 04:11:08', NULL),
-(5, 1, 'Test Message', 5, 'New Subject', 'Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message', 2, 1, 2, '2025-03-08 04:15:50', '2025-03-08 04:15:50', NULL),
-(6, 1, 'Kashif', 1, 'Test Message', '1-Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message \n\n2-Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message \n\n3-Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message', 2, 1, 2, '2025-03-08 05:01:36', '2025-03-08 05:01:36', NULL),
-(7, 1, 'Test Name', 6, 'Test Subject', '1-Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message \r\n\r\n2-Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message \r\n\r\n3-Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message', 2, 1, 2, '2025-03-08 05:07:33', '2025-03-08 05:07:33', NULL),
-(8, 1, 'Hello Word', 7, 'Test Subject', 'Kashif ali\r\nHello Word', 1, 1, 2, '2025-03-08 05:18:32', '2025-03-08 05:18:32', NULL),
-(9, 1, 'Kashif', 7, 'Test Subject', 'Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message \r\n\r\nTest Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message \r\n\r\nTest Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message Test Message', 2, 1, 2, '2025-03-08 12:52:25', '2025-03-08 12:52:25', NULL),
-(10, 1, 'John Doe', 8, 'First Message On Live Mail', 'Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message \r\n\r\nTest message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message \r\n\r\nTest message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message', 4, 1, 2, '2025-03-08 13:04:52', '2025-03-08 13:04:52', NULL),
-(11, 1, 'Mike Oskar Nilsen', 9, 'Unlock Your kashiftech.com Potential with a Free SEO Score Check', 'Hi, \r\n \r\nWant to know how your website is performing? \r\nDiscover its areas of improvement with our Free SEO Check Tool! \r\n \r\nIn just moments, you’ll get a comprehensive analysis of your site’s optimization and steps to boost your rankings. \r\n \r\nTake the first step towards stronger SEO and growth. \r\n \r\nRun Your Free SEO Check Now \r\nhttps://www.speed-seo.net/check-site-seo-score/ \r\n \r\nDon’t let undetected SEO issues damage your rankings. \r\nImprove your website today and become more visible in search results! \r\n \r\nNeed more info? Whatsapp with a SEO expert: https://www.speed-seo.net/whatsapp-with-us/ \r\n \r\nWishing you success, \r\n \r\n \r\nMike Oskar Nilsen\r\n \r\nSpeed SEO \r\nPhone/WhatsApp: +1 (833) 454-8622', 5, 1, 2, '2025-03-08 14:33:54', '2025-03-08 14:33:54', NULL),
-(12, 1, 'Kashif', 1, 'Test Subject', 'Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message', 5, 1, 2, '2025-03-08 14:58:01', '2025-03-08 14:58:01', NULL),
-(13, 1, 'Tabassum Zahra', 10, 'I want to learn HTML', 'Hello Kashif I want to learn the HTML Language.', 4, 1, 2, '2025-03-08 15:14:51', '2025-03-08 15:14:51', NULL),
-(14, 1, 'Kashif', 7, 'JOB', 'I want to do custom api development.', 2, 1, 2, '2025-03-08 15:37:30', '2025-03-08 15:37:30', NULL),
-(15, 1, 'Tabassum', 10, 'Tabassum Development', 'Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development Test Custom Development', 2, 1, 2, '2025-03-08 15:40:37', '2025-03-08 15:40:37', NULL),
-(16, 1, 'Kashif Ali', 11, 'Test Email', 'Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message Test message', NULL, 1, 2, '2025-03-08 16:02:01', '2025-03-08 16:02:01', NULL),
-(17, 1, 'Kashif Ali', 12, 'Test Email Subject', 'Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message \r\n\r\nHello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message \r\n\r\nHello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message Hello Test message', NULL, 1, 2, '2025-03-08 16:03:42', '2025-03-08 16:03:42', NULL),
-(18, 1, 'John Doe', 13, 'Unlock kashiftech.com with SEO', 'Hi, \r\n \r\nWant to know how your website is performing? \r\nDiscover its areas of improvement with our Free SEO Check Tool! \r\n \r\nIn just moments, you’ll get a comprehensive analysis of your site’s optimization and steps to boost your rankings. \r\n \r\nTake the first step towards stronger SEO and growth. \r\n \r\nRun Your Free SEO Check Now \r\nhttps://www.speed-seo.net/check-site-seo-score/ \r\n \r\nDon’t let undetected SEO issues damage your rankings. \r\nImprove your website today and become more visible in search results! \r\n \r\nNeed more info? Whatsapp with a SEO expert: https://www.speed-seo.net/whatsapp-with-us/ \r\n \r\nWishing you success, \r\n \r\n \r\nMike Oskar Nilsen\r\n \r\nSpeed SEO \r\nPhone/WhatsApp: +1 (833) 454-8622\r\n2025© Resume Builder Admin', NULL, 1, 2, '2025-03-08 16:12:53', '2025-03-08 16:12:53', NULL),
-(19, 1, 'Amandafuergoa', 14, '\"Is that really you, after all this time?\"', '\"I\'m curious to uncover what inspires you. Chat with me on https://rb.gy/44z0k7?naps !\"', NULL, 1, 2, '2025-03-08 22:45:00', '2025-03-08 22:45:00', NULL),
-(20, 1, 'Gregorylop', 15, 'Ncfwuwjijdwefjehue iwiqkwodeigi irwodwofjihgrjeo owofjiegheijwodkowj ihiwdowdkwojefgihg kashiftech.com', 'Nfwhdkjdwj rdqskwjfej wkdwodkwkifjejr okeowjrfiejfiej rowjedowkrfiejfi jrowkorwkjrfejfi jorkdworefoijfeijfowek okdwofjiejgierjfoe kashiftech.com', NULL, 1, 2, '2025-03-09 17:24:27', '2025-03-09 17:24:27', NULL),
-(21, 1, 'Perry Kelson', 16, 'This Secret Site Pays Us $49 Over and Over Again (No Selling Required!)', 'Hi Kashiftech,\r\n\r\nI just stumbled upon something that should not be possible… but it is.\r\n\r\nThere’s a secret website that’s quietly paying people $49 again and again for doing something so simple, it almost feels illegal.\r\n\r\nWhat is it?\r\n\r\n→ Just upload a simple PDF… and you get PAID. ������\r\nNo selling. No social media. No writing. No headaches.\r\n\r\nThe craziest part? You don’t even need to create these PDFs yourself!\r\n\r\nMy friend Glynn and his students have been using this method to quietly rake in hundreds per day, while everyone else is busy chasing the latest social media fads.\r\n\r\nNow, for a limited time, they’re revealing the exact system that turns PDFs into pure profit.\r\n\r\n������ Click here to watch how it works before it’s gone >> https://pdf-profit-machine.blogspot.com\r\n\r\nThis is hands-down the easiest online income stream of 2025. Don’t miss it!\r\n\r\nTo Your Success, \r\n[Perry Kelson]', NULL, 1, 2, '2025-03-12 07:00:55', '2025-03-12 07:00:55', NULL),
-(22, 1, 'Georgecer', 17, 'Hello    write about   the price', 'Sawubona, bengifuna ukwazi intengo yakho.', NULL, 1, 2, '2025-03-12 07:50:46', '2025-03-12 07:50:46', NULL),
-(23, 1, 'Jayrn Marques', 18, '[1]: The Hidden Formula to Getting Unlimited Traffic', 'Hi Kashiftech,\r\n\r\nA few years ago, I was struggling to get traffic to my online business. \r\n\r\nI had built what I thought was the perfect website, had an amazing offer, and even spent money on ads—but nothing worked. \r\n\r\nIt felt like I was shouting into the void, hoping someone would notice me.\r\n\r\nThen, I discovered a completely different approach, one that top entrepreneurs quietly use to attract a flood of traffic without constantly chasing it. \r\n\r\nThe secret? Traffic isn’t created—it’s redirected. Instead of hoping people find you, you strategically position yourself where they already are.\r\n\r\nThis simple shift changed everything for me. It’s the foundation of what some of the most successful marketers use to drive traffic effortlessly. \r\n\r\nIf you’ve ever wondered how certain businesses seem to attract leads on autopilot, today, I’ll break down the step-by-step process so you can do the same.\r\n\r\nLet\'s dive in: \r\nhttps://marketersmentor.com/unlimited-traffic.php?refer=kashiftech.com\r\n\r\nTalk soon,\r\nJayrn\r\n\r\n\r\n\r\n\r\n\r\n\r\nUnsubscribe: \r\nhttps://marketersmentor.com/unsubscribe.php?d=kashiftech.com', NULL, 1, 2, '2025-03-12 21:33:47', '2025-03-12 21:33:47', NULL),
-(24, 1, 'Mike Jesse De Vries', 19, 'Collaboration Request', 'Hey, \r\n \r\nThis is Mike from Monkey Digital, \r\nI am reaching out about a mutual collaboration. \r\n \r\nHow would you like to place our banners on your website and redirect via your unique affiliate link towards popular SEO solutions from our business? \r\n \r\nThis way, you earn a solid 35% profit share, every month from any sales that come in from your site. \r\n \r\nThink about it, all businesses benefit from SEO, so this is a huge opportunity. \r\n \r\nWe already have 12k+ affiliates and our payments are processed every month. \r\nRecently, we distributed a significant amount in affiliate earnings to our affiliates. \r\n \r\nIf interested, kindly contact us here: \r\nhttps://monkeydigital.co/affiliates-whatsapp/ \r\n \r\nOr register today: \r\nhttps://www.monkeydigital.co/join-our-affiliate-program/ \r\n \r\nLooking forward, \r\nMike Jesse De Vries\r\n \r\nPhone/whatsapp: +1 (775) 314-7914', NULL, 1, 2, '2025-03-15 00:17:08', '2025-03-15 00:17:08', NULL),
-(25, 1, 'Mike Olivier Thomas', 20, 'Improve your website`s ranks totally free', 'Hi there, \r\n \r\nWhile checking your kashiftech.com for its ranks, I have noticed that \r\nthere are some toxic links pointing towards it. \r\n \r\nGrab your free clean up and improve ranks in no time \r\nhttps://www.professionalseocleanup.com/ \r\n \r\nAsk us how we do it: \r\nhttps://www.professionalseocleanup.com/whatsapp/ \r\n \r\nRegards \r\nMike Olivier Thomas\r\n \r\nPhone: +1 (855) 221-7591', NULL, 1, 2, '2025-03-15 05:00:09', '2025-03-15 05:00:09', NULL),
-(26, 1, 'Mike Johan Goossens', 19, 'Grow Your Website Traffic with Geo-Targeted Social Ads – Only $10 for 10K Visits!', 'Dear Webmaster, \r\n \r\nI wanted to connect with something that could seriously boost your website’s visitor count. We work with a trusted ad network that allows us to deliver authentic, location-based social ads traffic for just $10 per 10,000 visits. \r\n \r\nThis isn\'t junk clicks—it’s real visitors, tailored to your chosen market and niche. \r\n \r\nWhat you get: \r\n \r\n10,000+ real visitors for just $10 \r\nGeo-targeted traffic for any country \r\nLarger traffic packages available based on your needs \r\nTrusted by SEO experts—we even use this for our SEO clients! \r\n \r\nWant to give it a try? Check out the details here: \r\nhttps://www.monkeydigital.co/product/country-targeted-traffic/ \r\n \r\nOr connect instantly on WhatsApp: \r\nhttps://monkeydigital.co/whatsapp-us/ \r\n \r\nLooking forward to helping you grow! \r\n \r\nBest, \r\nMike Johan Goossens\r\n \r\nPhone/whatsapp: +1 (775) 314-7914', NULL, 1, 2, '2025-03-15 14:21:54', '2025-03-15 14:21:54', NULL),
-(27, 1, 'Kashisf zahra', 21, 'Love you Karna ha', 'Kashisf Ali will you merry me I really love you baby', NULL, 1, 2, '2025-03-18 12:28:11', '2025-03-18 12:28:11', NULL),
-(28, 1, 'Jayrn Marques', 22, 'Most Entrepreneurs Struggle Because of This', 'Hey Kashiftech,\r\n\r\nThe brutal truth about business success is this:\r\n\r\nHard work alone won’t make you rich.\r\n\r\nYou can hustle 24/7, post on social media, and follow the “trendy” marketing tactics…\r\n\r\n������ Yet STILL struggle to grow your business.\r\n\r\nWhy? Because most entrepreneurs ignore what actually makes money.\r\n\r\nDan Kennedy changed everything for me.\r\n\r\nDan is the go-to guy for the world’s top entrepreneurs when they need to:\r\n✅ Make more sales without relying on social media\r\n✅ Turn cold leads into buyers—FAST\r\n✅ Use no B.S. marketing strategies that actually work\r\n\r\nNow, you can access Dan’s private business insights inside his No B.S. Newsletter…\r\n\r\n������ For a limited time, you can get it (+ exclusive bonuses) at a huge discount.\r\n\r\n⏳ This offer disappears soon—don’t miss it:\r\n\r\n������ Grab it now\r\nhttps://marketersmentor.com/marketing-strategies.php?refer=kashiftech.com&real=yes\r\n\r\nSee you inside,\r\nJayrn\r\n\r\n\r\nUnsubscribe: \r\nhttps://marketersmentor.com/unsubscribe.php?d=kashiftech.com&real=yes', NULL, 1, 2, '2025-03-21 07:30:38', '2025-03-21 07:30:38', NULL),
-(29, 1, 'Will M', 23, 'Your Competitors Are Winning – Here’s How to Beat Them!', 'Your competitors are raking in leads while your business stays buried in search results. High-DA backlinks + geo-targeted content = more visibility, more calls, more sales. Don’t let another customer slip away—lock in your SEO boost now!\r\n\r\nVisit: https://bit.ly/seogurunow now', NULL, 1, 2, '2025-03-21 09:54:48', '2025-03-21 09:54:48', NULL),
-(30, 1, 'Mike Tobias Janssens', 24, 'Not Getting Results? Try This Method', 'Greetings, \r\n \r\nI realize that many struggle to grasp that search engine optimization takes patience and a methodical monthly approach. \r\n \r\nSadly, very few site owners have the patience to witness the progressive yet impactful gains that can transform their business. \r\n \r\nWith constant search engine updates, a steady, long-term strategy is critical for achieving a high return on investment. \r\n \r\nIf you see this as the most effective strategy, give us a try! \r\n \r\nCheck out Our Custom SEO Plans \r\nhttps://www.digital-x-press.com/unbeatable-seo/ \r\n \r\nContact Us on Live Support \r\nhttps://www.digital-x-press.com/whatsapp-us/ \r\n \r\nWe offer unbeatable results for your investment, and you won’t regret choosing us as your growth partner. \r\n \r\nThank you, \r\nDigital X SEO Experts \r\nPhone/WhatsApp: +1 (844) 754-1148', NULL, 1, 2, '2025-03-22 20:13:50', '2025-03-22 20:13:50', NULL),
-(31, 1, 'Rubina Lage', 25, 'Is this useful to you?', 'Hey there,\r\n\r\nOur CEO asked me to reach out to you.\r\n\r\nWe’re running a special campaign to help ecom business owners like you save time and scale efficiently by offloading time-consuming tasks.\r\n\r\nAt Offshore Wolf, we make it ridiculously easy (and affordable) to delegate the tasks that slow you down so you can scale faster without burning out.\r\n\r\nHere’s what we offer:\r\nA full-time, highly skilled VA for just $199/week – Yup, not a typo!\r\n\r\nWe do all the heavy lifting – Recruiting, training, and managing your VA so you don’t have to.\r\n\r\nWork in your time zone – Your VA will sync with your schedule seamlessly.\r\n\r\n50+ happy clients – Including brands like 50Coach, DigitalChef, Printivity, and contractors for Sony, Barclays, and EasyJet.\r\n\r\nImagine how much time you’d get back if you could delegate those repetitive tasks and focus on scaling. Whether it’s admin, customer support, or marketing help, we’ve got the right VA for you.\r\n\r\nWant to learn more? Just reply \"YES\", and I’ll send over the details.\r\n\r\nLooking forward to chatting!\r\n\r\nBest,\r\nRubina\r\nOffshore Wolf (Offshorewolf dot com)', NULL, 1, 2, '2025-03-23 13:25:59', '2025-03-23 13:25:59', NULL),
-(32, 1, 'Muhammad Ali', 26, 'Please Control The Brakes', 'This is testing.', NULL, 1, 2, '2025-03-25 08:23:37', '2025-03-25 08:23:37', NULL),
-(33, 1, 'Jayrn Marques', 27, 'How This Brand Sold Out in 48 Hours (Without Ads)', 'Hey Kashiftech,\r\n\r\nImagine launching a product and selling out in 48 hours—without spending a fortune on ads. Sounds like a dream, right?\r\n\r\nThat’s exactly what happened to EcoStride, a sustainable sneaker brand. Instead of relying only on ads, they used a press release to get featured on Yahoo Finance, Google News, and 150+ media sites.\r\n\r\n✅ 11,400+ visitors in 5 days\r\n✅ 300+ sales before ads even started\r\n✅ 100% free organic traffic from media coverage\r\n\r\nAnd the best part? Writing a press release used to be time-consuming and difficult, but now EIN Presswire’s AI Press Release Generator makes it fast and effortless.\r\n\r\nJust enter your details, let AI craft a professional press release, and distribute it to top-tier media instantly.\r\n\r\nLaunch your next product the smart way.\r\n\r\nTry It Today: https://marketersmentor.com/sold-out-product-launch.php?refer=kashiftech.com&real=yes\r\n\r\nTo your success,\r\nJayrn\r\n\r\n\r\nUnsubscribe: \r\nhttps://marketersmentor.com/unsubscribe.php?d=kashiftech.com&real=yes', NULL, 1, 2, '2025-03-26 13:10:52', '2025-03-26 13:10:52', NULL),
-(34, 1, 'Kashif Ali', 1, 'Kashif Experience Total', '**Professional Experience**\r\n\r\n**Full Stack Web Developer, Softlinks Islamabad (July 2024 - Present)**\r\n\r\n- Developed and maintained multiple Laravel applications, ensuring high performance, scalability, and security.\r\n- Collaborated with cross-functional teams to design and implement new features, resulting in a 25% increase in user engagement.\r\n- Implemented automated testing and deployment scripts, reducing deployment time by 50%.\r\n\r\n**PHP Laravel Developer, Bitsoftsol Multan (August 2023 - April 2024)**\r\n\r\n- Contributed to the development of a large-scale e-commerce platform, utilizing Laravel and MySQL.\r\n- Implemented a caching mechanism, resulting in a 30% reduction in page load times.\r\n- Collaborated with the QA team to identify and resolve bugs, ensuring a high-quality product.\r\n\r\n**PHP Laravel Developer, DevStudio (February 2022 - July 2023)**\r\n\r\n- Developed and maintained multiple web applications, utilizing Laravel, MySQL, and HTML/CSS.\r\n- Implemented a RESTful API, enabling seamless data exchange between applications.\r\n- Collaborated with the design team to implement a new UI/UX design, resulting in a 20% increase in user satisfaction.\r\n\r\n**PHP Laravel Developer, Deviotech Lahore (October 2020 - January 2022)**\r\n\r\n- Contributed to the development of a custom CRM system, utilizing Laravel and MySQL.\r\n- Implemented a reporting module, enabling users to generate custom reports.\r\n- Collaborated with the QA team to identify and resolve bugs, ensuring a high-quality product.\r\n\r\n**Web Developer, Codex IT Solutions (April 2020 - September 2020)**\r\n\r\n- Developed and maintained web applications, focusing on performance and scalability.\r\n- Assisted in integrating third-party APIs for payment processing.\r\n- Provided maintenance and support for existing applications.\r\n\r\n**Web Developer, Soft Logix (August 2019 - March 2020)**\r\n\r\n- Worked on various client projects, developing dynamic websites using Laravel.\r\n- Implemented responsive design techniques for optimal performance on mobile devices.\r\n- Collaborated with team members to debug and enhance existing applications.\r\n\r\n**Web Developer, Comtech4All (August 2017 - July 2019)**\r\n\r\n- Gained hands-on experience in web development, working on small to medium-scale projects.\r\n- Learned and applied best practices for front-end and back-end development.\r\n- Built and maintained client websites, ensuring timely delivery and performance optimization.\r\n\r\n**Total Experience: 7 Years 8 Months**', NULL, 1, 2, '2025-03-27 05:35:33', '2025-03-27 05:35:33', NULL),
-(35, 1, 'Devin Hill', 28, 'Your Bitcoin Just Got More Valuable—Here’s Why!', 'We possess a large amount of BTC kept in offline storage , and we\'re one of many bidders that were awarded exclusive contracts for the U.S. Strategic Bitcoin Reserve. Check this site to track how current legislation is tracking https://bitcoinreservemonitor.com\r\n\r\nWe require investors to work with us operationally fulfill our part of the agreement. We\'ve got a limited amount BTC that we purchased a long time back. . .so, the amount of claims are limited. Claims are in units of 100 USD or 1000 USD. The initial claim is held for ten days , after which your payout will be $200 or $2,000 - withdraw at any time and for any amount later on. You can choose to keep compounding your earnings every ten days up to three months. Act now, since we\'re covering any associated fees and taxes by handling costs on our side on our end. Reach out to us to start.\r\n\r\nNate\r\n+1 (602) 551-6607 Text and WhatsApp\r\n\r\nnathan.unger@sharepoint.us.com\r\n\r\nUnger Cleaning Products | Cleaning Tools for Professionals\r\n\r\nEuropean company now manufacturing solely in the US!', NULL, 1, 2, '2025-03-28 04:29:14', '2025-03-28 04:29:14', NULL),
-(36, 1, 'Kashif', 7, 'Test', 'Test message Test message Test message Test message', NULL, 1, 2, '2025-03-28 19:29:33', '2025-03-28 19:29:33', NULL),
-(37, 1, 'Hans Iliff', 24, 'Invest in Your Success with Our Monthly SEO Strategy', 'Greetings,  \r\n\r\nI know that many have difficulty to grasp that organic ranking growth is a long-term game and a well-planned ongoing investment.  \r\n\r\nSadly, very few webmasters have the patience to witness the gradual yet impactful results that can elevate their company.  \r\n\r\nWith Google’s evolving algorithms, a consistent, commitment to SEO is essential for securing a positive ROI.  \r\n\r\nIf you see this as the most effective strategy, give us a try!  \r\n\r\nDiscover Our Monthly SEO Services  \r\nhttps://www.digital-x-press.com/unbeatable-seo/  \r\n\r\nChat With Us on WhatsApp  \r\nhttps://www.digital-x-press.com/whatsapp-us/  \r\n\r\nWe offer unbeatable results for your SEO spend, and you will appreciate choosing us as your digital agency.  \r\n\r\nBest regards,  \r\nDigital X SEO Experts  \r\nPhone/WhatsApp: +1 (844) 754-1148', NULL, 1, 2, '2025-03-29 23:43:15', '2025-03-29 23:43:15', NULL),
-(38, 1, 'Jeffry Dawson', 29, 'This AI Hack Pays $69 Over & Over Again', 'Hi Kashiftech,\r\n\r\nImagine waking up, grabbing your phone, and seeing $69 payments rolling in… over and over again.\r\n\r\nNo selling. No ads. No complicated tech. Just uploading simple 15-second clips and getting paid like clockwork.\r\n\r\n=>> https://ai-money-printer.blogspot.com\r\n\r\nSounds crazy, right? But it’s already happening.\r\n\r\nFor months, a handful of insiders have been quietly cashing in on a hidden profit loophole that taps into the explosive power of short viral clips, the same kind of videos flooding Instagram, TikTok, and YouTube right now.\r\n\r\nNow, for the first time, we’re revealing exactly how it works and how you can start making $69 over and over again as soon as today.\r\n\r\n=>> https://ai-money-printer.blogspot.com\r\n\r\nBut you have to act fast.\r\n\r\nThis AI-powered profit system won’t stay open for long.\r\n\r\nBest,\r\n[Jeffry Dawson]', NULL, 1, 2, '2025-03-30 00:02:43', '2025-03-30 00:02:43', NULL),
-(39, 1, 'Mike Frank Andersen', 30, 'Semrush links for kashiftech.com', 'Greetings, \r\n \r\nGetting some bunch of links pointing to kashiftech.com could have no value or negative impact for your site. \r\n \r\nIt really doesn’t matter the total external links you have, what is crucial is the number of search terms those platforms are optimized for. \r\n \r\nThat is the critical thing. \r\nNot the fake Domain Authority or ahrefs DR score. \r\nThat anyone can do these days. \r\nBUT the volume of high-traffic search terms the sites that send backlinks to you rank for. \r\nThat’s the bottom line. \r\n \r\nHave such links redirect to your site and you will ROCK! \r\n \r\nWe are offering this powerful service here: \r\nhttps://www.strictlydigital.net/product/semrush-backlinks/ \r\n \r\nNeed more details, or want clarification, chat with us here: \r\nhttps://www.strictlydigital.net/whatsapp-us/ \r\n \r\nKind regards, \r\nMike Frank Andersen\r\n \r\nstrictlydigital.net \r\nPhone/WhatsApp: +1 (877) 566-3738', NULL, 1, 2, '2025-03-30 10:27:19', '2025-03-30 10:27:19', NULL),
-(40, 1, 'Mike Walter Jensen', 9, 'Find kashiftech.com SEO Issues totally free', 'Hi, \r\nWorried about hidden SEO issues on your website? Let us help — completely free. \r\nRun a 100% free SEO check and discover the exact problems holding your site back from ranking higher on Google. \r\n \r\nRun Your Free SEO Check Now \r\nhttps://www.speed-seo.net/check-site-seo-score/ \r\n \r\nOr chat with us and our agent will run the report for you: https://www.speed-seo.net/whatsapp-with-us/ \r\n \r\nBest regards, \r\n \r\n \r\nMike Walter Jensen\r\n \r\nSpeed SEO Digital \r\nEmail: info@speed-seo.net \r\nPhone/WhatsApp: +1 (833) 454-8622', NULL, 1, 2, '2025-04-06 05:50:10', '2025-04-06 05:50:10', NULL),
-(41, 1, 'Prestonnep', 31, 'New music', 'Hello, \r\n \r\nExclusive promo quality music for DJs https://0daymusic.org \r\nMP3/FLAC, label, music videos. Fans giving you full access to exclusive electronic, rap, rock, trance, dance... music. \r\n \r\n0day team.', NULL, 1, 2, '2025-04-06 07:52:36', '2025-04-06 07:52:36', NULL),
-(42, 1, 'Mike Maqnus Nilsson', 32, 'Limited SEO Opportunities Open – Start Your Monthly SEO Boost Now', 'Hi, \r\n \r\nIf you’re serious about grow your search traffic, you need an ongoing SEO strategy. \r\n \r\nAt Hilkom Digital, we deliver sustainable growth through tailored SEO strategies. Our monthly plans are engineered for results and designed for businesses that want real results — not just numbers that look good but don’t convert. \r\n \r\nDue to increased interest and our dedicated workflow, we can only work with a limited number of clients each month. This ensures you get our full expertise. \r\n \r\n______________ \r\nYour SEO Plan Covers: \r\n•	Complete technical & content SEO \r\n•	DA50+ backlink building \r\n•	Smart keyword focus and tracking \r\n•	Toxic link cleanup & disavow file handling \r\n•	Accelerated indexing to boost visibility \r\n•	International SEO options \r\n______________ \r\n \r\nFew plans left — reserve your monthly SEO plan now: \r\nhttps://www.hilkom-digital.com/seo-services/ \r\n \r\nHave questions? Chat with an SEO expert here: \r\nhttps://www.hilkom-digital.com/whatsapp-us/ \r\n \r\nLet’s scale your rankings, bring leads, and build your success — the sustainable way. \r\n \r\nBest regards, \r\nMike Maqnus Nilsson\r\n \r\nHilkom Digital \r\nPhone/WhatsApp: +1 (855) 221-7591 \r\nsupport@hilkom-digital.com', NULL, 1, 2, '2025-04-08 03:05:20', '2025-04-08 03:05:20', NULL),
-(43, 1, 'Jayrn Marques', 33, 'The Magic of Speaking Directly to Your Leads', 'Dan Kennedy often uses a simple analogy to illustrate a common marketing mistake:\r\n\r\nImagine walking into a store and being swarmed by a salesperson who starts pitching everything they sell—refrigerators, running shoes, blenders—without once asking what you’re actually looking for. It’s frustrating, ineffective… and exactly what most businesses do in their marketing.\r\n\r\nInstead of speaking directly to prospects’ specific needs or concerns, most businesses blast the same generic message to everyone. And according to Dan, that’s a surefire way to water down your impact—and your profits.\r\n\r\nHe points to Weight Watchers as a prime example.\r\n\r\nThey serve two distinct types of customers:\r\n\r\nHealth Buyers – motivated by medical reasons, like a doctor’s orders or an upcoming surgery.\r\n\r\nEvent-Driven Buyers – focused on short-term goals, like fitting into a dress for a wedding or looking good for a vacation.\r\n\r\nThese two audiences have completely different motivations. One wants to avoid a health crisis. The other wants to feel confident on the beach. But for years, Weight Watchers hesitated to segment their leads and tailor their message accordingly—despite the fact that segmentation could’ve easily doubled their effectiveness.\r\n\r\nAnd this issue isn’t limited to weight loss companies.\r\n\r\nAt Magnetic Marketing, Dan Kennedy and his team have identified seven distinct interest categories among their audience—from wealth attraction to direct marketing and beyond. If they tried to send one message to all seven groups, they’d fail to deeply connect with any of them.\r\n\r\nDan compares this to politics: voters often care about one primary issue. Your leads are no different. Some are driven by fear. Others by ambition. And others by a very specific short-term goal.\r\n\r\nConsider three different prospects in the finance space:\r\n\r\nOne fears running out of money in retirement.\r\n\r\nAnother wants to protect wealth for their grandchildren.\r\n\r\nA third wants to maximize investment returns.\r\n\r\nA single message trying to appeal to all three ends up resonating with none of them.\r\n\r\nThat’s why segmentation is so powerful—and profitable.\r\n\r\nBy tailoring messages to meet prospects where they are mentally and emotionally, businesses instantly build trust, create relevance, and position themselves as the only solution that truly gets the customer.\r\n\r\nDan outlines a simple framework for doing this:\r\n\r\n1.Use a Self-Select Mechanism\r\nAsk your audience questions like:\r\n“Are you looking to grow your wealth?”\r\n“Do you want to protect your assets for your family?”\r\n\r\n2.Tailor the Follow-Up\r\nOnce they identify their concern, follow up with stories, testimonials, and offers that directly address it.\r\n\r\n3.Watch Response Rates Soar\r\nA personalized message turns cold leads into warm conversations—and buyers.\r\n\r\nDan stresses this strategy works in every industry. He’s seen it boost performance in colleges, financial firms, info-product businesses, and even local service providers.\r\n\r\nTake colleges, for example. A dad wants to know his kid will get a job after graduation. A mom wants safety and solid food options. The student just wants to know they’ll make friends. Smart schools speak directly to each one—and enrollment improves dramatically.\r\n\r\nIf segmentation sounds like a mystery to you, Dan lays it all out in plain English in The No B.S. Guide to Direct Marketing. In it, he reveals:\r\n\r\nThe art of message-to-market match—how to say the right thing to the right people.\r\n\r\nHow to build self-select mechanisms that get prospects to reveal what they want—without a survey.\r\n\r\nHis exact process for creating segmented campaigns that maximize every dollar spent.\r\n\r\n������ Click Here to Claim Your FREE Copy of The No B.S. Guide to Direct Marketing + $6,193 in Exclusive Bonuses:\r\n\r\nhttps://marketersmentor.com/direct-marketing-book.php?refer=kashiftech.com&real=yes\r\n\r\nDan Kennedy has watched businesses transform overnight simply by getting smarter with how they segment and speak to their audience.\r\n\r\nDon’t waste another marketing dollar talking to everyone. Start speaking to someone—the right someone—and watch your results soar.\r\n\r\nDedicated to Multiplying Your Income,\r\n\r\nGloria\r\n\r\nP.S. Dan always reminds his clients:\r\nWhoever can spend the most to acquire a customer—wins.Segmentation helps you do just that… profitably.\r\n\r\n\r\nUnsubscribe: \r\nhttps://marketersmentor.com/unsubscribe.php?d=kashiftech.com&real=yes', NULL, 1, 2, '2025-04-09 02:22:55', '2025-04-09 02:22:55', NULL),
-(44, 1, 'Clarksquaf', 34, 'A balancing instrument suitable for crushers, fans, mulchers, augers on combines, shafts, centrifuges, turbines, and various other machinery.', ' Portable balancer & Vibration analyzer Balanset-1A  \r\n \r\n Description:  \r\n   \r\n \r\nPrice: \r\n7500 PLN / 44250 CZK / 1751 EUR / 715000 HUF Full kit  Order on Allegro  \r\n6700 PLN / 39550 CZK / 1561 EUR / 640000 HUF OEM kit  Order on Allegro  \r\n \r\n Get a €100 discount on the official website vibromera.eu with promo code VB100  \r\n \r\n Details of the Balanset-1A  \r\n \r\n The Balanset-1A is a highly portable, dual-channel device tailored for rotor balancing and vibration analysis. It\'s ideally suited for balancing rotors like crushers, fans, mulchers, choppers, shafts, centrifuges, turbines, and other rotating machines.  \r\n \r\n Main Functions and Features  \r\n \r\n Vibrometer Mode  \r\n \r\n Tachometer: Accurate measurement of rotational speed (RPM).  \r\n Phase: Identifies the phase angle of vibration signals for accurate analysis.  \r\n 1x Vibration: Measurement and analysis of the dominant frequency component.  \r\n FFT Spectrum: Detailed analysis of the vibration signal\'s frequency spectrum.  \r\n Overall Vibration: Monitors overall vibration levels.  \r\n Measurement Log: Stores data for subsequent analysis.  \r\n \r\n Balancing Function  \r\n \r\n Single-Plane Balancing: Adjusts rotors in a single plane to reduce vibration.  \r\n Two-Plane Balancing: Dynamic rotor balancing in two planes.  \r\n Polar Diagram: Represents imbalance on a polar chart for precise correction weight placement.  \r\n Last Session Recovery: Enables continuation of the previous balancing session.  \r\n Tolerance Calculator (ISO 1940): Calculates allowable imbalance according to ISO 1940 standards.  \r\n Grinding Wheel Balancing: Corrects grinding wheel imbalance with three counterweights.  \r\n \r\n Charts and Graphs  \r\n \r\n Overall Graphs: Visualizes overall vibration levels.  \r\n 1x Graphs: Shows vibration characteristics at the primary frequency.  \r\n Harmonic Graphs: Analyzes the presence and impact of harmonic frequencies.  \r\n Spectral Graphs: Provides a detailed view of the frequency spectrum for analysis.  \r\n \r\n Supplementary Functions  \r\n \r\n Archive: Save and access past balancing sessions.  \r\n Reports: Generate detailed balancing reports.  \r\n Rebalancing: Simplifies rebalancing using stored data.  \r\n Serial Production Balancing: Designed for balancing rotors in serial manufacturing.  \r\n \r\n Included with the Device  \r\n \r\n The Balanset-1A package includes:  \r\n \r\n Measurement block with USB connection.  \r\n Two vibration transducers.  \r\n Optical sensor (laser tachometer) with magnetic base.  \r\n Digital weighing scales.  \r\n Software (Note: Laptop not included, available as an additional order).  \r\n Plastic carrying case.  \r\n \r\nPrice: \r\n7500 PLN / 44250 CZK / 1751 EUR / 715000 HUF Full kit  Order on Allegro  \r\n6700 PLN / 39550 CZK / 1561 EUR / 640000 HUF OEM kit  Order on Allegro  \r\n \r\n Get a €100 discount on the official website vibromera.eu with promo code VB100', NULL, 1, 2, '2025-04-11 19:31:30', '2025-04-11 19:31:30', NULL),
-(45, 1, 'Noreen Sipes', 35, 'Hello kashiftech.com Owner.', 'Hey there,\r\n\r\nI noticed you might be losing customers because you\'re not as active on TikTok.\r\nYou can see that some of your competitors are crushing it at TikTok - Example here (https://vm.tiktok.com/ZSMnGh7jq/).\r\n\r\n\r\nI would be happy to help you with your socials! \r\nMy team and I have over 5.000 positive reviews from our US customers on Fiverr.\r\nhttps://redditfwd.com/Fiverr\r\n\r\nI can even offer you a free trial for a week if you want to see what we can do for your business.\r\n\r\nLet me know.', NULL, 1, 2, '2025-04-12 07:16:19', '2025-04-12 07:16:19', NULL),
-(46, 1, 'Melody Finckh', 36, 'Hello kashiftech.com Owner.', 'Hi,\r\n\r\nWant to earn $100 + 50% commission from your site?\r\n\r\nWe’re AdKings, a top-rated marketing agency, and we’re offering to pay site owners like you for ad space—plus revenue share from every sale you help drive.\r\n\r\nGetting started takes 2 minutes:\r\n\r\n1. Sign up through GetCreators.co (redirects to our Fiverr page)  \r\n2. Reply with your signup email  \r\n3. We’ll send the $100 and get rolling  \r\n\r\nLet’s partner up!', NULL, 1, 2, '2025-04-12 10:59:50', '2025-04-12 10:59:50', NULL),
-(47, 1, 'Faith Merritt', 37, 'Real Creators, Real Results', 'Get more clients with Authentic Social Media Advertising!\r\n\r\nOur team of 6 Social Media creators (USA, UK, South Africa) delivers real, relatable content that drives new customers and sales to your site!\r\n\r\n- 20-second Stories or 60-second polished videos\r\n\r\n- Pro editing, voiceovers, and scripts\r\n\r\n- Budget-friendly packages (Starter, Growth, Premium)\r\n\r\nLet’s get you more clients! \r\nCheck our services at https://ugccontentcreator.net/', NULL, 1, 2, '2025-04-13 08:46:39', '2025-04-13 08:46:39', NULL),
-(48, 1, 'Mike Dieter Laurent', 19, 'Collaboration Request', 'Hey, \r\n \r\nThis is Mike from Monkey Digital, \r\nI am getting in touch to discuss a great business deal. \r\n \r\nHow would you like to feature our promotions on your website and redirect via your custom referral link towards high-demand products from our platform? \r\n \r\nThis way, you make a solid 35% profit share, every month from any sales that are made from your website. \r\n \r\nThink about it, all businesses need SEO, so this is a massive opportunity. \r\n \r\nWe already have 12k+ affiliates and our payouts are processed on time. \r\nRecently, we reached over $27,000 in commissions to our partners. \r\n \r\nIf this sounds good, kindly contact us here: \r\nhttps://monkeydigital.co/affiliates-whatsapp/ \r\n \r\nOr sign up today: \r\nhttps://www.monkeydigital.co/join-our-affiliate-program/ \r\n \r\nBest Regards, \r\nMike Dieter Laurent\r\n \r\nPhone/whatsapp: +1 (775) 314-7914', NULL, 1, 2, '2025-04-13 14:15:34', '2025-04-13 14:15:34', NULL),
-(49, 1, 'Kate McLeay', 38, '������ The World\'s First & Only A.I. Viral Video Quiz Builder App For Marketers!', 'Hi Kashiftech,\r\n\r\nThese short, simple and lame video\r\nquizzes are breaking the internet..\r\n\r\n- 1M views on a DOG CARE quiz\r\n- 3.6M views on a GK quiz\r\n- 4.5M views on a MOVIE quiz\r\n- 1.1M views on MAKEUP quiz\r\n- 921k views on a M0NEY quiz\r\n\r\nWant to create 100s of these \r\nViral \"AI Quiz Videos\" in minutes \r\nwith just few clicks & generate millions \r\nof visitors/m - WITH NO tech skills,\r\nNO subs, NO followers, NO ads, \r\nNO SEO.. ???\r\n\r\n==> Unlock *AI Video Quizzes* Now\r\n=> https://viral-quiz-ai.blogspot.com\r\n\r\nTHE BACKSTORY!!\r\n\r\nMy friend Ram have been EXPLOITING\r\nYoutube Shorts & Instagram Reels to \r\ngenerate viral, organic traffic for\r\npast 12 months...\r\n\r\nBut then he found something \r\nBIGGER & BETTER..\r\n\r\nHe started using the **SECRET \r\n3E + Proprietary AI Tech** to create \r\nstunning, engaging, addictive video \r\nquizzes..\r\n\r\nAnd with it, he started getting MILLIONS \r\nof visitors/m, sales, commissions and \r\nfollowers WITHOUT any effort or money.\r\n\r\n=> https://viral-quiz-ai.blogspot.com\r\n\r\nWith this revolutionary platform, you \r\ncan create 100s of these viral quiz \r\nvideos with zero effort in just minutes\r\nand go viral on YouTube, Instagram,\r\nTikTok and more..\r\n\r\nYou get 10x more sales, reach, followers, \r\nand engagement... \r\n\r\nLITERALLY handful of people know\r\nabout it, 99.95% of marketers have no \r\nidea how to use it, how to make money \r\nwith it..\r\n\r\nBut now you can become one of them.. \r\nGet the Viral Video Quiz app + learn \r\nall his methods, strategies and hacks \r\nfor just one LOW one-time price.\r\n\r\n=> Get ViralQuiz AI For A Low One-Time \r\nPrice Now \r\n=> https://viral-quiz-ai.blogspot.com\r\n\r\nDon\'t miss out on this opportunity. \r\n\r\nBest,\r\n[Kate McLeay]', NULL, 1, 2, '2025-04-15 02:01:56', '2025-04-15 02:01:56', NULL);
+(1, 1, 'Kashif Ali', 1, 'Leave application', 'HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE \r\n\r\nHELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE \r\n\r\nHELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE HELLO MESSAGE', 2, 1, 2, '2025-03-04 02:00:13', '2025-03-04 02:00:13', NULL);
 
 -- --------------------------------------------------------
 
@@ -8229,44 +8137,7 @@ CREATE TABLE `resume_website_contact_emails` (
 --
 
 INSERT INTO `resume_website_contact_emails` (`id`, `job_position_id`, `sort_number`, `contact_email`, `is_active`, `created_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, NULL, 'alikashi54321@gmail.com', 1, 2, '2025-03-04 02:00:13', '2025-03-04 02:00:13', NULL),
-(2, 1, NULL, 'klsdfj@gmail.com', 1, 2, '2025-03-07 14:42:19', '2025-03-07 14:42:19', NULL),
-(3, 1, NULL, 'fatima@gmail.com', 1, 2, '2025-03-08 04:08:49', '2025-03-08 04:08:49', NULL),
-(4, 1, NULL, 'fatimakashif@gmail.com', 1, 2, '2025-03-08 04:11:08', '2025-03-08 04:11:08', NULL),
-(5, 1, NULL, 'testemail@gmail.com', 1, 2, '2025-03-08 04:15:50', '2025-03-08 04:15:50', NULL),
-(6, 1, NULL, 'test@gmail.com', 1, 2, '2025-03-08 05:07:33', '2025-03-08 05:07:33', NULL),
-(7, 1, NULL, 'kashif@gmail.com', 1, 2, '2025-03-08 05:18:32', '2025-03-08 05:18:32', NULL),
-(8, 1, NULL, 'john@gmail.com', 1, 2, '2025-03-08 13:04:52', '2025-03-08 13:04:52', NULL),
-(9, 1, NULL, 'info@speed-seo.net', 1, 2, '2025-03-08 14:33:54', '2025-03-08 14:33:54', NULL),
-(10, 1, NULL, 'tabassum@gmail.com', 1, 2, '2025-03-08 15:14:51', '2025-03-08 15:14:51', NULL),
-(11, 1, NULL, 'kashifali@gmail.com', 1, 2, '2025-03-08 16:02:01', '2025-03-08 16:02:01', NULL),
-(12, 1, NULL, 'kashiftech@gmail.com', 1, 2, '2025-03-08 16:03:42', '2025-03-08 16:03:42', NULL),
-(13, 1, NULL, 'johndoe@gmail.com', 1, 2, '2025-03-08 16:12:53', '2025-03-08 16:12:53', NULL),
-(14, 1, NULL, 'amandaKnilewem2@gmail.com', 1, 2, '2025-03-08 22:45:00', '2025-03-08 22:45:00', NULL),
-(15, 1, NULL, 'nomin.momin+101t6@mail.ru', 1, 2, '2025-03-09 17:24:27', '2025-03-09 17:24:27', NULL),
-(16, 1, NULL, 'kelson.perry@outlook.com', 1, 2, '2025-03-12 07:00:55', '2025-03-12 07:00:55', NULL),
-(17, 1, NULL, 'ocopesuq299@gmail.com', 1, 2, '2025-03-12 07:50:46', '2025-03-12 07:50:46', NULL),
-(18, 1, NULL, 'duppstadt.robyn@gmail.com', 1, 2, '2025-03-12 21:33:47', '2025-03-12 21:33:47', NULL),
-(19, 1, NULL, 'mike@monkeydigital.co', 1, 2, '2025-03-15 00:17:08', '2025-03-15 00:17:08', NULL),
-(20, 1, NULL, 'info@professionalseocleanup.com', 1, 2, '2025-03-15 05:00:09', '2025-03-15 05:00:09', NULL),
-(21, 1, NULL, 'tabassumkashif@gmail.com', 1, 2, '2025-03-18 12:28:11', '2025-03-18 12:28:11', NULL),
-(22, 1, NULL, 'jackson.chapdelaine42@msn.com', 1, 2, '2025-03-21 07:30:38', '2025-03-21 07:30:38', NULL),
-(23, 1, NULL, 'julia.kimber@gmail.com', 1, 2, '2025-03-21 09:54:48', '2025-03-21 09:54:48', NULL),
-(24, 1, NULL, 'info@digital-x-press.com', 1, 2, '2025-03-22 20:13:50', '2025-03-22 20:13:50', NULL),
-(25, 1, NULL, 'rubina.lage12@gmail.com', 1, 2, '2025-03-23 13:25:59', '2025-03-23 13:25:59', NULL),
-(26, 1, NULL, 'ali558592@gmail.com', 1, 2, '2025-03-25 08:23:37', '2025-03-25 08:23:37', NULL),
-(27, 1, NULL, 'eddy.moe@outlook.com', 1, 2, '2025-03-26 13:10:52', '2025-03-26 13:10:52', NULL),
-(28, 1, NULL, 'n.wnp.h.oeni.x@googlemail.com', 1, 2, '2025-03-28 04:29:13', '2025-03-28 04:29:13', NULL),
-(29, 1, NULL, 'dawson.jeffry@gmail.com', 1, 2, '2025-03-30 00:02:43', '2025-03-30 00:02:43', NULL),
-(30, 1, NULL, 'info@strictlydigital.net', 1, 2, '2025-03-30 10:27:19', '2025-03-30 10:27:19', NULL),
-(31, 1, NULL, 'prestondjs@gmail.com', 1, 2, '2025-04-06 07:52:36', '2025-04-06 07:52:36', NULL),
-(32, 1, NULL, 'info@hilkom-digital.com', 1, 2, '2025-04-08 03:05:20', '2025-04-08 03:05:20', NULL),
-(33, 1, NULL, 'gloria.paramor@gmail.com', 1, 2, '2025-04-09 02:22:55', '2025-04-09 02:22:55', NULL),
-(34, 1, NULL, 'shasemiskh@gazeta.pl', 1, 2, '2025-04-11 19:31:30', '2025-04-11 19:31:30', NULL),
-(35, 1, NULL, 'sipes.noreen@gmail.com', 1, 2, '2025-04-12 07:16:19', '2025-04-12 07:16:19', NULL),
-(36, 1, NULL, 'finckh.melody@hotmail.com', 1, 2, '2025-04-12 10:59:50', '2025-04-12 10:59:50', NULL),
-(37, 1, NULL, 'candra.hacker2@gmail.com', 1, 2, '2025-04-13 08:46:39', '2025-04-13 08:46:39', NULL),
-(38, 1, NULL, 'mcleay.kate50@outlook.com', 1, 2, '2025-04-15 02:01:56', '2025-04-15 02:01:56', NULL);
+(1, 1, NULL, 'alikashi54321@gmail.com', 1, 2, '2025-03-04 02:00:13', '2025-03-04 02:00:13', NULL);
 
 -- --------------------------------------------------------
 
@@ -8316,13 +8187,12 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('3fQ63POU8YPmWkQ2NmHzqKeEvGw58bbVZIakhyMz', NULL, '2a02:4780:6:c0de::10', 'Go-http-client/2.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiaGZsVUpWcFVBdU42NVdNZVJWSmN3dkRDc0hzVjZFWHZUZ3FzQVc0bCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1744852415),
-('5lLfhZ9Td0Hne0G5Hdsmtf318cPTa6Pk3IhYXz89', NULL, '141.98.255.186', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMEJVSDB1aGZxVGpmM0lPQkx1UTVCaTFEbjBCN3FBd3F2WTRzU2pRVCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjI6Imh0dHBzOi8va2FzaGlmdGVjaC5jb20iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1744859150),
-('6XQc5xrDJKOnccKUIu4TcNS0INfDdHQWVYjqbZ0Q', NULL, '2a02:4780:6:c0de::10', 'Go-http-client/2.0', 'YToyOntzOjY6Il90b2tlbiI7czo0MDoiMzZpWm92Tjg5VkloVGRwclVzZEZSWmRYczF0Zno1Z0dzQ2ZaZmh1ZSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1744852415),
-('ioAuBSHxSoFUtocjktvtlvssaDMxBNjZizWxzkzC', NULL, '39.58.123.228', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoic3daZkhVUHNYeUhjdzBhOGFyVVlQbTZWQlVOTDU3R1NmQkV3N2ExUCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjI6Imh0dHBzOi8va2FzaGlmdGVjaC5jb20iO319', 1744862918),
-('jETCe05zgKtivQKA5HNK2M9QGkQW8tNh0gzb9iCi', NULL, '39.58.123.228', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiblRiQkhYM1Znc3hENWNnSVUzZ0x4NHRrNkM5cUl0eWlZa0JEd3R3ZiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MjoibG9naW5fYWRtaW5fNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjY0OiJodHRwczovL3BvcnRmb2xpby1idWlsZGVyLmthc2hpZnRlY2guY29tL3Jlc3VtZS9zZXJ2aWNlLXNlY3Rpb25zIjt9fQ==', 1744862875),
-('RhG1AydEzvl9Mp932phxeEpX2CvB9WOzgoDIuGE9', NULL, '85.208.96.200', 'Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRkh4Vkh0ZDZjcWFQaDlpaXNRMzI3UGx4VTNyeXFGN0hhNEhjdHQ3QyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTk6Imh0dHBzOi8va2FzaGlmdGVjaC5jb20vcG9ydGZvbGlvL3dlYi1kZXZlbG9wbWVudC90aGV0ZW1waHViIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1744860262),
-('rrNXgJnTTxNfK4BVqXLylnabVq55gnSUJCU0yMr4', NULL, '39.58.123.228', 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Mobile Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRzEzZDhMcndPbXp4U0dva3Z4NmVucUNUalRORDBzYWV6VnZ1SnVyWSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTM6Imh0dHBzOi8va2FzaGlmdGVjaC5jb20vc2VydmljZS9mdWxsLXN0YWNrLWRldmVsb3BtZW50Ijt9fQ==', 1744862054);
+('0a6wjhNvWX47dfdqUvlnjpkaCWpbPtKlyOEeXzFb', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiZUhCWHlpd1F0YktVcFFZNVpUc1dSOE8wWDRRaXRLZ2tHaDFVdkd1SCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yZXN1bWUvc2VydmljZS1zZWN0aW9ucyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTI6ImxvZ2luX2FkbWluXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mjt9', 1749735894),
+('49YvYovuoCiOMRx5Zn3YqWsWFemiuPjXA87ZXaLA', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiMDJTdnM2d21vMXA4RmI4M0xxUE9hZndhY2lYWXdqQmhGamxFRmJPcCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MjoibG9naW5fYWRtaW5fNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjYxOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvcmVzdW1lL3BvcnRmb2xpby1zZXR0aW5ncy9hYm91dC1zZWN0aW9uIjt9fQ==', 1741169691),
+('be6XyOkYo1SgNWrPGN09Jl3Xvo8XnuidicgjODAN', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiRGt1WXlVWG10R3dVbGZ1cFJiSnBnNWV0a3lROGhlQkV6cHpITURYNiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1741169691),
+('hqIPUjjbWhIfHSCc1V6wYTFGwynK5nnbA23jOn8T', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVUhSYlYzTUVrY0d2clNFT2E5ZEwxdmh1Um9DYkNlWUhsMldUNnoyaCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1742272389),
+('Lpueq1Ru6BrTiMIsxXnX3N59J1rsOtjcNkV4Iaa6', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiakxySTJNaHlOZFNIT0tyTk9xRnUxcHhNYlpRZnhubmNMbTJ1MXdsVCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1741167493),
+('qmM1d3cU5hSvqJluurS0WdZuzoEtSQ63snAyFG2v', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiTE53Y1VpQ2sweUQ2WjM1bW56aWl5NEo5Y1JodFQxemQ5WnRNSE9sSSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MjoibG9naW5fYWRtaW5fNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO3M6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMyOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYWNsL21vZHVsZSI7fX0=', 1749795612);
 
 -- --------------------------------------------------------
 
@@ -8347,7 +8217,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id`, `user_name`, `is_active`, `remember_token`, `password`, `deleted_at`, `created_at`, `updated_at`, `theme_color`) VALUES
-(2, 'kashif.ali', 1, 'Dj3ChRxQY3tzOsw6fPCIxMKkR4BcTOFZeLnQHyw3MJoPvgc9RdRsERRcwA1u', '$2y$12$EJIXj0lYWTmU/7l6MGRjcuo8vPHWus9e4Excv4pdImoKV1UKf1OF2', NULL, '2021-11-16 13:01:46', '2025-03-28 06:59:25', 'maroon'),
+(2, 'kashif.ali', 1, 'gFnIAyTc7s2NgLwD0VLaZbEAZQDlDsjYQBLXGNe4iIyNVN3jnSh7Hq4jqUH7', '$2y$12$EJIXj0lYWTmU/7l6MGRjcuo8vPHWus9e4Excv4pdImoKV1UKf1OF2', NULL, '2021-11-16 13:01:46', '2025-02-09 17:08:34', 'maroon'),
 (37, 'demo.supplier', 1, 'ECXTKXLAO1uRpe3Np6eyfyAG6kO56KuEdTYFcqHx3mVqjFh10OMgH7zSYMRN', '$2y$12$XzHu.iUKmuqTOC6p/gzLkO36oTLHRlVTOeV6N0UZUCNTOJKzcPVs6', NULL, '2024-03-17 04:25:55', '2024-08-29 19:55:55', 'blue'),
 (38, 'sdfsdfdsfdsfdsfsf', 1, NULL, '$2y$12$9KKJBZcqFnbpoxs/7Nkj.OVa2DUWqRUUNgyyPVPgIUF9d1yJelq/S', '2024-08-29 11:11:47', '2024-08-29 18:06:35', '2024-08-29 18:11:47', NULL),
 (39, 'hussain.ali', 1, NULL, '$2y$12$DE3Olb1dWLz2HHwYlilOv.zlQK0xPTrGbM3uLed8M6F5DdcjNXMGO', NULL, '2024-08-29 19:21:01', '2024-08-29 20:02:10', NULL),
@@ -8441,7 +8311,7 @@ CREATE TABLE `tbl_categories_lang` (
   `deleted_at` datetime DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_categories_lang`
@@ -8464,7 +8334,7 @@ CREATE TABLE `tbl_cities` (
   `added_by` int(11) DEFAULT NULL,
   `date_added` datetime DEFAULT NULL,
   `status` enum('0','1') DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_cities`
@@ -8492,7 +8362,7 @@ CREATE TABLE `tbl_countries` (
   `date_added` datetime DEFAULT NULL,
   `added_by` int(11) DEFAULT NULL,
   `status` enum('0','1') DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_countries`
@@ -9165,6 +9035,26 @@ ALTER TABLE `password_reset_tokens`
   ADD PRIMARY KEY (`email`);
 
 --
+-- Indexes for table `pos_products`
+--
+ALTER TABLE `pos_products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pos_product_categories`
+--
+ALTER TABLE `pos_product_categories`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `pos_product_categories_parent_id_foreign` (`parent_id`);
+
+--
+-- Indexes for table `pos_product_units`
+--
+ALTER TABLE `pos_product_units`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `pos_product_units_base_unit_id_foreign` (`base_unit_id`);
+
+--
 -- Indexes for table `resume_about_sections`
 --
 ALTER TABLE `resume_about_sections`
@@ -9442,13 +9332,31 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `audits`
 --
 ALTER TABLE `audits`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7021;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7016;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `pos_products`
+--
+ALTER TABLE `pos_products`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `pos_product_categories`
+--
+ALTER TABLE `pos_product_categories`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `pos_product_units`
+--
+ALTER TABLE `pos_product_units`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `resume_about_sections`
@@ -9466,13 +9374,13 @@ ALTER TABLE `resume_education_sections`
 -- AUTO_INCREMENT for table `resume_experience_sections`
 --
 ALTER TABLE `resume_experience_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `resume_experience_section_descriptions`
 --
 ALTER TABLE `resume_experience_section_descriptions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `resume_footer_sections`
@@ -9526,7 +9434,7 @@ ALTER TABLE `resume_live_link_sections`
 -- AUTO_INCREMENT for table `resume_portfolio_settings`
 --
 ALTER TABLE `resume_portfolio_settings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `resume_project_categories`
@@ -9538,13 +9446,13 @@ ALTER TABLE `resume_project_categories`
 -- AUTO_INCREMENT for table `resume_project_sections`
 --
 ALTER TABLE `resume_project_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `resume_project_section_descriptions`
 --
 ALTER TABLE `resume_project_section_descriptions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `resume_project_section_images`
@@ -9586,7 +9494,7 @@ ALTER TABLE `resume_sidebar_sections`
 -- AUTO_INCREMENT for table `resume_skill_sections`
 --
 ALTER TABLE `resume_skill_sections`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `resume_testimonial_sections`
@@ -9598,13 +9506,13 @@ ALTER TABLE `resume_testimonial_sections`
 -- AUTO_INCREMENT for table `resume_website_contacts`
 --
 ALTER TABLE `resume_website_contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `resume_website_contact_emails`
 --
 ALTER TABLE `resume_website_contact_emails`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `resume_website_contact_services`
@@ -9705,6 +9613,12 @@ ALTER TABLE `users`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `pos_product_categories`
+--
+ALTER TABLE `pos_product_categories`
+  ADD CONSTRAINT `pos_product_categories_parent_id_foreign` FOREIGN KEY (`parent_id`) REFERENCES `pos_product_categories` (`id`) ON DELETE SET NULL;
 
 --
 -- Constraints for table `tbl_admin_user_roles`
