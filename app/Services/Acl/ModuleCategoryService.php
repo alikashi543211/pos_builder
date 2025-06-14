@@ -60,10 +60,10 @@ class ModuleCategoryService
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\ $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store($request)
     {
         if (!$request->ajax() || !validatePermissions('acl/module-categories/add')) {
 
@@ -89,7 +89,7 @@ class ModuleCategoryService
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request, $id)
+    public function show($request, $id)
     {
 
         $sanitizedId = sanitizeInput($id, 'int');
@@ -117,7 +117,7 @@ class ModuleCategoryService
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request, $id)
+    public function edit($request, $id)
     {
         $sanitizedId = sanitizeInput($id, 'int');
 
@@ -139,11 +139,11 @@ class ModuleCategoryService
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\ $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update($request, $id)
     {
         $sanitizedId = sanitizeInput($id, 'int');
 
@@ -167,7 +167,7 @@ class ModuleCategoryService
     }
 
     //Ajax update display order
-    public function updateDisplayOrder(Request $request, $id, $displayOrderValue)
+    public function updateDisplayOrder($request, $id, $displayOrderValue)
     {
         $sanitizedId = sanitizeInput($id, 'int');
 
@@ -181,7 +181,7 @@ class ModuleCategoryService
         }
     }
 
-    public function searchModuleCategory(Request $request)
+    public function searchModuleCategory($request)
     {
 
         if (!$request->ajax() || !validatePermissions('acl/module-categories/search')) {
